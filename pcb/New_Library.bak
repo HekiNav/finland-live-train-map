@@ -71,7 +71,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -8.89 2.54 0)
 				(length 2.54)
 				(name "VIN"
@@ -107,7 +107,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin power_out line
 				(at 8.89 2.54 180)
 				(length 2.54)
 				(name "VOUT"
