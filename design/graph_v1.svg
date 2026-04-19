@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="300mm"
+   viewBox="0 0 200 300"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.2938725"
+     inkscape:cx="251.18395"
+     inkscape:cy="752.0061"
+     inkscape:window-width="2560"
+     inkscape:window-height="1368"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid136"
+       units="mm"
+       spacingx="2"
+       spacingy="2" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect23124"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect23120"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect23116"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect23112"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15848"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15788"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15786"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15782"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1 @ F,0,0,1,0,2,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="2"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15317"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,0,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15315"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,6,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect13048"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect12750"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3785"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3783"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3781"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3779"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3777"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3731"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3731-9"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1 @ F,0,0,1,0,4,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="4"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Muut rataosuudet"
+     style="display:inline"
+     inkscape:highlight-color="#a93636">
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 131.51451,196 v -4 a 2,2 45 0 0 -2,-2 H 122 a 4.8284271,4.8284271 22.5 0 1 -3.41421,-1.41421 l -5.17158,-5.17158 A 4.8284271,4.8284271 22.5 0 0 110,182 l -7.52222,0 a 2,2 135 0 0 -2,2 v 2"
+       id="path15780"
+       inkscape:label="Iisalmi-Ylivieska"
+       inkscape:path-effect="#path-effect15782"
+       inkscape:original-d="m 131.51451,196 v -6 H 120 l -8,-8 h -11.52222 v 4"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 152,232 v -8 a 2,2 45 0 0 -2,-2 h -15.53535 a 2,2 135 0 0 -2,2 v 2"
+       id="path15784"
+       sodipodi:nodetypes="cccc"
+       inkscape:path-effect="#path-effect15788"
+       inkscape:original-d="m 152,232 v -10 h -19.53535 v 4"
+       inkscape:label="Joensuu-Pieksamäki" />
+    <path
+       style="font-variation-settings:normal;display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="M 152,226 V 198"
+       id="path15842"
+       inkscape:label="Joensuu-Nurmes" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 151.5024,248 v -2 a 2,2 45 0 0 -2,-2 L 140,244"
+       id="path15846"
+       inkscape:label="Parikkala-Savonlinna"
+       inkscape:path-effect="#path-effect15848"
+       inkscape:original-d="m 151.5024,248 v -4 L 140,244"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 120,229.53125 h -2 a 2,2 45 0 1 -2,-2 L 116,220 a 2,2 45 0 0 -2,-2 h -11.51246 a 2,2 135 0 0 -2,2 v 2"
+       id="path23110"
+       sodipodi:nodetypes="ccccc"
+       inkscape:path-effect="#path-effect23112"
+       inkscape:original-d="m 120,229.53125 h -4 V 218 h -15.51246 v 4"
+       inkscape:label="Jyväskylä-Seinäjoki" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 106,229.50737 h 2 a 2,2 135 0 0 2,-2 V 220 a 2,2 45 0 0 -2,-2 h -2"
+       id="path23114"
+       sodipodi:nodetypes="cccc"
+       inkscape:path-effect="#path-effect23116"
+       inkscape:original-d="m 106,229.50737 h 4 L 110,218 h -4"
+       inkscape:label="Orivesi-Haapamäki" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 126,258.46567 h 4 a 2,2 45 0 1 2,2 v 37.53432"
+       id="path23118"
+       inkscape:path-effect="#path-effect23120"
+       inkscape:original-d="m 126,258.46567 h 6 v 39.53432"
+       sodipodi:nodetypes="ccc"
+       inkscape:label="Kouvola-Kotka" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 99.530316,138 v -2 a 2,2 45 0 0 -2,-2 H 88"
+       id="path23122"
+       inkscape:path-effect="#path-effect23124"
+       inkscape:original-d="m 99.530316,138 v -4 H 88"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:label="Rataosuudet"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:highlight-color="#1791c8">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:none"
+       d="M 100,297.99999 V 144 a 4,4 135 0 1 4,-4 h 28"
+       id="path352"
+       inkscape:label="Päärata"
+       sodipodi:nodetypes="ccc"
+       inkscape:path-effect="#path-effect15317"
+       inkscape:original-d="M 100,297.99999 V 140 h 32" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 100,292 v -4 a 4,4 45 0 0 -4,-4 H 52"
+       id="path1195"
+       inkscape:label="Rantarata"
+       sodipodi:nodetypes="ccc"
+       inkscape:path-effect="#path-effect3785"
+       inkscape:original-d="m 100,292 v -8 H 52" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 52,284 h 8 a 9.6568542,9.6568542 157.5 0 0 6.828427,-2.82843 L 97.171573,250.82843 A 9.6568542,9.6568542 112.5 0 0 100,244 v -2"
+       id="path3129"
+       inkscape:label="Turku-Toijala"
+       inkscape:path-effect="#path-effect3777"
+       inkscape:original-d="m 52,284 h 12 l 36,-36 v -6"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 100,272 v -10 a 4,4 135 0 1 4,-4 h 44 a 4,4 135 0 0 4,-4 v -26"
+       id="path3464"
+       inkscape:label="Riihimäki-Kouvola"
+       sodipodi:nodetypes="cccc"
+       inkscape:original-d="m 100,272 v -14 h 52 v -30"
+       inkscape:path-effect="#path-effect3781" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 126,258 h -6 a 9.6568542,9.6568542 157.5 0 0 -6.82843,2.82843 l -10.34314,10.34314 A 9.6568542,9.6568542 112.5 0 0 100,278 v 2"
+       id="path3462"
+       inkscape:label="Oikorata"
+       sodipodi:nodetypes="cccc"
+       inkscape:path-effect="#path-effect3779"
+       inkscape:original-d="m 126,258 h -10 l -16,16 v 6" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 56,230 h 40 a 4,4 45 0 1 4,4 v 6"
+       id="path3729"
+       inkscape:label="Tampere-Pori"
+       inkscape:path-effect="#path-effect3731"
+       inkscape:original-d="m 56,230 h 44 v 10"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 100,240 v -6 a 4,4 135 0 1 4,-4 h 24 a 4,4 135 0 0 4,-4 v -34 a 9.6568542,9.6568542 67.5 0 0 -2.82843,-6.82843 L 102.82843,158.82843 A 9.6568542,9.6568542 67.5 0 1 100,152 v -2"
+       id="path3729-5"
+       inkscape:label="Tampere-Kajaani-Oulu"
+       inkscape:path-effect="#path-effect3731-9"
+       inkscape:original-d="m 100,240 v -10 h 32 v -42 l -32,-32 v -6"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 132,226 v 28 a 4,4 135 0 1 -4,4 h -2"
+       id="path12720"
+       inkscape:path-effect="#path-effect12750"
+       inkscape:original-d="m 132,226 v 32 h -6"
+       inkscape:label="Kouvola-Pieksamäki"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="m 100,252 v 2 a 4,4 45 0 0 4,4 h 6"
+       id="path13018"
+       inkscape:path-effect="#path-effect13048"
+       inkscape:original-d="m 100,252 v 6 h 10"
+       inkscape:label="Rihimäki north curve" />
+    <path
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+       d="M 100,146 V 120"
+       id="path15324"
+       inkscape:label="Oulu-Kolari" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Asemat"
+     style="display:inline">
+    <g
+       id="g3162"
+       inkscape:label="Turku satama"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5-6-0-6-8-2"
+         width="4"
+         height="2"
+         x="278"
+         y="-50"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-165.463"
+         y="236.17366"
+         id="text1275-5-2-2-9-0-7-0"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-165.463"
+           y="236.17366"
+           id="tspan1370-1-7-3-6-9-2">Turku satama</tspan></text>
+    </g>
+    <g
+       id="g3171"
+       inkscape:label="Turku"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5-6-0-6-8"
+         width="4"
+         height="2"
+         x="278"
+         y="-56"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-161.22035"
+         y="240.41629"
+         id="text1275-5-2-2-9-0-7"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-161.22035"
+           y="240.41629"
+           id="tspan1370-1-7-3-6-9">Turku</tspan></text>
+    </g>
+    <g
+       id="g3180"
+       inkscape:label="Kupittaa"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5-6-0-6-2"
+         width="4"
+         height="2"
+         x="278"
+         y="-66"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-154.14928"
+         y="247.48737"
+         id="text1275-5-2-2-9-0-6"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-154.14928"
+           y="247.48737"
+           id="tspan1370-1-7-3-6-1">Kupittaa</tspan></text>
+    </g>
+    <g
+       id="g3220"
+       inkscape:label="Pasila">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3"
+         width="4"
+         height="2"
+         x="98"
+         y="290" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.61905"
+         y="291.99997"
+         id="text1275"><tspan
+           sodipodi:role="line"
+           id="tspan1273"
+           style="fill:#000000;stroke:none;stroke-width:2"
+           x="102.61905"
+           y="291.99997">Pasila</tspan></text>
+    </g>
+    <g
+       id="g3215"
+       inkscape:label="Leppävaara"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5"
+         width="4"
+         height="2"
+         x="278"
+         y="-90"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-137.17871"
+         y="264.45795"
+         id="text1275-5-2"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-137.17871"
+           y="264.45795"
+           id="tspan1370-1">Leppävaara</tspan></text>
+    </g>
+    <g
+       id="g3201"
+       inkscape:label="Kirkkonummi"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5-6"
+         width="4"
+         height="2"
+         x="278"
+         y="-84"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-141.42136"
+         y="260.2153"
+         id="text1275-5-2-2"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-141.42136"
+           y="260.2153"
+           id="tspan1370-1-7">Kirkkonummi</tspan></text>
+    </g>
+    <g
+       id="g3196"
+       inkscape:label="Karjaa"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5-6-0"
+         width="4"
+         height="2"
+         x="278"
+         y="-78"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-145.66399"
+         y="255.97266"
+         id="text1275-5-2-2-9"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-145.66399"
+           y="255.97266"
+           id="tspan1370-1-7-3">Karjaa</tspan></text>
+    </g>
+    <g
+       id="g3191"
+       inkscape:label="Salo"
+       transform="translate(4,4)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-5-6-0-6"
+         width="4"
+         height="2"
+         x="278"
+         y="-72"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-149.90663"
+         y="251.73001"
+         id="text1275-5-2-2-9-0"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-149.90663"
+           y="251.73001"
+           id="tspan1370-1-7-3-6">Salo</tspan></text>
+    </g>
+    <g
+       id="g3225"
+       inkscape:label="Helsinki">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014"
+         width="4"
+         height="2"
+         x="98"
+         y="296" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.61905"
+         y="298"
+         id="text1279"><tspan
+           sodipodi:role="line"
+           id="tspan1277"
+           style="stroke-width:2"
+           x="102.61905"
+           y="298">Helsinki</tspan></text>
+    </g>
+    <g
+       id="g3210"
+       inkscape:label="Tikkurila"
+       transform="translate(0,2)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.5873"
+         y="277.96826"
+         id="text3205"><tspan
+           sodipodi:role="line"
+           id="tspan3203"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.5873"
+           y="277.96826">Tikkurila</tspan></text>
+    </g>
+    <g
+       id="g3210-3"
+       inkscape:label="Kouvola"
+       transform="translate(20,-14)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-6-6"
+         width="4"
+         height="2"
+         x="270"
+         y="-108"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-118.77253"
+         y="271.53836"
+         id="text3205-1-3"
+         transform="rotate(-44.995482)"
+         inkscape:transform-center-x="-1.0742624"
+         inkscape:transform-center-y="-2.9882984"><tspan
+           sodipodi:role="line"
+           id="tspan3203-0-2"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-118.77253"
+           y="271.53836">Kouvola</tspan></text>
+    </g>
+    <g
+       id="g3210-3-8"
+       inkscape:label="Lappeenranta"
+       transform="translate(28,-14)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-6-6-5"
+         width="4"
+         height="2"
+         x="270"
+         y="-108"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;opacity:1;paint-order:markers stroke fill;stop-opacity:1"
+         x="-118.77253"
+         y="271.53836"
+         id="text3205-1-3-6"
+         transform="rotate(-44.995482)"
+         inkscape:transform-center-x="-1.0742624"
+         inkscape:transform-center-y="-2.9882984"><tspan
+           sodipodi:role="line"
+           id="tspan3203-0-2-1"
+           style="text-align:start;text-anchor:end;fill:#000000;stroke:#ffffff;stroke-width:0.5;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+           x="-118.77253"
+           y="271.53836">Lappeenranta</tspan></text>
+    </g>
+    <g
+       id="g3210-3-8-1"
+       inkscape:label="Joutseno"
+       transform="translate(34,-14)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-6-6-5-5"
+         width="4"
+         height="2"
+         x="270"
+         y="-108"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;opacity:1;paint-order:markers stroke fill;stop-opacity:1"
+         x="-118.77253"
+         y="271.53836"
+         id="text3205-1-3-6-9"
+         transform="rotate(-44.995482)"
+         inkscape:transform-center-x="-1.0742624"
+         inkscape:transform-center-y="-2.9882984"><tspan
+           sodipodi:role="line"
+           id="tspan3203-0-2-1-8"
+           style="text-align:start;text-anchor:end;fill:#000000;stroke:#ffffff;stroke-width:0.5;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+           x="-118.77253"
+           y="271.53836">Joutseno</tspan></text>
+    </g>
+    <g
+       id="g3210-3-8-1-4"
+       inkscape:label="Imatra"
+       transform="translate(40,-14)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-6-6-5-5-8"
+         width="4"
+         height="2"
+         x="270"
+         y="-108"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="-118.77253"
+         y="271.53836"
+         id="text3205-1-3-6-9-1"
+         transform="rotate(-44.995482)"
+         inkscape:transform-center-x="-1.0742624"
+         inkscape:transform-center-y="-2.9882984"><tspan
+           sodipodi:role="line"
+           id="tspan3203-0-2-1-8-0"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-118.77253"
+           y="271.53836">Imatra</tspan></text>
+    </g>
+    <g
+       id="g3558"
+       inkscape:label="Lahti"
+       transform="translate(-12.000008,7.9999941)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-6"
+         width="4"
+         height="2"
+         x="270"
+         y="-102"
+         transform="rotate(90,27,4.9999999)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-123.0155"
+         y="267.29605"
+         id="text3205-1"
+         transform="rotate(-44.995482,-10.559311,-49.631725)"
+         inkscape:transform-center-x="-1.0742624"
+         inkscape:transform-center-y="-2.9882984"><tspan
+           sodipodi:role="line"
+           id="tspan3203-0"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-123.0155"
+           y="267.29605">Lahti</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8"
+       inkscape:label="Hyvinkää"
+       transform="translate(0,-8)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="84.112587"
+         y="278.41299"
+         id="text3205-2-7"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+           x="84.112587"
+           y="278.41299">Hyvinkää</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-0"
+       inkscape:label="Loimaa"
+       transform="translate(-19.143832,-23.509921)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-6-4"
+         width="4"
+         height="2"
+         x="274.23392"
+         y="143.50865"
+         transform="rotate(45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="91.401009"
+         y="295.47818"
+         id="text3205-2-7-2-1-7"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-5-6"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="91.401009"
+           y="295.47818">Loimaa</tspan></text>
+    </g>
+    <g
+       id="g3723"
+       inkscape:label="Humppila"
+       transform="translate(-16.111185,-26.958541)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-6"
+         width="4"
+         height="2"
+         x="274.52805"
+         y="125.46418"
+         transform="rotate(45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="104.11118"
+         y="282.95853"
+         id="text3205-2-7-2-1"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-5"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="104.11118"
+           y="282.95853">Humppila</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-8"
+       inkscape:label="Hämeenlinna"
+       transform="translate(0,-13)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-4"
+         width="4"
+         height="2"
+         x="98"
+         y="265" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.58729"
+         y="266.96826"
+         id="text3205-2-7-2-5"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-0"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.58729"
+           y="266.96826">Hämeenlinna</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-8-3"
+       inkscape:label="Simpele"
+       transform="translate(52,-13)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-4-0"
+         width="4"
+         height="2"
+         x="98"
+         y="265" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.44284"
+         y="266.96826"
+         id="text3205-2-7-2-5-4"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-0-4"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.44284"
+           y="266.96826">Simpele</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-8-3-4"
+       inkscape:label="Parikkala"
+       transform="translate(52,-19)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-4-0-4"
+         width="4"
+         height="2"
+         x="98"
+         y="265" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.44284"
+         y="266.96826"
+         id="text3205-2-7-2-5-4-7"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-0-4-6"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.44284"
+           y="266.96826">Parikkala</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-8-3-4-3"
+       inkscape:label="Kesälahti"
+       transform="translate(52,-25)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-4-0-4-1"
+         width="4"
+         height="2"
+         x="98"
+         y="265" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.44284"
+         y="266.96826"
+         id="text3205-2-7-2-5-4-7-7"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-0-4-6-5"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.44284"
+           y="266.96826">Kesälahti</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-8-3-4-3-9"
+       inkscape:label="Kitee"
+       transform="translate(52,-31)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-4-0-4-1-6"
+         width="4"
+         height="2"
+         x="98"
+         y="265" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.44284"
+         y="266.96826"
+         id="text3205-2-7-2-5-4-7-7-2"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-0-4-6-5-1"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.44284"
+           y="266.96826">Kitee</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-8-3-4-3-9-7"
+       inkscape:label="Joensuu"
+       transform="translate(52,-37)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-4-0-4-1-6-8"
+         width="4"
+         height="2"
+         x="98"
+         y="265" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.44284"
+         y="266.96826"
+         id="text3205-2-7-2-5-4-7-7-2-5"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-0-4-6-5-1-7"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.44284"
+           y="266.96826">Joensuu</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3"
+       inkscape:label="Toijala"
+       transform="translate(0,-36)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.5873"
+         y="277.96826"
+         id="text3205-2-7-4"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.5873"
+           y="277.96826">Toijala</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9"
+       inkscape:label="Muhos"
+       transform="translate(17.729998,-109.96852)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3"
+         width="4"
+         height="2"
+         x="-131.89438"
+         y="250.89841"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="88.076202"
+         y="267.93652"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="88.076202"
+           y="267.93652"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8"
+           sodipodi:role="line">Muhos</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7"
+       inkscape:label="Pieksamäki"
+       transform="translate(31.968246,-52.031738)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.18729"
+         y="277.96826"
+         id="text3205-2-7-4-1"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.18729"
+           y="277.96826">Pieksamäki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-4"
+       inkscape:label="Suonenjoki"
+       transform="translate(32.031754,-57.968262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-1"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.38261"
+         y="277.96826"
+         id="text3205-2-7-4-1-8"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-5"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.38261"
+           y="277.96826">Suonenjoki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-4-9"
+       inkscape:label="Kuopio"
+       transform="translate(32.031754,-63.968262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-1-7"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.38261"
+         y="277.96826"
+         id="text3205-2-7-4-1-8-5"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-5-3"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.38261"
+           y="277.96826">Kuopio</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-4-9-8"
+       inkscape:label="Siilinjärvi"
+       transform="translate(32.031754,-69.968262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-1-7-8"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.38261"
+         y="277.96826"
+         id="text3205-2-7-4-1-8-5-3"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-5-3-1"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.38261"
+           y="277.96826">Siilinjärvi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-4-9-8-8"
+       inkscape:label="Lapinlahti"
+       transform="translate(32.031754,-75.968262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-1-7-8-9"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.38261"
+         y="277.96826"
+         id="text3205-2-7-4-1-8-5-3-6"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-5-3-1-4"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.38261"
+           y="277.96826">Lapinlahti</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-4-9-8-8-3"
+       inkscape:label="Iisalmi"
+       transform="translate(32,-82)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-1-7-8-9-3"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.38261"
+         y="277.96826"
+         id="text3205-2-7-4-1-8-5-3-6-3"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-5-3-1-4-8"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.38261"
+           y="277.96826">Iisalmi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-7"
+       inkscape:label="Mikkeli"
+       transform="translate(32,-40)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-6"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="86.700882"
+         y="277.96826"
+         id="text3205-2-7-4-1-7"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-3"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="86.700882"
+           y="277.96826">Mikkeli</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-7-7-6"
+       inkscape:label="Mäntyharju"
+       transform="translate(32,-30)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-1-6-5"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="79.740807"
+         y="278.41299"
+         id="text3205-2-7-4-1-7-6"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-5-3-3"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="79.740807"
+           y="278.41299">Mäntyharju</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5"
+       inkscape:label="Tampere"
+       transform="translate(0,-42)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="102.5873"
+         y="277.96826"
+         id="text3205-2-7-4-9"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="102.5873"
+           y="277.96826">Tampere</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7"
+       inkscape:label="Tesoma"
+       transform="translate(-28,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Tesoma</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0"
+       inkscape:label="Orivesi"
+       transform="translate(-14,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;paint-order:markers stroke fill"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:#ffffff;stroke-width:0.5;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+           x="-102.53049"
+           y="275.06454">Orivesi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-0"
+       inkscape:label="Orivesi"
+       transform="translate(-14.000002,-129.00001)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-0"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-4"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-6"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="-102.53049"
+           y="275.06454">Tervola</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-0-2"
+       inkscape:label="Orivesi"
+       transform="translate(-8.0000021,-129.00001)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-0-6"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-4-7"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-6-5"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="-102.53049"
+           y="275.06454">Muurola</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-0-2-6"
+       inkscape:label="Orivesi"
+       transform="translate(-2,-129)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-0-6-9"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-4-7-8"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-6-5-7"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="-102.53049"
+           y="275.06454">Rovaniemi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-0-2-6-2"
+       inkscape:label="Orivesi"
+       transform="translate(4,-129)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-0-6-9-8"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-4-7-8-2"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-6-5-7-9"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="-102.53049"
+           y="275.06454">Misi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-2"
+       inkscape:label="Jämsä"
+       transform="translate(-8,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-7"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;paint-order:markers stroke fill"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-2"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-2"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:#ffffff;stroke-width:0.5;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+           x="-102.53049"
+           y="275.06454">Jämsä</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-2-6"
+       inkscape:label="Jyväskylä"
+       transform="translate(-2,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-7-1"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-2-0"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-2-6"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="-102.53049"
+           y="275.06454">Jyväskylä</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-2-6-1"
+       inkscape:label="Hankasalmi"
+       transform="translate(4,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-7-1-5"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="123.22747"
+         y="270.19061"
+         id="text3205-2-7-4-9-5-71-2-0-9"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-2-6-4"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+           x="123.22747"
+           y="270.19061">Hankasalmi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-5"
+       inkscape:label="Nokia"
+       transform="translate(-34,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-4"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5-7"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-4"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Nokia</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-5-4"
+       inkscape:label="Karkku"
+       transform="translate(-40,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-4-3"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5-7-0"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-4-7"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Karkku</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-5-8"
+       inkscape:label="Vammala"
+       transform="translate(-46,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-4-6"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5-7-8"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-4-8"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Vammala</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-5-4-4"
+       inkscape:label="Kokemäki"
+       transform="translate(-52,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-4-3-3"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5-7-0-1"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-4-7-4"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Kokemäki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-5-4-4-9"
+       inkscape:label="Harjavalta"
+       transform="translate(-58,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-4-3-3-2"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5-7-0-1-0"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-4-7-4-6"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Harjavalta</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-5-4-4-9-8"
+       inkscape:label="Pori"
+       transform="translate(-64,-39)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-4-3-3-2-9"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-106.77312"
+         y="279.30719"
+         id="text3205-2-7-4-9-5-7-0-1-0-2"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-4-7-4-6-6"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:2"
+           x="-106.77312"
+           y="279.30719">Pori</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6"
+       inkscape:label="Riihimäki"
+       transform="translate(0,-14)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="83.814964"
+         y="277.71826"
+         id="text3205-2-7-2"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="83.814964"
+           y="277.71826">Riihimäki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9"
+       inkscape:label="Parkano"
+       transform="translate(0,-50.000262)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-9-9"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826">Parkano</tspan><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="281.93701"
+           id="tspan12961" /></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3"
+       inkscape:label="Lapua"
+       transform="translate(0,-62.000262)">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8">Lapua</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-8"
+       inkscape:label="Seinäjoki"
+       transform="translate(0,-56.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-1"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-2"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan14922">Seinäjoki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0"
+       inkscape:label="Parkano"
+       transform="translate(0,-68.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3">Kauhava</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6"
+       inkscape:label="Pietarsaari"
+       transform="translate(0,-74.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8">Pietarsaari</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8"
+       inkscape:label="Kokkola"
+       transform="translate(0,-80.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7">Kokkola</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7"
+       inkscape:label="Kannus"
+       transform="translate(0,-86.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7-3">Kannus</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0"
+       inkscape:label="Ylivieska"
+       transform="translate(0,-92.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7-3-9">Ylivieska</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2"
+       inkscape:label="Oulainen"
+       transform="translate(0,-98.000262)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7-3-9-0">Oulainen</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5"
+       inkscape:label="Vihanti"
+       transform="translate(0,-104.00026)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6">Vihanti</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9"
+       inkscape:label="Ruukki"
+       transform="translate(0,-110.00026)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4">Ruukki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-0"
+       inkscape:label="Kempele"
+       transform="translate(0,-116.00026)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-6"
+         width="4"
+         height="2"
+         x="98"
+         y="276" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.723808"
+         y="277.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-2"><tspan
+           sodipodi:role="line"
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.723808"
+           y="277.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-9">Kempele</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7"
+       inkscape:label="Oulu"
+       transform="translate(0,-118)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7"
+         width="4"
+         height="2"
+         x="98"
+         y="270" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.749207"
+         y="271.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5"><tspan
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.749207"
+           y="271.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4"
+           sodipodi:role="line">Oulu</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-90"
+       inkscape:label="Oulu"
+       transform="translate(0,-124)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-8"
+         width="4"
+         height="2"
+         x="98"
+         y="270" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.749207"
+         y="271.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-1"><tspan
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.749207"
+           y="271.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-3"
+           sodipodi:role="line">Kemi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-90-1"
+       inkscape:label="Oulu"
+       transform="translate(0,-134)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-8-1"
+         width="4"
+         height="2"
+         x="98"
+         y="270" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.749207"
+         y="271.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-1-0"><tspan
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.749207"
+           y="271.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-3-3"
+           sodipodi:role="line">Tornio-Itäinen</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-90-1-4"
+       inkscape:label="Oulu"
+       transform="translate(0,-140)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-8-1-0"
+         width="4"
+         height="2"
+         x="98"
+         y="270" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.749207"
+         y="271.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-1-0-3"><tspan
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.749207"
+           y="271.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-3-3-9"
+           sodipodi:role="line">Ylitornio</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-90-1-4-1"
+       inkscape:label="Oulu"
+       transform="translate(0,-146)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-8-1-0-9"
+         width="4"
+         height="2"
+         x="98"
+         y="270" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.749207"
+         y="271.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-1-0-3-6"><tspan
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.749207"
+           y="271.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-3-3-9-9"
+           sodipodi:role="line">Pello</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-90-1-4-1-5"
+       inkscape:label="Oulu"
+       transform="translate(0,-152)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-8-1-0-9-6"
+         width="4"
+         height="2"
+         x="98"
+         y="270" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:end;text-anchor:end;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="97.749207"
+         y="271.96826"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-1-0-3-6-6"><tspan
+           style="text-align:end;text-anchor:end;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="97.749207"
+           y="271.96826"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-3-3-9-9-4"
+           sodipodi:role="line">Kolari</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9-0"
+       inkscape:label="Utajärvi"
+       transform="translate(21.608676,-105.26142)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3-2"
+         width="4"
+         height="2"
+         x="-131.30859"
+         y="250.48419"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="88.197517"
+         y="267.2294"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6-1"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="88.197517"
+           y="267.2294"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8-0"
+           sodipodi:role="line">Utajärvi</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9-0-5"
+       inkscape:label="Vaala"
+       transform="translate(26.315785,-100.55432)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3-2-1"
+         width="4"
+         height="2"
+         x="-131.30859"
+         y="249.48419"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="87.49041"
+         y="266.52231"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6-1-1"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="87.49041"
+           y="266.52231"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8-0-0"
+           sodipodi:role="line">Vaala</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9-0-5-8"
+       inkscape:label="Paltamo"
+       transform="translate(30.194464,-95.847213)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3-2-1-5"
+         width="4"
+         height="2"
+         x="-130.72281"
+         y="249.06998"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="87.611732"
+         y="265.81519"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6-1-1-0"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="87.611732"
+           y="265.81519"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8-0-0-6"
+           sodipodi:role="line">Paltamo</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9-0-5-4"
+       inkscape:label="Kontiomäki"
+       transform="translate(34.437105,-91.261427)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3-2-1-6"
+         width="4"
+         height="2"
+         x="-130.48016"
+         y="248.48419"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="87.369095"
+         y="265.2294"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6-1-1-2"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="87.369095"
+           y="265.2294"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8-0-0-5"
+           sodipodi:role="line">Kontiomäki</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9-0-5-4-8"
+       inkscape:label="Kajaani"
+       transform="translate(38.194464,-87.847213)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3-2-1-6-6"
+         width="4"
+         height="2"
+         x="-130.72281"
+         y="249.06998"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="87.611732"
+         y="265.81519"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6-1-1-2-2"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="87.611732"
+           y="265.81519"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8-0-0-5-8"
+           sodipodi:role="line">Kajaani</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-6-9-3-0-6-8-7-0-2-5-9-7-9-0-5-4-8-4"
+       inkscape:label="Sukeva"
+       transform="translate(41.022892,-84.675641)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-1-48-9-9-0-8-6-3-5-9-2-7-3-2-1-6-6-7"
+         width="4"
+         height="2"
+         x="-130.48016"
+         y="250.48419"
+         transform="rotate(-45)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;stop-color:#000000;stop-opacity:1"
+         x="88.783302"
+         y="266.64362"
+         id="text3205-2-7-2-12-0-6-4-9-4-0-4-4-2-5-6-1-1-2-2-2"><tspan
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.5;stroke-dasharray:none;paint-order:markers stroke fill"
+           x="88.783302"
+           y="266.64362"
+           id="tspan12961-8-3-8-7-3-9-0-6-4-4-8-0-0-5-8-4"
+           sodipodi:role="line">Sukeva</tspan></text>
+    </g>
+    <g
+       id="g3210-7-8-3-5-7-0-0-2-6-2-9"
+       inkscape:label="Orivesi"
+       transform="translate(10,-129)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;stroke:#ffffff;stroke-width:0.5;stroke-dasharray:none"
+         id="rect1014-3-7-59-9-19-6-4-48-0-6-9-8-6"
+         width="4"
+         height="2"
+         x="267"
+         y="-122"
+         transform="rotate(90)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;font-variation-settings:normal;text-align:start;text-anchor:start;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+         x="-102.53049"
+         y="275.06454"
+         id="text3205-2-7-4-9-5-71-4-7-8-2-0"
+         transform="rotate(-45)"><tspan
+           sodipodi:role="line"
+           id="tspan3203-2-3-7-3-2-7-6-5-7-9-2"
+           style="text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:2"
+           x="-102.53049"
+           y="275.06454">Kemijärvi</tspan></text>
+    </g>
+  </g>
+</svg>
