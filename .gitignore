@@ -1,0 +1,4 @@
+*.lck
+pcb/#auto_saved_files#
+*-backups
+*-cache
