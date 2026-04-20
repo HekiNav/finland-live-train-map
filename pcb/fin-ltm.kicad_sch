@@ -883,7 +883,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 10.16 0)
+				(at 0 13.208 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8867,68 +8867,6 @@
 			(justify left bottom)
 		)
 		(uuid "ec46abc3-2e46-448e-899a-5267d87191a1")
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 228.6 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4978512e-adef-4687-af5c-0987da00082b")
-		(property "Netclass" "50Ohm"
-			(at 229.2985 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -77.47 -15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 252.73 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "54b17860-8e38-4d51-9bdf-63ea7c5a43eb")
-		(property "Netclass" "50Ohm"
-			(at 253.4285 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at -53.34 -15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")

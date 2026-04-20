@@ -278,14 +278,7 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/Antenna": [
-        "50Ohm"
-      ],
-      "Net-(AE1-A)": [
-        "50Ohm"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
