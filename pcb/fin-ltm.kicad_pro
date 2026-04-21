@@ -250,7 +250,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "hki-ltm.kicad_pro",
+    "filename": "fin-ltm.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -412,6 +412,10 @@
     [
       "da13f94e-0fc0-403b-a3ae-59c6a026d422",
       "Root"
+    ],
+    [
+      "d89a664e-caf2-420e-9c80-1c073f244520",
+      "Leds"
     ]
   ],
   "text_variables": {}

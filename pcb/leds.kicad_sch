@@ -1,0 +1,19 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7fb6363e-e1de-4bbd-8135-116563f0c3f0")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "LED_DATA_5V"
+		(shape input)
+		(at 27.94 16.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1802729-3c2b-41e4-8801-47953c893049")
+	)
+)
