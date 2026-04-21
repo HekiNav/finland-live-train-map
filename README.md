@@ -2,4 +2,4 @@
 
 A Hack Club Fallout project.
 
-A map with LED's marking the route for most intercity trains across Finland.
+A map with LED's marking the route for most intercity trains across Finland. Will also have a display for extra info.
