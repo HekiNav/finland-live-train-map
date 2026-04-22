@@ -795,14 +795,6 @@
 				)
 			)
 			(symbol "RT9080_1_1"
-				(text "RF9080\n"
-					(at 0 7.112 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
 				(pin power_in line
 					(at -8.89 2.54 0)
 					(length 2.54)
@@ -12129,7 +12121,7 @@
 		(at 269.24 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "23a39dac-f5ff-4e9f-b806-07806fc51664")
@@ -16177,7 +16169,7 @@
 		(at 88.9 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "61f6bdf7-cb73-4f4e-a7ec-96d41938cd63")
@@ -22474,6 +22466,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C100024"
+			(at 186.69 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "925618b2-80ee-4614-9371-7babda6e73ad")
 		)
@@ -22936,7 +22937,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "RT9080"
 			(at 99.06 30.48 0)
 			(effects
 				(font
@@ -22963,6 +22964,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 99.06 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C841192 "
 			(at 99.06 40.64 0)
 			(effects
 				(font
