@@ -3,3 +3,7 @@ pcb/#auto_saved_files#
 *-backups
 *-cache
 *-bak
+
+node_modules
+dist
+package-lock.json
