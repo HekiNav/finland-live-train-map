@@ -10677,7 +10677,7 @@
 		)
 		(uuid "65ede0fd-1b20-41e5-86ce-21168c093838")
 	)
-	(label "MCU_RX"
+	(label "MCU_TX"
 		(at 266.7 109.22 180)
 		(effects
 			(font
@@ -10807,7 +10807,7 @@
 		)
 		(uuid "c1666757-0acb-4591-9b93-aa50c00b9a40")
 	)
-	(label "MCU_TX"
+	(label "MCU_RX"
 		(at 266.7 106.68 180)
 		(effects
 			(font
@@ -13658,7 +13658,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:Test_connector"
 			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
