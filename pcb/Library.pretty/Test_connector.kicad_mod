@@ -8,7 +8,7 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "133e4f98-7dc8-4edf-9f39-3f5a7d74a6a0")
+		(uuid "d9b2f4ec-2e83-4361-b71a-515cc7b994c3")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at -9 -1.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "217c7e57-67c3-4343-8999-9b476325c723")
+		(uuid "7d00dfa7-d941-4b23-bcb4-fcea5676edeb")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "448b90f9-66da-4d85-8945-91537470f26a")
+		(uuid "66be4468-4aac-43bd-958c-3a436b7bb7f4")
 		(effects
 			(font
 				(size 1 1)
@@ -46,7 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2024650d-9b37-4fa1-a6f4-3cefcad82662")
+		(uuid "817f74fe-f0f1-4aa1-b09f-550f620432ba")
 		(effects
 			(font
 				(size 1 1)
@@ -56,11 +56,22 @@
 	)
 	(attr smd exclude_from_pos_files exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.5 -10.5)
+		(end 1.5 10.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "bd1e08d2-e60f-4178-a95c-19063bc85b3c")
+	)
 	(fp_text user "5V"
 		(at 2 -9 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "11f3163f-509a-4880-a6d5-77cf7b5cca65")
+		(uuid "e29da565-6c29-4bb6-ac1e-c3940dc2f6f2")
 		(effects
 			(font
 				(size 1 1)
@@ -73,7 +84,7 @@
 		(at 2 -6 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "fdf8aed1-f6c7-4ad3-8c7c-c169c075411b")
+		(uuid "5e4d5b59-bfee-4b2b-985c-56b920732f47")
 		(effects
 			(font
 				(size 1 1)
@@ -86,7 +97,7 @@
 		(at 2 -3 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "ad2a0ed0-bcce-4670-8750-742dd4791e56")
+		(uuid "b6e0ce8d-3c88-4145-b0c9-64b6a7741242")
 		(effects
 			(font
 				(size 1 1)
@@ -99,7 +110,7 @@
 		(at 2 0 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "e05e4f9d-0146-48eb-8e54-5f1bd6adc618")
+		(uuid "47b0be1d-12c0-4556-9e68-0fc64c98386c")
 		(effects
 			(font
 				(size 1 1)
@@ -112,7 +123,7 @@
 		(at 2 3 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "fd7cb021-0b74-4696-aabf-8f4b3acf72c9")
+		(uuid "c46b5430-ca4a-4e2c-ba46-5a77f7f8f004")
 		(effects
 			(font
 				(size 1 1)
@@ -125,7 +136,7 @@
 		(at 2 6 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "6c297af3-4f56-4cec-8344-865eabf37589")
+		(uuid "a5ac9a58-6f3b-44fe-af79-1fd81de2c111")
 		(effects
 			(font
 				(size 1 1)
@@ -138,7 +149,7 @@
 		(at 2 9 0)
 		(unlocked yes)
 		(layer "B.SilkS")
-		(uuid "045cd559-085c-4b2f-bb0b-be6ba658463f")
+		(uuid "43cb52dc-c740-4fe4-9cce-619643cde063")
 		(effects
 			(font
 				(size 1 1)
@@ -151,7 +162,7 @@
 		(at -9 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "a54f4950-13b9-4c3d-96c5-e88e91afe865")
+		(uuid "28206aa6-f35a-474c-95b7-8eda84a01705")
 		(effects
 			(font
 				(size 1 1)
@@ -164,49 +175,49 @@
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "5ca6623d-f708-470f-8ed0-0b1fdc05f0e1")
+		(uuid "a6ce2383-e467-43c5-bf3d-13f9e2b51159")
 	)
 	(pad "2" smd circle
 		(at 0 -6)
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "5d96faef-4e8c-4f5e-b081-4c82b45530b0")
+		(uuid "b3f708ad-745d-468f-9123-6d143edb4866")
 	)
 	(pad "3" smd circle
 		(at 0 -3)
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "0bee5ffd-1665-434a-b54f-31caa92d53b1")
+		(uuid "0ea07eb2-3a84-4180-b33e-7633dd5b0296")
 	)
 	(pad "4" smd circle
 		(at 0 0)
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "8f4337af-bf9b-40a3-9895-3463830c5102")
+		(uuid "ceb5f232-51b0-4afa-b1b5-e29ae7e1a937")
 	)
 	(pad "5" smd circle
 		(at 0 3)
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "6d90acb5-8215-44d8-911f-efbbc0d4a2f1")
+		(uuid "c24b32e6-e279-4691-a553-3e44c7cfe5d9")
 	)
 	(pad "6" smd circle
 		(at 0 6)
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "9952e8d7-8761-4bbe-8312-bc3f2196c049")
+		(uuid "0498c0b2-c31c-4e34-aac6-e73cec554d82")
 	)
 	(pad "7" smd circle
 		(at 0 9)
 		(size 2.54 2.54)
 		(property pad_prop_testpoint)
 		(layers "B.Cu" "B.Mask")
-		(uuid "355a113b-6045-48ad-92cd-12fb6aa76607")
+		(uuid "7913fd7b-ad1d-4455-b6d2-24f0cad9add8")
 	)
 	(embedded_fonts no)
 )
