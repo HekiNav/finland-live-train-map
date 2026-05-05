@@ -10189,16 +10189,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 50.8) (xy 208.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84ad80ff-ba23-4e99-a5d0-3e5c75bbb31d")
-	)
-	(wire
-		(pts
 			(xy 165.1 116.84) (xy 166.37 116.84)
 		)
 		(stroke
@@ -10226,6 +10216,16 @@
 			(type default)
 		)
 		(uuid "8caf7bf6-12c7-494e-8897-6b887b69d138")
+	)
+	(wire
+		(pts
+			(xy 165.1 50.8) (xy 208.28 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "915b21be-a391-44ba-91a3-011f32d1915f")
 	)
 	(wire
 		(pts
@@ -10768,7 +10768,7 @@
 		(uuid "76246fba-2e28-4636-90c6-24593e77d4ac")
 	)
 	(label "BRIGHTNESS_DOWN_BUTTON"
-		(at 181.61 50.8 0)
+		(at 181.61 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10908,7 +10908,7 @@
 		(uuid "d2245789-4cfd-4996-9c22-ff7414d8de83")
 	)
 	(label "BRIGHTNESS_UP_BUTTON"
-		(at 181.61 48.26 0)
+		(at 181.61 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
