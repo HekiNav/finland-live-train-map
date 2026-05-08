@@ -11,7 +11,7 @@ A map with LED's marking the route for intercity trains across Finland.
 ## /pcb
 
 - Contains KiCad design files
-- More about PCB design in `/pcb/DESIGN.md`
+- More about PCB design in [`/pcb/`](https://github.com/HekiNav/finland-live-train-map/tree/main/pcb)
 
 ### KiCanvas viewer
 View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FHekinav%2FFinland-Live-Train-Map%2Ftree%2Fmain%2Fpcb)
