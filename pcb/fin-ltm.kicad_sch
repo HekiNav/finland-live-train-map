@@ -13470,7 +13470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Test_connector"
+		(property "Footprint" "Custom:Test_connector"
 			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -16040,6 +16040,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 87.63 160.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b6abcae-4460-4a70-ae95-f5845ff1c750")
+		(property "Reference" "#PWR0302"
+			(at 87.63 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 87.63 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 87.63 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3fadd1a-d5a2-43c6-8a73-b475f541f391")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 165.1 124.46 0)
 		(unit 1)
@@ -16653,7 +16731,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB.pretty"
+		(property "Footprint" "Custom:Inverted_F_Antenna_2.4Ghz_1.0mmPCB_TI_CC2430DB.pretty"
 			(at 194.31 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -18578,7 +18656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom:OLED_1306_THT_pinheader"
 			(at 88.9 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -32354,84 +32432,6 @@
 			(project "fin-ltm"
 				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 87.63 160.02 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc1ca885-102b-4700-abab-81304acc65ac")
-		(property "Reference" "#PWR075"
-			(at 87.63 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 87.63 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 87.63 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fa010e01-4833-443f-a467-d57d4d445861")
-		)
-		(instances
-			(project "fin-ltm"
-				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422"
-					(reference "#PWR075")
 					(unit 1)
 				)
 			)

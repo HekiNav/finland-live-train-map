@@ -496,7 +496,7 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Library"
+      "Custom"
     ],
     "pinned_symbol_libs": []
   },
