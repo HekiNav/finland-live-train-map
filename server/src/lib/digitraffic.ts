@@ -23,19 +23,27 @@ export class DigitrafficDataCollector {
         this.client.on("message", (topic, payload) => {
             console.log(topic)
             const data = parseTrain(JSON.parse(payload.toString()))
-            if (data.type == "NOT_RUNNING") {
-                this.state.delete(data.id)
-            } else {
-                this.state.set(data.id, data)
-            }
-            console.log(data)
+            this.#updateTrain(data)
         })
     }
     async #getInitialData() {
+        const data = await (await fetch("https://rata.digitraffic.fi/api/v1/live-trains/")).json() as TrainData[]
+        data.forEach(train => {
+            const data = parseTrain(train)
+            this.#updateTrain(data)
+        });
 
+    }
+    #updateTrain(t: Train | TrainNotRunning) {
+        if (t.type == "NOT_RUNNING") {
+            this.state.delete(t.id)
+        } else {
+            this.state.set(t.id, t)
+        }
     }
 }
 // return string if needs removal
+export type TrainNotRunning = { id: number, type: "NOT_RUNNING" }
 export function parseTrain(data: TrainData): Train | { id: number, type: "NOT_RUNNING" } {
     const lastIndex = data.timeTableRows.reverse().findIndex(r => Object.hasOwn(r, "actualTime"))
     if (lastIndex < 0 || lastIndex == data.timeTableRows.length - 1) return { id: data.trainNumber, type: "NOT_RUNNING" }
@@ -52,7 +60,6 @@ export function parseTrain(data: TrainData): Train | { id: number, type: "NOT_RU
         }
     }
     const next = data.timeTableRows[lastIndex + 1]
-    console.log(last, next)
     return {
         id: data.trainNumber,
         type: data.trainType,
@@ -77,7 +84,7 @@ export interface Train {
 export type AnyTrainState = TrainAtStationState | TrainBetweenStationsState
 export interface TrainAtStationState {
     type: "at_station"
-    current: TrainPos
+    current: TrainPos | { id: number, type: "NOT_RUNNING" }
 }
 export interface TrainBetweenStationsState {
     type: "between"
