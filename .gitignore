@@ -8,4 +8,4 @@ node_modules
 dist
 package-lock.json
 _autosave*
-.history_trim
+*/.history_trim
