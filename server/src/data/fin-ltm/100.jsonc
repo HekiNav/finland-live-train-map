@@ -1,0 +1,861 @@
+[
+    ///////////////////////////////////////////////////
+    ////    Kolari line                            ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KLI"
+        },
+        "blocks": [
+            {
+                "index": 100
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KLI",
+            "station_2_code": "PEL"
+        },
+        "blocks": [
+            {
+                "index": 101
+            },
+            {
+                "index": 102
+            },
+            {
+                "index": 103
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PEL"
+        },
+        "blocks": [
+            {
+                "index": 104
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PEL",
+            "station_2_code": "YTR"
+        },
+        "blocks": [
+            {
+                "index": 105
+            },
+            {
+                "index": 106
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "YTR"
+        },
+        "blocks": [
+            {
+                "index": 107
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "YTR",
+            "station_2_code": "TRI"
+        },
+        "blocks": [
+            {
+                "index": 108
+            },
+            {
+                "index": 109
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TRI"
+        },
+        "blocks": [
+            {
+                "index": 110
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TRI",
+            "station_2_code": "KEM"
+        },
+        "blocks": [
+            {
+                "index": 111
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Kemijärvi line                         ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KEM",
+            "station_2_code": "TRV"
+        },
+        "blocks": [
+            {
+                "index": 112
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TRV"
+        },
+        "blocks": [
+            {
+                "index": 113
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TRV",
+            "station_2_code": "MUL"
+        },
+        "blocks": [
+            {
+                "index": 114
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "MUL"
+        },
+        "blocks": [
+            {
+                "index": 115
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MUL",
+            "station_2_code": "ROI"
+        },
+        "blocks": [
+            {
+                "index": 116
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "ROI"
+        },
+        "blocks": [
+            {
+                "index": 117
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "ROI",
+            "station_2_code": "MIS"
+        },
+        "blocks": [
+            {
+                "index": 118
+            },
+            {
+                "index": 119
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "MIS"
+        },
+        "blocks": [
+            {
+                "index": 120
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MIS",
+            "station_2_code": "KJÄ"
+        },
+        "blocks": [
+            {
+                "index": 121
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KJÄ"
+        },
+        "blocks": [
+            {
+                "index": 122
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Kemi-Oulu line                         ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KEM"
+        },
+        "blocks": [
+            {
+                "index": 123
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KEM",
+            "station_2_code": "OL"
+        },
+        "blocks": [
+            {
+                "index": 124
+            },
+            {
+                "index": 125
+            },
+            {
+                "index": 126
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "OL"
+        },
+        "blocks": [
+            {
+                "index": 127,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "KML"
+                    }
+                ]
+            },
+            {
+                "index": 128,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "MH"
+                    }
+                ]
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Päärata (Oulu-Seinäjoki)               ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "OL",
+            "station_2_code": "KML"
+        },
+        "blocks": [
+            {
+                "index": 129
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KML"
+        },
+        "blocks": [
+            {
+                "index": 130
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KML",
+            "station_2_code": "RKI"
+        },
+        "blocks": [
+            {
+                "index": 131
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "RKI"
+        },
+        "blocks": [
+            {
+                "index": 132
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RKI",
+            "station_2_code": "VTI"
+        },
+        "blocks": [
+            {
+                "index": 132
+            },
+            {
+                "index": 133
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "VTI"
+        },
+        "blocks": [
+            {
+                "index": 133
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VTI",
+            "station_2_code": "OU"
+        },
+        "blocks": [
+            {
+                "index": 133
+            },
+            {
+                "index": 134
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "OU"
+        },
+        "blocks": [
+            {
+                "index": 134
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "OU",
+            "station_2_code": "YV"
+        },
+        "blocks": [
+            {
+                "index": 135
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "YV"
+        },
+        "blocks": [
+            {
+                "index": 136
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "YV",
+            "station_2_code": "KNS"
+        },
+        "blocks": [
+            {
+                "index": 137
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KNS"
+        },
+        "blocks": [
+            {
+                "index": 138
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KNS",
+            "station_2_code": "KOK"
+        },
+        "blocks": [
+            {
+                "index": 139
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KOK"
+        },
+        "blocks": [
+            {
+                "index": 140
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KOK",
+            "station_2_code": "PNÄ"
+        },
+        "blocks": [
+            {
+                "index": 141
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PNÄ"
+        },
+        "blocks": [
+            {
+                "index": 142
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PNÄ",
+            "station_2_code": "KHA"
+        },
+        "blocks": [
+            {
+                "index": 143
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KHA"
+        },
+        "blocks": [
+            {
+                "index": 144
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KHA",
+            "station_2_code": "LPA"
+        },
+        "blocks": [
+            {
+                "index": 145
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LPA"
+        },
+        "blocks": [
+            {
+                "index": 146
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LPA",
+            "station_2_code": "SK"
+        },
+        "blocks": [
+            {
+                "index": 146
+            },
+            {
+                "index": 147
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SK"
+        },
+        "blocks": [
+            {
+                "index": 147
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Vaasa branch line                      ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SK",
+            "station_2_code": "TK"
+        },
+        "blocks": [
+            {
+                "index": 148
+            },
+            {
+                "index": 149
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TK"
+        },
+        "blocks": [
+            {
+                "index": 150
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TK",
+            "station_2_code": "VS"
+        },
+        "blocks": [
+            {
+                "index": 151
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "VS"
+        },
+        "blocks": [
+            {
+                "index": 152
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Pori/Rauma branch line                 ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PRI"
+        },
+        "blocks": [
+            {
+                "index": 153
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PRI",
+            "station_2_code": "HVA"
+        },
+        "blocks": [
+            {
+                "index": 154
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HVA"
+        },
+        "blocks": [
+            {
+                "index": 155
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HVA",
+            "station_2_code": "KKI"
+        },
+        "blocks": [
+            {
+                "index": 156
+            }
+        ]
+    },
+    // jumps to Rauma here
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "RMA"
+        },
+        "blocks": [
+            {
+                "index": 157
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RMA",
+            "station_2_code": "KKI"
+        },
+        "blocks": [
+            {
+                "index": 158
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KKI"
+        },
+        "blocks": [
+            {
+                "index": 159
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KKI",
+            "station_2_code": "VMA"
+        },
+        "blocks": [
+            {
+                "index": 159
+            },
+            {
+                "index": 160
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "VMA"
+        },
+        "blocks": [
+            {
+                "index": 160
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VMA",
+            "station_2_code": "KRU"
+        },
+        "blocks": [
+            {
+                "index": 160
+            },
+            {
+                "index": 161
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KRU"
+        },
+        "blocks": [
+            {
+                "index": 161
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KRU",
+            "station_2_code": "NOA"
+        },
+        "blocks": [
+            {
+                "index": 161
+            },
+            {
+                "index": 162
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "NOA"
+        },
+        "blocks": [
+            {
+                "index": 162
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "NOA",
+            "station_2_code": "TSO"
+        },
+        "blocks": [
+            {
+                "index": 162
+            },
+            {
+                "index": 163
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TSO"
+        },
+        "blocks": [
+            {
+                "index": 163
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LPA",
+            "station_2_code": "TPE"
+        },
+        "blocks": [
+            {
+                "index": 163
+            },
+            {
+                "index": 164
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Tampere-Turku line                     ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TPE"
+        },
+        "blocks": [
+            {
+                "index": 164,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "LLH"
+                    }
+                ]
+            },
+            {
+                "index": 165,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "JVS"
+                    }
+                ]
+            }
+        ]
+    },
+    // trains between Tampere and Toijala go to the Toijala LED immidiately after leaving due to this data format not supporting such an edge case
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TPE",
+            "station_2_code": "TL"
+        },
+        "blocks": [
+            {
+                "index": 166
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TL"
+        },
+        "blocks": [
+            {
+                "index": 166
+            }
+        ]
+    }
+]
