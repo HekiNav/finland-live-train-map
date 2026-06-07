@@ -1,0 +1,16 @@
+[
+    {
+        "id": "fin-ltm",
+        "name": "Finland Live Train Map",
+        "desc": "Live LED train map of Finland. Focused on passenger IC routes.",
+        "versions": ["100"],
+        "available": true
+    },
+    {
+        "id": "hki-ltm",
+        "name": "Helsinki Region Live Train Map",
+        "desc": "Live LED train map of the Helsinki region commuter train network.",
+        "versions": ["100"],
+        "available": false
+    }
+]
