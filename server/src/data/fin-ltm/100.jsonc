@@ -857,5 +857,207 @@
                 "index": 166
             }
         ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TL",
+            "station_2_code": "HL"
+        },
+        "blocks": [
+            {
+                "index": 167
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TL",
+            "station_2_code": "HP"
+        },
+        "blocks": [
+            {
+                "index": 168
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HP"
+        },
+        "blocks": [
+            {
+                "index": 169
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HP",
+            "station_2_code": "LM"
+        },
+        "blocks": [
+            {
+                "index": 170
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LM"
+        },
+        "blocks": [
+            {
+                "index": 171
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LM",
+            "station_2_code": "TKU"
+        },
+        "blocks": [
+            {
+                "index": 172
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TKU"
+        },
+        "blocks": [
+            {
+                "index": 174
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TKU",
+            "station_2_code": "TUS"
+        },
+        "blocks": [
+            {
+                "index": 174
+            },
+            {
+                "index": 173
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HP"
+        },
+        "blocks": [
+            {
+                "index": 173
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TKU",
+            "station_2_code": "SLO"
+        },
+        "blocks": [
+            {
+                "index": 175
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SLO"
+        },
+        "blocks": [
+            {
+                "index": 176
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SLO",
+            "station_2_code": "KR"
+        },
+        "blocks": [
+            {
+                "index": 177
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KR"
+        },
+        "blocks": [
+            {
+                "index": 178
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KR",
+            "station_2_code": "KKN"
+        },
+        "blocks": [
+            {
+                "index": 179
+            },
+            {
+                "index": 180
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KKN"
+        },
+        "blocks": [
+            {
+                "index": 181
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KKN",
+            "station_2_code": "LPV"
+        },
+        "blocks": [
+            {
+                "index": 182
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LPV"
+        },
+        "blocks": [
+            {
+                "index": 183
+            }
+        ]
     }
 ]

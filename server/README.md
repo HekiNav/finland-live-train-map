@@ -12,4 +12,5 @@ Defines boards to support
 
 ### `src/data/[board_id]/[board_version].jsonc`
 - Versions are currently in a number format ("1.0.0" => 100)
+- The format is an array of station/between objects
 
