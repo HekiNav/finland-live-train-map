@@ -1,3 +1,4 @@
+[Back to main page](./)
 # Server
 Processes train data into a format that is easier to consume for the map.
 
