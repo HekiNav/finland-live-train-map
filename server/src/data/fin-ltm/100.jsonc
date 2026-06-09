@@ -286,7 +286,7 @@
         ]
     },
     ///////////////////////////////////////////////////
-    ////    Päärata (Oulu-Seinäjoki)               ////
+    ////    Mainline (Oulu-Seinäjoki)              ////
     ///////////////////////////////////////////////////
     {
         "type": "between",
@@ -957,7 +957,7 @@
     {
         "type": "station",
         "properties": {
-            "station_code": "HP"
+            "station_code": "TUS"
         },
         "blocks": [
             {
@@ -965,6 +965,9 @@
             }
         ]
     },
+    ///////////////////////////////////////////////////
+    ////    Coastal railway line                   ////
+    ///////////////////////////////////////////////////
     {
         "type": "between",
         "properties": {
@@ -1020,9 +1023,6 @@
         "blocks": [
             {
                 "index": 179
-            },
-            {
-                "index": 180
             }
         ]
     },
@@ -1033,7 +1033,7 @@
         },
         "blocks": [
             {
-                "index": 181
+                "index": 180
             }
         ]
     },
@@ -1045,7 +1045,7 @@
         },
         "blocks": [
             {
-                "index": 182
+                "index": 181
             }
         ]
     },
@@ -1056,7 +1056,409 @@
         },
         "blocks": [
             {
+                "index": 182
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LPV",
+            "station_2_code": "PSL"
+        },
+        "blocks": [
+            {
+                "index": 182
+            },
+            {
                 "index": 183
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Helsinki-Pasila                        ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PSL"
+        },
+        "blocks": [
+            {
+                "index": 183,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "KHK"
+                    }
+                ]
+            },
+            {
+                "index": 188,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "AIN"
+                    }
+                ]
+            },
+            {
+                "index": 187,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "HAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PSL",
+            "station_2_code": "HKI"
+        },
+        "blocks": [
+            {
+                "index": 183,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "KHK"
+                    }
+                ]
+            },
+            {
+                "index": 184,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "KHK"
+                    }
+                ]
+            },
+            {
+                "index": 185,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "AIN"
+                    }
+                ]
+            },
+            {
+                "index": 188,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "AIN"
+                    }
+                ]
+            },
+            {
+                "index": 186,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "HAA"
+                    }
+                ]
+            },
+            {
+                "index": 187,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "HAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HKI"
+        },
+        "blocks": [
+            {
+                "index": 184,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "KHK"
+                    }
+                ]
+            },
+            {
+                "index": 185,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "AIN"
+                    }
+                ]
+            },
+            {
+                "index": 186,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "HAA"
+                    }
+                ]
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Mainline (Pasila-Hämeenlinna)          ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PSL",
+            "station_2_code": "TKL"
+        },
+        "blocks": [
+            {
+                "index": 190,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "AIN"
+                    }
+                ]
+            },
+            {
+                "index": 189,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "HAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "TKL"
+        },
+        "blocks": [
+            {
+                "index": 191,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "AIN"
+                    }
+                ]
+            },
+            {
+                "index": 192,
+                "filters": [
+                    {
+                        "type": "train_via",
+                        "station_code": "HAA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TKL",
+            "station_2_code": "RI"
+        },
+        "blocks": [
+            {
+                "index": 193
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "RI"
+        },
+        "blocks": [
+            {
+                "index": 194
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RI",
+            "station_2_code": "HL"
+        },
+        "blocks": [
+            {
+                "index": 195
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HL"
+        },
+        "blocks": [
+            {
+                "index": 196
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Riihimäki-Lahti line                   ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RI",
+            "station_2_code": "LH"
+        },
+        "blocks": [
+            {
+                "index": 197
+            },
+            {
+                "index": 198
+            },
+            {
+                "index": 199
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LH"
+        },
+        "blocks": [
+            {
+                "index": 200
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Kerava-Lahti-Kouvola line              ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LH",
+            "station_2_code": "TKL"
+        },
+        "blocks": [
+            {
+                "index": 201
+            },
+            {
+                "index": 202
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LH",
+            "station_2_code": "KV"
+        },
+        "blocks": [
+            {
+                "index": 203
+            },
+            {
+                "index": 204
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Kouvola-Pieksamäki line                ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KV",
+            "station_2_code": "MR"
+        },
+        "blocks": [
+            {
+                "index": 205
+            },
+            {
+                "index": 206
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "MR"
+        },
+        "blocks": [
+            {
+                "index": 207
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MR",
+            "station_2_code": "MI"
+        },
+        "blocks": [
+            {
+                "index": 208
+            },
+            {
+                "index": 209
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "MI"
+        },
+        "blocks": [
+            {
+                "index": 210
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MI",
+            "station_2_code": "PM"
+        },
+        "blocks": [
+            {
+                "index": 211
+            },
+            {
+                "index": 212
+            },
+            {
+                "index": 213
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PM"
+        },
+        "blocks": [
+            {
+                "index": 214
             }
         ]
     }
