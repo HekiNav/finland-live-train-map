@@ -1,4 +1,4 @@
-[Back to main page](https://github.com/HekiNav/finland-live-train-map/tree/main)
+[Back to main page](./)
 # Server
 Processes train data into a format that is easier to consume for the map.
 
