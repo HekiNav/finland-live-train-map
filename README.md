@@ -8,16 +8,16 @@ This project was made for Hack Club [Fallout](https://fallout.hackclub.com) by [
 
 **Each directory contains its own README file with more detailed information on the specific section. Basic information is provided here.**
 
-### [`/pcb`](./pcb/#readme)
+### [`/pcb`](./pcb/README.md)
 Contains KiCad design files
 View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FHekinav%2FFinland-Live-Train-Map%2Ftree%2Fmain%2Fpcb)
 
 **NOTICE**: KiCanvas does not properly render everything, please hide layers User.1-User.5 to view power circuitry. These layers mark the different power circuits
 
-### [`/design`](./design/#readme)
+### [`/design`](./design/README.md)
 Contains Map Design ideas and plans as Inkscape SVGs
 
-### [`/server`](./server/#readme)
+### [`/server`](./server/README.md)
 Contains the NodeJS server
 
 ## Why this exists
