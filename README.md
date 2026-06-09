@@ -8,25 +8,21 @@ This project was made for Hack Club [Fallout](fallout.hackclub.com) by [NoseFa](
 
 **Each directory contains its own README file with more detailed information on the specific section. Basic information is provided here.**
 
+### [`/pcb`](./pcb/)
+Contains KiCad design files
+View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FHekinav%2FFinland-Live-Train-Map%2Ftree%2Fmain%2Fpcb)
+
+**NOTICE**: KiCanvas does not properly render everything, please hide layers User.1-User.5 to view power circuitry. These layers mark the different power circuits
+
+### [`/design`](./design/)
+Contains Map Design ideas and plans as Inkscape SVGs
+
+### [`/server`](./server/)
+Contains the NodeJS server
+
 ## Why this exists
 
 This project was made because we wanted to work on something together and Hack Club was running the Fallout event. Hekinav has built a similar type of project before for Helsinki. [The Helsinki Live Train map](https://github.com/HekiNav/helsinki-live-train-map) and we decided that making one of all the Trains in Finland would be cool. This project is meant to be something to look at and something cool to have in your space. Thats why we put so much effort in the silkscreen of the pcb and the placement of the LED's. We wanted it to be good to look at.
-
-## /pcb
-
-- Contains KiCad design files
-- More about PCB design in [`/pcb/`](https://github.com/HekiNav/finland-live-train-map/tree/main/pcb)
-
-### KiCanvas viewer
-
-View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FHekinav%2FFinland-Live-Train-Map%2Ftree%2Fmain%2Fpcb)
-
-**NOTICE**: KiCanvas does not properly render everything, please hide layers User.1-User.5 to view power circuitry
-
-## /design
-
-- Contains Map Design ideas and plans as Inkscape SVGs
-- More about this in [`/design/`](./design/README.md)
 
 ## Zine page
 

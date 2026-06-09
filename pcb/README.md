@@ -7,11 +7,8 @@
 
 ## Main components
 
-- ESP32-C3FH4 (chip or module)
+- ESP32-C3FH4 (chip)
     - 4MiB built-in flash
-    - Chip/module pros and cons (currently chip)
-        - Chip is more aesthetical
-        - Module has a built-in antenna
 - Level Shifter (3V3 data from esp to 5V led data)
     - [TI SN74LV1T34DBVR](https://www.lcsc.com/product-detail/C100024.html)
 - Power management
@@ -19,7 +16,7 @@
     - Mosfet to shut down 5V rail
 - 239 ARGB LEDs: [Xinglight XL-1615RGBC-2812B-S](https://www.lcsc.com/product-detail/C41413180.html)
     - The -S version is less bright and cheaper than the non -S version. 
-    - These LEDs are a cheaper alternative to WorldSemi WS2812Bs
+    - These LEDs are a cheaper alternative (knockoff) to WorldSemi WS2812Bs
 
 ### KiCanvas viewer
 
@@ -30,4 +27,7 @@ View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%
 ## Schematic
 
 ![Schematic image](./img/fin-ltm.svg)
+
+
+Some of the LEDs are missing because they were removed after making the initial layout
 ![Schematic image](./img/fin-ltm-Leds.svg)
