@@ -1,7 +1,3 @@
-function generateInitialState(): MapEvent[] {
-    return []
-}
-
 export type MapMode = "trains" | "delay"
 export type MapEvent = MapEventAdd | MapEventRemove | MapEventUpdate
 export interface MapEventBase<T extends string> {
@@ -22,16 +18,4 @@ export interface MapEventTrain {
     id: number, // train id
     ts: number, // timestamp
     ct: number, // color type
-}
-
-// temporary
-export const mapModeColors = {
-    trains: {   
-        1: "A",
-        2: "B"
-    },
-    delay: {
-        1: "A",
-        2: "B"
-    }
 }

@@ -18,7 +18,8 @@
     "dev": "tsx --watch src/main.ts",
     "ws-test": "tsx src/test.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "postbuild": "cp src/data/* dist/data/",
+    "start": "node dist/main.js"
   },
   "devDependencies": {
     "@types/ws": "^8.18.1",
@@ -26,6 +27,7 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
+    "jsonc-simple-parser": "^3.0.0",
     "mqtt": "^5.15.1",
     "ws": "^8.20.0"
   },
