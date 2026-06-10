@@ -1,3 +1,4 @@
+// fun fact: this was done manually
 [
     ///////////////////////////////////////////////////
     ////    Kolari line                            ////
@@ -1459,6 +1460,1117 @@
         "blocks": [
             {
                 "index": 214
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Pieksamäki-Tampere line                ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PM",
+            "station_2_code": "HKS"
+        },
+        "blocks": [
+            {
+                "index": 215
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HKS"
+        },
+        "blocks": [
+            {
+                "index": 216
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HKS",
+            "station_2_code": "JY"
+        },
+        "blocks": [
+            {
+                "index": 217
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "JY"
+        },
+        "blocks": [
+            {
+                "index": 218
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JY",
+            "station_2_code": "JÄS"
+        },
+        "blocks": [
+            {
+                "index": 219
+            },
+            {
+                "index": 220
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "JÄS"
+        },
+        "blocks": [
+            {
+                "index": 221
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JÄS",
+            "station_2_code": "OV"
+        },
+        "blocks": [
+            {
+                "index": 222
+            },
+            {
+                "index": 223
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "OV"
+        },
+        "blocks": [
+            {
+                "index": 224
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "OV",
+            "station_2_code": "TPE"
+        },
+        "blocks": [
+            {
+                "index": 225
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////    Mainline (Tampere-Seinäjoki)           ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TPE",
+            "station_2_code": "PKO"
+        },
+        "blocks": [
+            {
+                "index": 226
+            },
+            {
+                "index": 227
+            },
+            {
+                "index": 228
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PKO"
+        },
+        "blocks": [
+            {
+                "index": 229
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PKO",
+            "station_2_code": "SJ"
+        },
+        "blocks": [
+            {
+                "index": 230
+            },
+            {
+                "index": 231
+            },
+            {
+                "index": 232
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Seinäjoki-Orivesi line                ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SJ",
+            "station_2_code": "HPK"
+        },
+        "blocks": [
+            {
+                "index": 233
+            },
+            {
+                "index": 234
+            },
+            {
+                "index": 235
+            },
+            {
+                "index": 236
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HPK"
+        },
+        "blocks": [
+            {
+                "index": 237
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HPK",
+            "station_2_code": "VLP"
+        },
+        "blocks": [
+            {
+                "index": 238
+            },
+            {
+                "index": 239
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "VLP"
+        },
+        "blocks": [
+            {
+                "index": 240
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VLP",
+            "station_2_code": "OV"
+        },
+        "blocks": [
+            {
+                "index": 241
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Haapamäki-Jyväskylä line              ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HPK",
+            "station_2_code": "KEU"
+        },
+        "blocks": [
+            {
+                "index": 242
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KEU"
+        },
+        "blocks": [
+            {
+                "index": 243
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KEU",
+            "station_2_code": "JY"
+        },
+        "blocks": [
+            {
+                "index": 244
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Jyväskylä-Haapajärvi freight line     ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JY",
+            "station_2_code": "HPJ"
+        },
+        "blocks": [
+            {
+                "index": 245
+            },
+            {
+                "index": 246
+            },
+            {
+                "index": 247
+            },
+            {
+                "index": 248
+            },
+            {
+                "index": 249
+            },
+            {
+                "index": 250
+            },
+            {
+                "index": 251
+            },
+            {
+                "index": 252
+            },
+            {
+                "index": 253
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "HPJ"
+        },
+        "blocks": [
+            {
+                "index": 254
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Haapajärvi-Ylivieska line             ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HPJ",
+            "station_2_code": "YV"
+        },
+        "blocks": [
+            {
+                "index": 255
+            },
+            {
+                "index": 256
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Oulu-Iisalmi line                     ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "OL",
+            "station_2_code": "MH"
+        },
+        "blocks": [
+            {
+                "index": 257
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "MH"
+        },
+        "blocks": [
+            {
+                "index": 258
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MH",
+            "station_2_code": "UTJ"
+        },
+        "blocks": [
+            {
+                "index": 259
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "UTJ"
+        },
+        "blocks": [
+            {
+                "index": 260
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "UTJ",
+            "station_2_code": "VAA"
+        },
+        "blocks": [
+            {
+                "index": 261
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "VAA"
+        },
+        "blocks": [
+            {
+                "index": 262
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VAA",
+            "station_2_code": "PTO"
+        },
+        "blocks": [
+            {
+                "index": 263
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PTO"
+        },
+        "blocks": [
+            {
+                "index": 264
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PTO",
+            "station_2_code": "KON"
+        },
+        "blocks": [
+            {
+                "index": 264
+            },
+            {
+                "index": 265
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KON"
+        },
+        "blocks": [
+            {
+                "index": 265
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KON",
+            "station_2_code": "KAJ"
+        },
+        "blocks": [
+            {
+                "index": 266
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KAJ"
+        },
+        "blocks": [
+            {
+                "index": 267
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KAJ",
+            "station_2_code": "SKV"
+        },
+        "blocks": [
+            {
+                "index": 268
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SKV"
+        },
+        "blocks": [
+            {
+                "index": 269
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SKV",
+            "station_2_code": "ILM"
+        },
+        "blocks": [
+            {
+                "index": 270
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Iisalmi-Haapajärvi                    ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "ILM",
+            "station_2_code": "HPJ"
+        },
+        "blocks": [
+            {
+                "index": 271
+            },
+            {
+                "index": 272
+            },
+            {
+                "index": 273
+            },
+            {
+                "index": 274
+            },
+            {
+                "index": 275
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Iisalmi-Pieksamäki                    ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "ILM"
+        },
+        "blocks": [
+            {
+                "index": 276
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "ILM",
+            "station_2_code": "LNA"
+        },
+        "blocks": [
+            {
+                "index": 276
+            },
+            {
+                "index": 277
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LNA"
+        },
+        "blocks": [
+            {
+                "index": 277
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LNA",
+            "station_2_code": "SIJ"
+        },
+        "blocks": [
+            {
+                "index": 278
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SIJ"
+        },
+        "blocks": [
+            {
+                "index": 279
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SIJ",
+            "station_2_code": "KUO"
+        },
+        "blocks": [
+            {
+                "index": 279
+            },
+            {
+                "index": 280
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KUO"
+        },
+        "blocks": [
+            {
+                "index": 280
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KUO",
+            "station_2_code": "SNJ"
+        },
+        "blocks": [
+            {
+                "index": 280
+            },
+            {
+                "index": 281
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SNJ"
+        },
+        "blocks": [
+            {
+                "index": 281
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SNJ",
+            "station_2_code": "PM"
+        },
+        "blocks": [
+            {
+                "index": 282
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Pieksamäki-Joensuu line               ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PM",
+            "station_2_code": "VAR"
+        },
+        "blocks": [
+            {
+                "index": 283
+            },
+            {
+                "index": 284
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "VAR"
+        },
+        "blocks": [
+            {
+                "index": 285
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VAR",
+            "station_2_code": "JNS"
+        },
+        "blocks": [
+            {
+                "index": 286
+            },
+            {
+                "index": 287
+            },
+            {
+                "index": 288
+            },
+            {
+                "index": 289
+            },
+            {
+                "index": 290
+            },
+            {
+                "index": 291
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "JNS"
+        },
+        "blocks": [
+            {
+                "index": 292
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Joensuu-Nurmes branch line            ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JNS",
+            "station_2_code": "LIS"
+        },
+        "blocks": [
+            {
+                "index": 293
+            },
+            {
+                "index": 294
+            },
+            {
+                "index": 295
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LIS"
+        },
+        "blocks": [
+            {
+                "index": 296
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LIS",
+            "station_2_code": "NRM"
+        },
+        "blocks": [
+            {
+                "index": 297
+            },
+            {
+                "index": 298
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "NRM"
+        },
+        "blocks": [
+            {
+                "index": 299
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Joensuu-Kouvola line (part 1)         ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JNS",
+            "station_2_code": "KIT"
+        },
+        "blocks": [
+            {
+                "index": 300
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KIT"
+        },
+        "blocks": [
+            {
+                "index": 301
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KIT",
+            "station_2_code": "KTI"
+        },
+        "blocks": [
+            {
+                "index": 302
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KTI"
+        },
+        "blocks": [
+            {
+                "index": 303
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KTI",
+            "station_2_code": "PAR"
+        },
+        "blocks": [
+            {
+                "index": 304
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "PAR"
+        },
+        "blocks": [
+            {
+                "index": 305
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PAR",
+            "station_2_code": "SPL"
+        },
+        "blocks": [
+            {
+                "index": 305
+            },
+            {
+                "index": 306
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SPL"
+        },
+        "blocks": [
+            {
+                "index": 306
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Savonlinna branch line                ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PAR",
+            "station_2_code": "SL"
+        },
+        "blocks": [
+            {
+                "index": 307
+            },
+            {
+                "index": 308
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "SL"
+        },
+        "blocks": [
+            {
+                "index": 309
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Joensuu-Kouvola line (part 2)         ////
+    ///////////////////////////////////////////////////
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SPL",
+            "station_2_code": "IMR"
+        },
+        "blocks": [
+            {
+                "index": 310
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "IMR"
+        },
+        "blocks": [
+            {
+                "index": 311
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "IMR",
+            "station_2_code": "JTS"
+        },
+        "blocks": [
+            {
+                "index": 311
+            },
+            {
+                "index": 312
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "JTS"
+        },
+        "blocks": [
+            {
+                "index": 312
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JTS",
+            "station_2_code": "LR"
+        },
+        "blocks": [
+            {
+                "index": 312
+            },
+            {
+                "index": 313
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "LR"
+        },
+        "blocks": [
+            {
+                "index": 313
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LR",
+            "station_2_code": "KV"
+        },
+        "blocks": [
+            {
+                "index": 314
+            },
+            {
+                "index": 315
+            },
+            {
+                "index": 316
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KV"
+        },
+        "blocks": [
+            {
+                "index": 317
+            }
+        ]
+    },
+    ///////////////////////////////////////////////////
+    ////     Kotka line                            ////
+    ///////////////////////////////////////////////////
+    // Juurikorpi so trains going to hamina show up on the line
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KV",
+            "station_2_code": "JRI"
+        },
+        "blocks": [
+            {
+                "index": 318
+            },
+            {
+                "index": 319
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "JRI"
+        },
+        "blocks": [
+            {
+                "index": 319
+            }
+        ]
+    },
+    // Kotka tavara so freights show properly
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JRI",
+            "station_2_code": "KTT"
+        },
+        "blocks": [
+            {
+                "index": 319
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KTT"
+        },
+        "blocks": [
+            {
+                "index": 320
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KTT",
+            "station_2_code": "KTA"
+        },
+        "blocks": [
+            {
+                "index": 320
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code": "KTA"
+        },
+        "blocks": [
+            {
+                "index": 320
             }
         ]
     }
