@@ -1,3 +1,3346 @@
 [
-    // wip
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HPL"
+        },
+        "blocks": [
+            {
+                "index": 101,
+                "lines": [
+                    "A",
+                    "L",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D18",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HPL",
+            "station_2_code": "ILA"
+        },
+        "blocks": [
+            {
+                "index": 102,
+                "lines": [
+                    "A",
+                    "L",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D17",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"ILA"
+        },
+        "blocks": [
+            {
+                "index": 103,
+                "lines": [
+                    "A",
+                    "L",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D16",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "ILA",
+            "station_2_code": "PSL"
+        },
+        "segments": [
+            [
+                {
+                    "index": 104,
+                    "lines": [
+                        "A",
+                        "L",
+                        "I",
+                        "P"
+                    ]
+                },
+                {
+                    "index": "D15",
+                    "lines": [
+                        "E",
+                        "U",
+                        "Y",
+                        "H",
+                        "-"
+                    ]
+                }
+            ],
+            [
+                {
+                    "index": 105,
+                    "lines": [
+                        "A",
+                        "L",
+                        "I",
+                        "P"
+                    ]
+                },
+                {
+                    "index": 106,
+                    "lines": [
+                        "E",
+                        "U",
+                        "Y",
+                        "H",
+                        "-"
+                    ]
+                }
+            ],
+            [
+                {
+                    "index": 107,
+                    "lines": [
+                        "A",
+                        "L",
+                        "I",
+                        "P"
+                    ],
+                    "line": "coastal"
+                },
+                {
+                    "index": 108,
+                    "lines": [
+                        "E",
+                        "U",
+                        "Y",
+                        "H",
+                        "-"
+                    ],
+                    "line": "coastal"
+                }
+            ],
+            [
+                {
+                    "index": "D177",
+                    "lines": [
+                        "A",
+                        "L",
+                        "I",
+                        "P"
+                    ],
+                    "line": "coastal"
+                },
+                {
+                    "index": "D167",
+                    "lines": [
+                        "E",
+                        "U",
+                        "Y",
+                        "H",
+                        "-"
+                    ]
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"PSL"
+        },
+        "blocks": [
+            {
+                "index": "D176",
+                "lines": [
+                    "A",
+                    "L",
+                    "I",
+                    "P"
+                ],
+                "line": "coastal"
+            },
+            {
+                "index": "D166",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ],
+                "line": "coastal"
+            },
+            {
+                "index": "D156",
+                "lines": [
+                    "T",
+                    "K"
+                ],
+                "line": "main"
+            },
+            {
+                "index": "D146",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ],
+                "line": "main"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PSL",
+            "station_2_code": "HKI"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D175",
+                    "lines": [
+                        "A",
+                        "L",
+                        "I",
+                        "P"
+                    ],
+                    "line": "coastal"
+                },
+                {
+                    "index": "D165",
+                    "lines": [
+                        "E",
+                        "U",
+                        "Y",
+                        "H",
+                        "-"
+                    ],
+                    "line": "coastal"
+                },
+                {
+                    "index": "D155",
+                    "lines": [
+                        "T",
+                        "K",
+                        "I",
+                        "P"
+                    ],
+                    "line": "main"
+                },
+                {
+                    "index": "D145",
+                    "lines": [
+                        "D",
+                        "R",
+                        "Z",
+                        "-"
+                    ],
+                    "line": "main"
+                }
+            ],
+            [
+                {
+                    "index": "D174",
+                    "lines": [
+                        "A",
+                        "L",
+                        "I",
+                        "P"
+                    ],
+                    "line": "coastal"
+                },
+                {
+                    "index": "D164",
+                    "lines": [
+                        "E",
+                        "U",
+                        "Y",
+                        "H",
+                        "-"
+                    ],
+                    "line": "coastal"
+                },
+                {
+                    "index": "D154",
+                    "lines": [
+                        "T",
+                        "K",
+                        "I",
+                        "P"
+                    ],
+                    "line": "main"
+                },
+                {
+                    "index": "D144",
+                    "lines": [
+                        "D",
+                        "R",
+                        "Z",
+                        "-"
+                    ],
+                    "line": "main"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HKI"
+        },
+        "blocks": [
+            {
+                "index": "D173",
+                "lines": [
+                    "A",
+                    "L",
+                    "I",
+                    "P"
+                ],
+                "line": "coastal"
+            },
+            {
+                "index": "D163",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ],
+                "line": "coastal"
+            },
+            {
+                "index": "D153",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ],
+                "line": "main"
+            },
+            {
+                "index": "D143",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ],
+                "line": "main"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PSL",
+            "station_2_code": "KÄP"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D157",
+                    "lines": [
+                        "T",
+                        "K",
+                        "I",
+                        "P"
+                    ]
+                },
+                {
+                    "index": "D147",
+                    "lines": [
+                        "D",
+                        "R",
+                        "Z",
+                        "-"
+                    ]
+                }
+            ],
+            [
+                {
+                    "index": "D158",
+                    "lines": [
+                        "T",
+                        "K",
+                        "I",
+                        "P"
+                    ]
+                },
+                {
+                    "index": "D148",
+                    "lines": [
+                        "D",
+                        "R",
+                        "Z",
+                        "-"
+                    ]
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KÄP"
+        },
+        "blocks": [
+            {
+                "index": "D149",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D159",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KÄP",
+            "station_2_code": "OLK"
+        },
+        "blocks": [
+            {
+                "index": "D160",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D150",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"OLK"
+        },
+        "blocks": [
+            {
+                "index": "D161",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D151",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "OLK",
+            "station_2_code": "PMK"
+        },
+        "blocks": [
+            {
+                "index": "D162",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D152",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"PMK"
+        },
+        "blocks": [
+            {
+                "index": "D178",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D168",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PMK",
+            "station_2_code": "ML"
+        },
+        "blocks": [
+            {
+                "index": "D179",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D169",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"ML"
+        },
+        "blocks": [
+            {
+                "index": "D180",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D170",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "ML",
+            "station_2_code": "TNA"
+        },
+        "blocks": [
+            {
+                "index": "D181",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D171",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TNA"
+        },
+        "blocks": [
+            {
+                "index": "D182",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D172",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TNA",
+            "station_2_code": "PLA"
+        },
+        "blocks": [
+            {
+                "index": "D188",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D183",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"PLA"
+        },
+        "blocks": [
+            {
+                "index": "D189",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D184",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PLA",
+            "station_2_code": "TKL"
+        },
+        "blocks": [
+            {
+                "index": "D190",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D185",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TKL"
+        },
+        "blocks": [
+            {
+                "index": "D191",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D186",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TKL",
+            "station_2_code": "HKH"
+        },
+        "blocks": [
+            {
+                "index": "D192",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D187",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HKH"
+        },
+        "blocks": [
+            {
+                "index": "D203",
+                "lines": [
+                    "T",
+                    "K",
+                    "I",
+                    "P"
+                ]
+            },
+            {
+                "index": "D193",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HKH",
+            "station_2_code": "KVY"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D204",
+                    "lines": [
+                        "T",
+                        "K"
+                    ]
+                },
+                {
+                    "index": "D194",
+                    "lines": [
+                        "D",
+                        "R",
+                        "Z",
+                        "-"
+                    ]
+                }
+            ],
+            [
+                {
+                    "index": "D205",
+                    "lines": [
+                        "T",
+                        "K"
+                    ]
+                },
+                {
+                    "index": "D195",
+                    "lines": [
+                        "D",
+                        "R",
+                        "Z",
+                        "-"
+                    ]
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KVY"
+        },
+        "blocks": [
+            {
+                "index": "D206",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D196",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KVY",
+            "station_2_code": "RKL"
+        },
+        "blocks": [
+            {
+                "index": "D207",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D197",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"RKL"
+        },
+        "blocks": [
+            {
+                "index": "D208",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D198",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RKL",
+            "station_2_code": "KRS"
+        },
+        "blocks": [
+            {
+                "index": "D209",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D199",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KRS"
+        },
+        "blocks": [
+            {
+                "index": "D210",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D200",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KRS",
+            "station_2_code": "SAV"
+        },
+        "blocks": [
+            {
+                "index": "D211",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D201",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"SAV"
+        },
+        "blocks": [
+            {
+                "index": "D212",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D202",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SAV",
+            "station_2_code": "KE"
+        },
+        "blocks": [
+            {
+                "index": "D219",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D213",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KE"
+        },
+        "blocks": [
+            {
+                "index": "D220",
+                "lines": [
+                    "T",
+                    "K"
+                ]
+            },
+            {
+                "index": "D214",
+                "lines": [
+                    "D",
+                    "R",
+                    "Z",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KE",
+            "station_2_code": "HAA"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D215"
+                }
+            ],
+            [
+                {
+                    "index": "D216"
+                }
+            ],
+            [
+                {
+                    "index": "D217"
+                }
+            ],
+            [
+                {
+                    "index": "D218"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KE",
+            "station_2_code": "AIN"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D221"
+                }
+            ],
+            [
+                {
+                    "index": "D222"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"AIN"
+        },
+        "blocks": [
+            {
+                "index": "D223"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "AIN",
+            "station_2_code": "JP"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D224"
+                }
+            ],
+            [
+                {
+                    "index": "D225"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"JP"
+        },
+        "blocks": [
+            {
+                "index": "D226"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JP",
+            "station_2_code": "SAU"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D227"
+                }
+            ],
+            [
+                {
+                    "index": "D228"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"SAU"
+        },
+        "blocks": [
+            {
+                "index": "D229"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SAU",
+            "station_2_code": "JK"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D230"
+                }
+            ],
+            [
+                {
+                    "index": "D231"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"JK"
+        },
+        "blocks": [
+            {
+                "index": "D232"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JK",
+            "station_2_code": "HY"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D233"
+                }
+            ],
+            [
+                {
+                    "index": "D234"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HY"
+        },
+        "blocks": [
+            {
+                "index": "D235"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HY",
+            "station_2_code": "RI"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D236"
+                }
+            ],
+            [
+                {
+                    "index": "D237"
+                }
+            ],
+            [
+                {
+                    "index": "D238"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"RI"
+        },
+        "blocks": [
+            {
+                "index": "D239"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RI",
+            "station_2_code": "HK"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D240"
+                }
+            ],
+            [
+                {
+                    "index": "D241"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HK"
+        },
+        "blocks": [
+            {
+                "index": "D242"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HK",
+            "station_2_code": "OI"
+        },
+        "blocks": [
+            {
+                "index": "D243"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"OI"
+        },
+        "blocks": [
+            {
+                "index": "D244"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "OI",
+            "station_2_code": "MLA"
+        },
+        "blocks": [
+            {
+                "index": "D245"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MLA"
+        },
+        "blocks": [
+            {
+                "index": "D246"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MLA",
+            "station_2_code": "LAA"
+        },
+        "blocks": [
+            {
+                "index": "D247"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LAA"
+        },
+        "blocks": [
+            {
+                "index": "D248"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LAA",
+            "station_2_code": "JR"
+        },
+        "blocks": [
+            {
+                "index": "D249"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"JR"
+        },
+        "blocks": [
+            {
+                "index": "D250"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JR",
+            "station_2_code": "HR"
+        },
+        "blocks": [
+            {
+                "index": "D251"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HR"
+        },
+        "blocks": [
+            {
+                "index": "D252"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HR",
+            "station_2_code": "LH"
+        },
+        "blocks": [
+            {
+                "index": "D253"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LH"
+        },
+        "blocks": [
+            {
+                "index": "D268",
+                "lines": [
+                    "G"
+                ]
+            },
+            {
+                "index": "D267",
+                "lines": [
+                    "Z",
+                    "O",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LH",
+            "station_2_code": "HNN"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D254"
+                }
+            ],
+            [
+                {
+                    "index": "D255"
+                }
+            ],
+            [
+                {
+                    "index": "D256"
+                }
+            ],
+            [
+                {
+                    "index": "D257"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HNN"
+        },
+        "blocks": [
+            {
+                "index": "D258"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HNN",
+            "station_2_code": "MLÄ"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D259"
+                }
+            ],
+            [
+                {
+                    "index": "D260"
+                }
+            ],
+            [
+                {
+                    "index": "D261"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MLÄ"
+        },
+        "blocks": [
+            {
+                "index": "D262"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MLÄ",
+            "station_2_code": "HAA"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D263"
+                }
+            ],
+            [
+                {
+                    "index": "D264"
+                }
+            ],
+            [
+                {
+                    "index": "D265"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HAA"
+        },
+        "blocks": [
+            {
+                "index": "D266"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LH",
+            "station_2_code": "VLH"
+        },
+        "blocks": [
+            {
+                "index": "D269"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"VLH"
+        },
+        "blocks": [
+            {
+                "index": "D270"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VLH",
+            "station_2_code": "NSL"
+        },
+        "blocks": [
+            {
+                "index": "D271"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"NSL"
+        },
+        "blocks": [
+            {
+                "index": "D272"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "NSL",
+            "station_2_code": "UKÄ"
+        },
+        "blocks": [
+            {
+                "index": "D273"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"UKÄ"
+        },
+        "blocks": [
+            {
+                "index": "D274"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "UKÄ",
+            "station_2_code": "KA"
+        },
+        "blocks": [
+            {
+                "index": "D275"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KA"
+        },
+        "blocks": [
+            {
+                "index": "D276"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KA",
+            "station_2_code": "KRA"
+        },
+        "blocks": [
+            {
+                "index": "D277"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KRA"
+        },
+        "blocks": [
+            {
+                "index": "D278"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KRA",
+            "station_2_code": "KV"
+        },
+        "blocks": [
+            {
+                "index": "D279"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KV"
+        },
+        "blocks": [
+            {
+                "index": "D289"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KV",
+            "station_2_code": "MKI"
+        },
+        "blocks": [
+            {
+                "index": "D281"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MKI"
+        },
+        "blocks": [
+            {
+                "index": "D282"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MKI",
+            "station_2_code": "IKR"
+        },
+        "blocks": [
+            {
+                "index": "D283"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"IKR"
+        },
+        "blocks": [
+            {
+                "index": "D284"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "IKR",
+            "station_2_code": "TSL"
+        },
+        "blocks": [
+            {
+                "index": "D285"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TSL"
+        },
+        "blocks": [
+            {
+                "index": "D286"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TSL",
+            "station_2_code": "KY"
+        },
+        "blocks": [
+            {
+                "index": "D287"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KY"
+        },
+        "blocks": [
+            {
+                "index": "D288"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KY",
+            "station_2_code": "KLN"
+        },
+        "blocks": [
+            {
+                "index": "D290"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KLN"
+        },
+        "blocks": [
+            {
+                "index": "D291"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KLN",
+            "station_2_code": "PTI"
+        },
+        "blocks": [
+            {
+                "index": "D292"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"PTI"
+        },
+        "blocks": [
+            {
+                "index": "D293"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PTI",
+            "station_2_code": "KTA"
+        },
+        "blocks": [
+            {
+                "index": "D294"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KTA"
+        },
+        "blocks": [
+            {
+                "index": "D295"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KTA",
+            "station_2_code": "KTS"
+        },
+        "blocks": [
+            {
+                "index": "D296"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KTS"
+        },
+        "blocks": [
+            {
+                "index": "D297"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HKH",
+            "station_2_code": "LNÄ"
+        },
+        "blocks": [
+            {
+                "index": "D25"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LNÄ"
+        },
+        "blocks": [
+            {
+                "index": "D26"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LNÄ",
+            "station_2_code": "LEN"
+        },
+        "blocks": [
+            {
+                "index": "D27"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LEN"
+        },
+        "blocks": [
+            {
+                "index": "D28"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LEN",
+            "station_2_code": "AVP"
+        },
+        "blocks": [
+            {
+                "index": "D29"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"AVP"
+        },
+        "blocks": [
+            {
+                "index": "D30"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "AVP",
+            "station_2_code": "KTÖ"
+        },
+        "blocks": [
+            {
+                "index": "D31"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KTÖ"
+        },
+        "blocks": [
+            {
+                "index": "D32"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KTÖ",
+            "station_2_code": "VEH"
+        },
+        "blocks": [
+            {
+                "index": "D34"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"VEH"
+        },
+        "blocks": [
+            {
+                "index": "D35"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VEH",
+            "station_2_code": "VKS"
+        },
+        "blocks": [
+            {
+                "index": "D36"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"VKS"
+        },
+        "blocks": [
+            {
+                "index": "D37"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VKS",
+            "station_2_code": "MRL"
+        },
+        "blocks": [
+            {
+                "index": "D38"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MRL"
+        },
+        "blocks": [
+            {
+                "index": "D39"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MRL",
+            "station_2_code": "LOH"
+        },
+        "blocks": [
+            {
+                "index": "D40"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LOH"
+        },
+        "blocks": [
+            {
+                "index": "D41"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LOH",
+            "station_2_code": "MYR"
+        },
+        "blocks": [
+            {
+                "index": "D42"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MYR"
+        },
+        "blocks": [
+            {
+                "index": "D43"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MYR",
+            "station_2_code": "MLO"
+        },
+        "blocks": [
+            {
+                "index": "D44"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MLO"
+        },
+        "blocks": [
+            {
+                "index": "D45"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MLO",
+            "station_2_code": "KAN"
+        },
+        "blocks": [
+            {
+                "index": "D46"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KAN"
+        },
+        "blocks": [
+            {
+                "index": "D47"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KAN",
+            "station_2_code": "POH"
+        },
+        "blocks": [
+            {
+                "index": "D48"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"POH"
+        },
+        "blocks": [
+            {
+                "index": "D49"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "POH",
+            "station_2_code": "HPL"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D50"
+                }
+            ],
+            [
+                {
+                    "index": "D52"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HPL",
+            "station_2_code": "VMO"
+        },
+        "blocks": [
+            {
+                "index": "D54",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D52",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"VMO"
+        },
+        "blocks": [
+            {
+                "index": "D53",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D66",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VMO",
+            "station_2_code": "PJM"
+        },
+        "blocks": [
+            {
+                "index": "D67",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D55",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"PJM"
+        },
+        "blocks": [
+            {
+                "index": "D68",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D56",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PJM",
+            "station_2_code": "MÄK"
+        },
+        "blocks": [
+            {
+                "index": "D69",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D57",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MÄK"
+        },
+        "blocks": [
+            {
+                "index": "D70",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D58",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MÄK",
+            "station_2_code": "LPV"
+        },
+        "blocks": [
+            {
+                "index": "D71",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D59",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LPV"
+        },
+        "blocks": [
+            {
+                "index": "D72",
+                "lines": [
+                    "A",
+                    "L"
+                ]
+            },
+            {
+                "index": "D60",
+                "lines": [
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LPV",
+            "station_2_code": "KIL"
+        },
+        "blocks": [
+            {
+                "index": "D73",
+                "lines": [
+                    "L",
+                    "E",
+                    "U",
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            },
+            {
+                "index": "D61",
+                "lines": []
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KIL"
+        },
+        "blocks": [
+            {
+                "index": "D74",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D62",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KIL",
+            "station_2_code": "KEA"
+        },
+        "blocks": [
+            {
+                "index": "D75",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D63",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KEA"
+        },
+        "blocks": [
+            {
+                "index": "D76",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            },
+            {
+                "index": "D64",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KEA",
+            "station_2_code": "KNI"
+        },
+        "blocks": [
+            {
+                "index": "D77",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D65",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KNI"
+        },
+        "blocks": [
+            {
+                "index": "D87",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D78",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KNI",
+            "station_2_code": "KVH"
+        },
+        "blocks": [
+            {
+                "index": "D88",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D79",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KVH"
+        },
+        "blocks": [
+            {
+                "index": "D89",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D80",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KVH",
+            "station_2_code": "TRL"
+        },
+        "blocks": [
+            {
+                "index": "D90",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D81",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TRL"
+        },
+        "blocks": [
+            {
+                "index": "D91",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D82",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TRL",
+            "station_2_code": "EPO"
+        },
+        "blocks": [
+            {
+                "index": "D92",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D83",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"EPO"
+        },
+        "blocks": [
+            {
+                "index": "D93",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D84",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "EPO",
+            "station_2_code": "KLH"
+        },
+        "blocks": [
+            {
+                "index": "D94",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D85",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KLH"
+        },
+        "blocks": [
+            {
+                "index": "D95",
+                "lines": [
+                    "L",
+                    "E",
+                    "U"
+                ]
+            },
+            {
+                "index": "D86",
+                "lines": [
+                    "Y",
+                    "H",
+                    "-"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KLH",
+            "station_2_code": "MAS"
+        },
+        "blocks": [
+            {
+                "index": "D96"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"MAS"
+        },
+        "blocks": [
+            {
+                "index": "D97"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "MAS",
+            "station_2_code": "JRS"
+        },
+        "blocks": [
+            {
+                "index": "D98"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"JRS"
+        },
+        "blocks": [
+            {
+                "index": "D99"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "JRS",
+            "station_2_code": "TOL"
+        },
+        "blocks": [
+            {
+                "index": "D100"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TOL"
+        },
+        "blocks": [
+            {
+                "index": "D101"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TOL",
+            "station_2_code": "KKN"
+        },
+        "blocks": [
+            {
+                "index": "D102"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KKN"
+        },
+        "blocks": [
+            {
+                "index": "D103"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KKN",
+            "station_2_code": "STI"
+        },
+        "blocks": [
+            {
+                "index": "D104"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"STI"
+        },
+        "blocks": [
+            {
+                "index": "D105"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "STI",
+            "station_2_code": "IKO"
+        },
+        "blocks": [
+            {
+                "index": "D106"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"IKO"
+        },
+        "blocks": [
+            {
+                "index": "D107"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "IKO",
+            "station_2_code": "KR"
+        },
+        "blocks": [
+            {
+                "index": "D108"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"KR"
+        },
+        "blocks": [
+            {
+                "index": "D109"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "KR",
+            "station_2_code": "DRA"
+        },
+        "blocks": [
+            {
+                "index": "D110"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"DRA"
+        },
+        "blocks": [
+            {
+                "index": "D111"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "DRA",
+            "station_2_code": "TMS"
+        },
+        "blocks": [
+            {
+                "index": "D112"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TMS"
+        },
+        "blocks": [
+            {
+                "index": "D113"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TMS",
+            "station_2_code": "SGY"
+        },
+        "blocks": [
+            {
+                "index": "D114"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"SGY"
+        },
+        "blocks": [
+            {
+                "index": "D115"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "SGY",
+            "station_2_code": "LPO"
+        },
+        "blocks": [
+            {
+                "index": "D116"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LPO"
+        },
+        "blocks": [
+            {
+                "index": "D117"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LPO",
+            "station_2_code": "STA"
+        },
+        "blocks": [
+            {
+                "index": "D118"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"STA"
+        },
+        "blocks": [
+            {
+                "index": "D119"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "STA",
+            "station_2_code": "HKP"
+        },
+        "blocks": [
+            {
+                "index": "D120"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HKP"
+        },
+        "blocks": [
+            {
+                "index": "D121"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HKP",
+            "station_2_code": "HNK"
+        },
+        "blocks": [
+            {
+                "index": "D122"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HNK"
+        },
+        "blocks": [
+            {
+                "index": "D123"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RI",
+            "station_2_code": "RY"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D240"
+                }
+            ],
+            [
+                {
+                    "index": "D124"
+                }
+            ],
+            [
+                {
+                    "index": "D125"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"RY"
+        },
+        "blocks": [
+            {
+                "index": "D126"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "RY",
+            "station_2_code": "TU"
+        },
+        "blocks": [
+            {
+                "index": "D127"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TU"
+        },
+        "blocks": [
+            {
+                "index": "D128"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TU",
+            "station_2_code": "HL"
+        },
+        "blocks": [
+            {
+                "index": "D129"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"HL"
+        },
+        "blocks": [
+            {
+                "index": "D130"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "HL",
+            "station_2_code": "PRL"
+        },
+        "blocks": [
+            {
+                "index": "D131"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"PRL"
+        },
+        "blocks": [
+            {
+                "index": "D132"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "PRL",
+            "station_2_code": "ITA"
+        },
+        "blocks": [
+            {
+                "index": "D133"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"ITA"
+        },
+        "blocks": [
+            {
+                "index": "D134"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "ITA",
+            "station_2_code": "TL"
+        },
+        "blocks": [
+            {
+                "index": "D135"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TL"
+        },
+        "blocks": [
+            {
+                "index": "D136"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TL",
+            "station_2_code": "VIA"
+        },
+        "blocks": [
+            {
+                "index": "D137"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"VIA"
+        },
+        "blocks": [
+            {
+                "index": "D138"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "VIA",
+            "station_2_code": "LPÄ"
+        },
+        "blocks": [
+            {
+                "index": "D139"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"LPÄ"
+        },
+        "blocks": [
+            {
+                "index": "D140"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "LPÄ",
+            "station_2_code": "TPE"
+        },
+        "segments": [
+            [
+                {
+                    "index": "D141"
+                }
+            ],
+            [
+                {
+                    "index": "D142"
+                }
+            ]
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TPE"
+        },
+        "equalblocksException": true,
+        "blocks": [
+            {
+                "index": "D298"
+            },
+            {
+                "index": "D303"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TPE",
+            "station_2_code": "TSO"
+        },
+        "blocks": [
+            {
+                "index": "D299"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"TSO"
+        },
+        "blocks": [
+            {
+                "index": "D300"
+            }
+        ]
+    },
+    {
+        "type": "between",
+        "properties": {
+            "station_1_code": "TSO",
+            "station_2_code": "NOA"
+        },
+        "blocks": [
+            {
+                "index": "D301"
+            }
+        ]
+    },
+    {
+        "type": "station",
+        "properties": {
+            "station_code":"NOA"
+        },
+        "blocks": [
+            {
+                "index": "D302"
+            }
+        ]
+    }
 ]
