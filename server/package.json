@@ -17,8 +17,9 @@
   "scripts": {
     "dev": "tsx --watch src/main.ts",
     "ws-test": "tsx src/test.ts",
+    "prebuild": "rm -rf dist/*",
     "build": "tsc",
-    "postbuild": "cp src/data/* dist/data/",
+    "postbuild": "mkdir -p dist/data && cp -r src/data/* dist/data/",
     "start": "node dist/main.js"
   },
   "devDependencies": {
