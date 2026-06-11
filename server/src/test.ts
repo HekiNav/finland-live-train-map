@@ -1,13 +1,37 @@
 import WebSocket from 'ws';
+import { SocketMessage, encodeMessage, parseMessage } from './lib/socket.js';
 
-const ws = new WebSocket('ws://localhost:3010');
+const ws = new WebSocket('ws://localhost:3010?board_id=fin-ltm&version=100&mode_id=route');
 
 ws.on('error', console.error);
 
 ws.on('open', function open() {
-  ws.send('something');
+  console.log("Requested ping")
+  ws.send(encodeMessage({ type: "ping_req" }))
 });
 
 ws.on('message', function message(data) {
-  console.log('received: %s', data);
+  const result = parseMessage(data)
+  if (Object.hasOwn(result, "error")) {
+    console.log("Received unknown data:", data)
+  } else if (Object.hasOwn(result, "message")) {
+    const message = (result as { message: SocketMessage }).message
+    switch (message.type) {
+      case "error":
+        console.error(`Received error: ${message.message}`)
+        break
+      case "uuid":
+        console.error(`Connection was assigned UUID: ${message.uuid}`)
+        break
+      case "ping_req":
+        ws.send(encodeMessage({ type: "ping_res" }))
+        break
+      case "ping_res":
+        console.log("Received ping response")
+        break
+      default:
+        console.log("[WS SERVER] Received data of unknown type: " + message.type)
+        break
+    }
+  }
 });

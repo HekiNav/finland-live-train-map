@@ -16,7 +16,7 @@
   "main": "src/main.ts",
   "scripts": {
     "dev": "tsx --watch src/main.ts",
-    "ws-test": "tsx src/test.ts",
+    "ws-test": "tsx --watch src/test.ts",
     "prebuild": "rm -rf dist/*",
     "build": "tsc",
     "postbuild": "mkdir -p dist/data && cp -r src/data/* dist/data/",

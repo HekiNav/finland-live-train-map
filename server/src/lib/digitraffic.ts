@@ -2,26 +2,27 @@ import * as mqtt from "mqtt"
 
 export class DigitrafficDataCollector {
     state = new Map<number, Train>()
-    client: mqtt.MqttClient
-    constructor(onready: () => void) {
-        console.log("Getting initial data")
+    #client: mqtt.MqttClient
+    #listeners = new Map<string, (t: Train | TrainNotRunning) => void>()
+    constructor(onready: (c: DigitrafficDataCollector) => void) {
+        console.log("[DIGITRAFFIC] Getting initial data")
         this.#getInitialData().then(() => {
-            onready()
+            onready(this)
         })
-        console.log("Connecting to MQTT")
-        this.client = mqtt.connect("wss://rata.digitraffic.fi/mqtt")
-        this.client.on("connect", () => {
-            this.client.subscribe("trains/#", (err) => {
+        console.log("[DIGITRAFFIC] Connecting to MQTT")
+        this.#client = mqtt.connect("wss://rata.digitraffic.fi/mqtt")
+        this.#client.on("connect", () => {
+            this.#client.subscribe("trains/#", (err) => {
                 if (err) {
-                    console.error("MQTT subcription error %s", err)
+                    console.error("[DIGITRAFFIC] MQTT subcription error %s", err)
                 } else {
-                    console.log("Connected to MQTT")
+                    console.log("[DIGITRAFFIC] Connected to MQTT")
                 }
             });
         });
-        this.client.on("error", console.error)
-        this.client.on("message", (topic, payload) => {
-            console.log(topic)
+        this.#client.on("error", console.error)
+        this.#client.on("message", (topic, payload) => {
+            //console.log("[DIGITRAFFIC]"+topic)
             const data = parseTrain(JSON.parse(payload.toString()))
             this.#updateTrain(data)
         })
@@ -35,11 +36,18 @@ export class DigitrafficDataCollector {
 
     }
     #updateTrain(t: Train | TrainNotRunning) {
+        this.#listeners.forEach(l => l(t))
         if (t.type == "NOT_RUNNING") {
             this.state.delete(t.id)
         } else {
             this.state.set(t.id, t)
         }
+    }
+    onUpdate(id: string,fn: (t: Train | TrainNotRunning) => void) {
+        this.#listeners.set(id, fn)
+    }
+    offUpdate(id: string) {
+        this.#listeners.delete(id)
     }
 }
 // return string if needs removal

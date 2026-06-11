@@ -5,7 +5,7 @@
         "desc": "Live LED train map of Finland. Focused on passenger IC routes.",
         "versions": ["100"],
         "available": true,
-        "colors": [
+        "modes": [
             {
                 "id": "route",
                 "name": "IC train route"
@@ -22,7 +22,7 @@
         "desc": "Live LED train map of the Helsinki region commuter train network.",
         "versions": ["100"],
         "available": false,
-        "colors": [
+        "modes": [
             {
                 "id": "lines",
                 "name": "Commuter Lines"
