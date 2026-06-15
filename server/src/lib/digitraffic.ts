@@ -3,7 +3,7 @@ import * as mqtt from "mqtt"
 export class DigitrafficDataCollector {
     state = new Map<number, Train>()
     #client: mqtt.MqttClient
-    #listeners = new Map<string, (t: Train | TrainNotRunning) => void>()
+    #listeners = new Map<string, (t: Train) => void>()
     constructor(onready: (c: DigitrafficDataCollector) => void) {
         console.log("[DIGITRAFFIC] Getting initial data")
         this.#getInitialData().then(() => {
@@ -24,6 +24,7 @@ export class DigitrafficDataCollector {
         this.#client.on("message", (topic, payload) => {
             //console.log("[DIGITRAFFIC]"+topic)
             const data = parseTrain(JSON.parse(payload.toString()))
+            if (!data) return
             this.#updateTrain(data)
         })
     }
@@ -31,46 +32,57 @@ export class DigitrafficDataCollector {
         const data = await (await fetch("https://rata.digitraffic.fi/api/v1/live-trains/")).json() as TrainData[]
         data.forEach(train => {
             const data = parseTrain(train)
-            this.#updateTrain(data)
+            if (!data) return
+            if (data.running) this.state.set(data.id, data)
         });
 
     }
-    #updateTrain(t: Train | TrainNotRunning) {
+    #updateTrain(t: Train) {
         this.#listeners.forEach(l => l(t))
-        if (t.type == "NOT_RUNNING") {
+        if (t.running) {
             this.state.delete(t.id)
         } else {
             this.state.set(t.id, t)
         }
     }
-    onUpdate(id: string,fn: (t: Train | TrainNotRunning) => void) {
+    onUpdate(id: string, fn: (t: Train) => void) {
         this.#listeners.set(id, fn)
     }
     offUpdate(id: string) {
         this.#listeners.delete(id)
     }
 }
-// return string if needs removal
-export type TrainNotRunning = { id: number, type: "NOT_RUNNING" }
-export function parseTrain(data: TrainData): Train | { id: number, type: "NOT_RUNNING" } {
-    const lastIndex = data.timeTableRows.reverse().findIndex(r => Object.hasOwn(r, "actualTime"))
-    if (lastIndex < 0 || lastIndex == data.timeTableRows.length - 1) return { id: data.trainNumber, type: "NOT_RUNNING" }
+export function parseTrain(data: TrainData): Train | null {
+    const lastIndex = data.timeTableRows.length - 1 - data.timeTableRows.reverse().findIndex(r => Object.hasOwn(r, "actualTime"))
+    if (lastIndex < 0 || lastIndex >= data.timeTableRows.length) return null
+    const running = lastIndex > 0 && lastIndex < data.timeTableRows.length - 1
     const last = data.timeTableRows[lastIndex]
+
+    const props: TrainProperties = {
+        commuter_line_id: data.commuterLineID || null,
+        start_point: data.timeTableRows[0].stationShortCode,
+        end_point: data.timeTableRows[data.timeTableRows.length - 1].stationShortCode,
+        stations: data.timeTableRows.filter((r, i, a) => r.type == "DEPARTURE" || i == a.length - 1 || i == 0).map(r => ({ station: r.stationShortCode, time: new Date(last.actualTime || last.scheduledTime) }))
+    }
+
     if (last.type == "ARRIVAL") return {
         id: data.trainNumber,
         type: data.trainType,
+        running,
         state: {
             type: "at_station",
             current: {
                 station: last.stationShortCode,
                 time: new Date(last.actualTime || last.scheduledTime)
             }
-        }
+        },
+        properties: props
     }
-    const next = data.timeTableRows[lastIndex + 1]
+    const next = data.timeTableRows[lastIndex + 1] || last
     return {
         id: data.trainNumber,
         type: data.trainType,
+        running,
         state: {
             type: "between",
             last: {
@@ -81,18 +93,27 @@ export function parseTrain(data: TrainData): Train | { id: number, type: "NOT_RU
                 station: next.stationShortCode,
                 time: new Date(next.actualTime || next.scheduledTime)
             }
-        }
+        },
+        properties: props
     }
 }
 export interface Train {
     id: number
     type: TrainType
     state: AnyTrainState
+    properties: TrainProperties,
+    running: boolean
+}
+export interface TrainProperties {
+    start_point: string,
+    end_point: string,
+    commuter_line_id: string | null,
+    stations: TrainPos[]
 }
 export type AnyTrainState = TrainAtStationState | TrainBetweenStationsState
 export interface TrainAtStationState {
     type: "at_station"
-    current: TrainPos | { id: number, type: "NOT_RUNNING" }
+    current: TrainPos
 }
 export interface TrainBetweenStationsState {
     type: "between"

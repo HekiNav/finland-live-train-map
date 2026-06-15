@@ -1,5 +1,5 @@
 import { WebSocketServer, WebSocket } from "ws"
-import { DigitrafficDataCollector, Train, TrainNotRunning } from "./lib/digitraffic.js"
+import { DigitrafficDataCollector, Train } from "./lib/digitraffic.js"
 import { DataTranslator } from "./lib/translator.js";
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -7,7 +7,24 @@ import { SocketMessage, encodeMessage, parseMessage } from "./lib/socket.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+export type RGBArray = [number, number, number]
 
+// some colors are skipped due to them looking too similar to other colors in testing
+export const colors = {
+  0: [255, 0, 0] as RGBArray,     // Red
+  1: [255, 128, 0] as RGBArray,   // Orange
+  2: [255, 255, 0] as RGBArray,   // Yellow
+  // SKIPPED 3: [128, 255, 0], // Yellow-green
+  3: [0, 255, 0] as RGBArray,     // Green
+  // SKIPPED 5: [0, 255, 128], // Turqoise
+  4: [0, 255, 255] as RGBArray,   // Cyan
+  // SKIPPED 7: [0, 128, 255], // Almost blue
+  5: [0, 0, 255] as RGBArray,     // Blue
+  6: [128, 0, 255] as RGBArray,   // Purple
+  7: [255, 0, 255] as RGBArray,   // Magenta
+  8: [255, 0, 128] as RGBArray,   // Pink
+  9: [255, 255, 255] as RGBArray, // White
+}
 
 const [digitraffic, translator] = await Promise.all([
   new Promise<DigitrafficDataCollector>(res => {
@@ -70,21 +87,43 @@ socket.on('connection', function connection(c,r) {
     }))
     return c.close()
   }
+
   let current_mode = mode_id
+
+  
+  function sendEvents(trains: Train[]) {
+    if(!board) return
+    const filters = board.config.modes.find(m => m.id == current_mode)?.filters!;
+    const updates = translator.generateUpdates(trains, current_mode, filters, board.sections);
+    console.log(`sending ${updates.length} events`);
+    c.send(encodeMessage({
+      type: "events",
+      updates
+    }));
+  }
+
+  // initial state
+  sendEvents(Array.from(digitraffic.state.values()))
 
   console.log(`[WS SERVER] New connection: ${board.config.id}/${version}/${mode_id}`)
 
-
-  let updateQueue = new Array<Train | TrainNotRunning>()
+  let updateQueue = new Array<Train>()
   let timeout: null | NodeJS.Timeout = null
+
   digitraffic.onUpdate(cid, (update) => {
     // clump updates together
     updateQueue.push(update)
     if (!timeout) timeout = setTimeout(() => {
+      const trains = updateQueue
+
       timeout = null
-      console.log(`sending ${updateQueue.length} events`)
-    }, 5000)
+      updateQueue = []
+
+
+      sendEvents(trains);
+    }, 1000)
   })
+
   c.on("close", () => digitraffic.offUpdate(cid))
 
   c.on('message', function message(data) {

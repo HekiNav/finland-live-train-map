@@ -15,16 +15,16 @@ export function encodeMessage(msg: SocketMessage): WebSocket.RawData {
 
 
 export type SocketMessage = 
-SocketInitialMessage | SocketErrorMessage | SocketPingReqMessage | 
-SocketPingResMessage | SocketUUIDMessage
+SocketEventsMessage | SocketErrorMessage | SocketPingReqMessage | 
+SocketPingResMessage | SocketUUIDMessage | {type: "null"}
 
 export interface SocketErrorMessage {
     type: "error",
     message: string
 }
 
-export interface SocketInitialMessage {
-    type: "initial_data",
+export interface SocketEventsMessage {
+    type: "events",
     updates: MapEvent[]
 }
 

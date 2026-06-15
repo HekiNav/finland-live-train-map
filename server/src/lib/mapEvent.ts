@@ -1,21 +1,16 @@
-export type MapMode = "trains" | "delay"
-export type MapEvent = MapEventAdd | MapEventRemove | MapEventUpdate
+export type MapEvent = MapEventRemove | MapEventUpdate
 export interface MapEventBase<T extends string> {
-    ty: T
-}
-export interface MapEventAdd extends MapEventBase<"add"> {
-    tr: MapEventTrain
+    t: T
 }
 export interface MapEventRemove extends MapEventBase<"remove"> {
-    tr: Omit<MapEventTrain, "mi" | "ti" | "ct">
+    d: Omit<MapEventTrain, "idx" | "clr">
 }
 export interface MapEventUpdate extends MapEventBase<"update"> {
-    tr: MapEventTrain
+    d: MapEventTrain
 }
 export interface MapEventTrain {
-    mi: number, // main index 
-    ti: number, // tail index
+    idx: number, // main index 
+    //ti: number, // tail index (maybe later)
     id: number, // train id
-    ts: number, // timestamp
-    ct: number, // color type
+    clr: number, // color type
 }

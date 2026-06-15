@@ -8,7 +8,19 @@
         "modes": [
             {
                 "id": "route",
-                "name": "IC train route"
+                "name": "IC train route",
+                "colors": [
+                    ["HKI-TKU","HKI-TUS"],
+                    ["ROI-HKI","HKI-KJÄ"],
+                    ["HKI-TPE"]
+                ],
+                "filters" : [
+                    {
+                        "type": "train_type",
+                        "allow": false,
+                        "list": ["HL","HV","SAA","W"]
+                    }
+                ]
             },
             {
                 "id": "length",

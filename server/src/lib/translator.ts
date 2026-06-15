@@ -1,4 +1,6 @@
+import { AnyTrainState, Train } from "./digitraffic.js"
 import { importJSONC } from "./jsonc.js"
+import { MapEvent } from "./mapEvent.js"
 
 export interface BoardConfig {
     id: string,
@@ -8,20 +10,34 @@ export interface BoardConfig {
     available: boolean,
     modes: BoardMode[]
 }
+export type ColorTable = string[][]
 export interface BoardMode {
     id: string,
     name: string,
+    colors: ColorTable,
+    filters: AnyBoardModeTrainFilter[],
     versions_not_available?: string[]
 }
+export interface BoardModeTrainFilter<T extends string> {
+    type: T,
+    allow: boolean,
+    list: string[]
+}
+export type BoardModeTrainTypeFilter = BoardModeTrainFilter<"train_type">
+
+export type AnyBoardModeTrainFilter = BoardModeTrainTypeFilter
+
 export type BoardsConfig = BoardConfig[]
+
+type BoardBlock = {
+    index: number
+    filters: AnySectionFilter[]
+}
 
 export interface BoardSection<T extends string, P extends { [K: string]: string | number }> {
     type: T,
     properties: P,
-    blocks: {
-        index: number,
-        filters: AnySectionFilter[]
-    }[]
+    blocks: BoardBlock[]
 }
 export interface SectionFilter<T extends string> {
     type: T
@@ -65,7 +81,129 @@ export class DataTranslator {
     listBoards() {
         return Array.from(this.#board_configs.keys())
     }
-    generateUpdates() {
-        
+    generateUpdates(trains: Train[], mode: string, filters: AnyBoardModeTrainFilter[], board_sections: AnyBoardSection[]): MapEvent[] {
+        let events: MapEvent[] = []
+        const filteredTrains = trains
+            .filter(t => filters.every(f => this.#checkBoardModeTrainFilter(t, f)))
+            .reduce<Train[]>((a, t) => {
+                if (t.running) return [...a, t]
+                events.push({
+                    t: "remove",
+                    d: {
+                        id: t.id
+                    }
+                })
+                return a
+            }, [])
+        filteredTrains.forEach(t => {
+            let color = 0
+            switch (mode) {
+                case "route":
+                    color = 1
+                    break
+                default:
+                    console.error(`Unknown mode - Cannot process`)
+            }
+
+            const section = this.#findSection(t, board_sections)
+            
+            if (!section) return null
+
+            events.push({
+                t: "update",
+                d: {
+                    idx: section,
+                    id: t.id,
+                    clr: color
+                }
+            })
+        })
+        console.log(events.length, trains.length)
+        return events
+    }
+    #checkBoardModeTrainFilter(t: Train, filter: AnyBoardModeTrainFilter) {
+        switch (filter.type) {
+            case "train_type":
+                const in_train_type_list = filter.list.some(e => e == t.type)
+                return filter.allow ? in_train_type_list : !in_train_type_list
+            default:
+                return false
+        }
+    }
+    #findSection(t: Train, sections: AnyBoardSection[]): number | null {
+        const state = this.#convertState(t, sections)
+        if (!state) {
+            return null
+        }
+        let blocks: BoardBlock[] = []
+        if (state.type == "at_station") {
+            blocks = sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)!.blocks
+        } else {
+            blocks = sections.find(s => s.type == "between" && (
+                (s.properties.station_1_code == state.next.station && s.properties.station_2_code == state.last.station) ||
+                (s.properties.station_1_code == state.last.station && s.properties.station_2_code == state.next.station)
+            ))!.blocks
+        }
+        if (blocks.length == 0) return blocks[0].index
+        return -1
+    }
+    #convertState(t: Train, sections: AnyBoardSection[]): AnyTrainState | null {
+        const state = t.state
+        if (state.type == "at_station") {
+            if (sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)) {
+                return state
+            } else {
+                const split_index = t.properties.stations.findIndex(s => s.station == state.current.station)
+                const previous_stations = t.properties.stations.slice(0, split_index).reverse()
+                const next_stations = t.properties.stations.slice(split_index + 1, t.properties.stations.length)
+                for (let i = 0; i < previous_stations.length; i++) {
+                    const p = previous_stations[i];
+                    for (let j = 0; j < next_stations.length; j++) {
+                        const n = next_stations[j];
+                        if (sections.find(s => s.type == "between" && (
+                            (s.properties.station_1_code == n.station && s.properties.station_2_code == p.station) ||
+                            (s.properties.station_1_code == p.station && s.properties.station_2_code == n.station)
+                        ))) {
+                            return {
+                                type: "between",
+                                last: p,
+                                next: n
+                            }
+                        }
+                    }
+                }
+                return null
+            }
+        } else {
+            if (sections.find(s => s.type == "between" &&
+                (
+                    (s.properties.station_1_code == state.next.station && s.properties.station_2_code == state.last.station) ||
+                    (s.properties.station_1_code == state.last.station && s.properties.station_2_code == state.next.station)
+                )
+            )) {
+                return state
+            } else {
+                const split_index = t.properties.stations.findIndex(s => s.station == state.last.station)
+                const previous_stations = t.properties.stations.slice(0, split_index).reverse()
+                const next_stations = t.properties.stations.slice(split_index + 1, t.properties.stations.length)
+                for (let i = 0; i < previous_stations.length; i++) {
+                    const p = previous_stations[i];
+                    for (let j = 0; j < next_stations.length; j++) {
+                        const n = next_stations[j];
+                        if (sections.find(s => s.type == "between" && (
+                            (s.properties.station_1_code == n.station && s.properties.station_2_code == p.station) ||
+                            (s.properties.station_1_code == p.station && s.properties.station_2_code == n.station)
+                        ))) {
+                            return {
+                                type: "between",
+                                last: p,
+                                next: n
+                            }
+                        }
+                    }
+                }
+                return null
+            }
+        }
     }
 }
