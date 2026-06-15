@@ -78,7 +78,7 @@ export function parseTrain(data: TrainData): Train | null {
         },
         properties: props
     }
-    const next = data.timeTableRows[lastIndex + 1] || last
+    const next = data.timeTableRows[lastIndex + 2] || last
     return {
         id: data.trainNumber,
         type: data.trainType,

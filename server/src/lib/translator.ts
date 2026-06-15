@@ -106,7 +106,7 @@ export class DataTranslator {
             }
 
             const section = this.#findSection(t, board_sections)
-            
+
             if (!section) return null
 
             events.push({
@@ -135,16 +135,21 @@ export class DataTranslator {
         if (!state) {
             return null
         }
+
         let blocks: BoardBlock[] = []
         if (state.type == "at_station") {
-            blocks = sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)!.blocks
+            const section = sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)!
+            console.log(t.id, section.properties, state.current.station)
+            blocks = section.blocks
         } else {
-            blocks = sections.find(s => s.type == "between" && (
+            const section = sections.find(s => s.type == "between" && (
                 (s.properties.station_1_code == state.next.station && s.properties.station_2_code == state.last.station) ||
                 (s.properties.station_1_code == state.last.station && s.properties.station_2_code == state.next.station)
-            ))!.blocks
+            ))!
+            console.log(t.id, section.properties, state.last.station, state.next.station)
+            blocks = section.blocks
         }
-        if (blocks.length == 0) return blocks[0].index
+        if (blocks.length == 1) return blocks[0].index
         return -1
     }
     #convertState(t: Train, sections: AnyBoardSection[]): AnyTrainState | null {

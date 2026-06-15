@@ -39,6 +39,13 @@ function start() {
           break
         case "events":
           console.log(`Received ${message.updates.length} updates`)
+          message.updates.forEach(u => {
+            if (u.t == "remove") {
+              console.log(`${u.d.id} X`)
+            } else {
+              console.log(`${u.d.id} => ${u.d.idx}`)
+            }
+          })
           break
         default:
           console.log("[WS SERVER] Received data of unknown type: " + message.type)
