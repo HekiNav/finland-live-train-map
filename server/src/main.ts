@@ -95,7 +95,8 @@ socket.on('connection', function connection(c,r) {
     if(!board) return
     const filters = board.config.modes.find(m => m.id == current_mode)?.filters!;
     const updates = translator.generateUpdates(trains, current_mode, filters, board.sections);
-    console.log(`sending ${updates.length} events`);
+    if (updates.length == 0) return
+    console.log(`[WS SERVER] sending ${updates.length} events`);
     c.send(encodeMessage({
       type: "events",
       updates

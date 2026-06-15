@@ -31,7 +31,7 @@ export type BoardsConfig = BoardConfig[]
 
 type BoardBlock = {
     index: number
-    filters: AnySectionFilter[]
+    filters?: AnySectionFilter[]
 }
 
 export interface BoardSection<T extends string, P extends { [K: string]: string | number }> {
@@ -118,7 +118,6 @@ export class DataTranslator {
                 }
             })
         })
-        console.log(events.length, trains.length)
         return events
     }
     #checkBoardModeTrainFilter(t: Train, filter: AnyBoardModeTrainFilter) {
@@ -139,18 +138,27 @@ export class DataTranslator {
         let blocks: BoardBlock[] = []
         if (state.type == "at_station") {
             const section = sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)!
-            console.log(t.id, section.properties, state.current.station)
             blocks = section.blocks
         } else {
             const section = sections.find(s => s.type == "between" && (
                 (s.properties.station_1_code == state.next.station && s.properties.station_2_code == state.last.station) ||
                 (s.properties.station_1_code == state.last.station && s.properties.station_2_code == state.next.station)
             ))!
-            console.log(t.id, section.properties, state.last.station, state.next.station)
             blocks = section.blocks
         }
         if (blocks.length == 1) return blocks[0].index
+        blocks = blocks.filter(b => !b.filters || b.filters.length == 0 || b.filters.every(f => this.#checkBlockFilter(t, f)))
+        if (blocks.length == 1) return blocks[0].index
         return -1
+    }
+    #checkBlockFilter(t: Train, filter: AnySectionFilter) {
+        switch (filter.type) {
+            case "train_via":
+                return t.properties.stations.some(s => s.station == filter.station_code)
+            default:
+                console.error(`Unknown block filter type ${filter.type}`)
+                return false
+        }
     }
     #convertState(t: Train, sections: AnyBoardSection[]): AnyTrainState | null {
         const state = t.state

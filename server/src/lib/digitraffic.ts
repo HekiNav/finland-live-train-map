@@ -53,7 +53,7 @@ export class DigitrafficDataCollector {
     }
 }
 export function parseTrain(data: TrainData): Train | null {
-    const lastIndex = data.timeTableRows.length - 1 - data.timeTableRows.reverse().findIndex(r => Object.hasOwn(r, "actualTime"))
+    const lastIndex = data.timeTableRows.length - 1 - [...data.timeTableRows].reverse().findIndex(r => Object.hasOwn(r, "actualTime"))
     if (lastIndex < 0 || lastIndex >= data.timeTableRows.length) return null
     const running = lastIndex > 0 && lastIndex < data.timeTableRows.length - 1
     const last = data.timeTableRows[lastIndex]
@@ -64,6 +64,7 @@ export function parseTrain(data: TrainData): Train | null {
         end_point: data.timeTableRows[data.timeTableRows.length - 1].stationShortCode,
         stations: data.timeTableRows.filter((r, i, a) => r.type == "DEPARTURE" || i == a.length - 1 || i == 0).map(r => ({ station: r.stationShortCode, time: new Date(last.actualTime || last.scheduledTime) }))
     }
+
 
     if (last.type == "ARRIVAL") return {
         id: data.trainNumber,
@@ -78,7 +79,7 @@ export function parseTrain(data: TrainData): Train | null {
         },
         properties: props
     }
-    const next = data.timeTableRows[lastIndex + 2] || last
+    const next = data.timeTableRows[lastIndex + 1] || last
     return {
         id: data.trainNumber,
         type: data.trainType,
