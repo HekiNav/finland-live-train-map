@@ -42,7 +42,6 @@
       "tracks",
       "drc_errors",
       "drawing_sheet",
-      "bitmaps",
       "pads",
       "zones",
       "drc_warnings",

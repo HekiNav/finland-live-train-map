@@ -1300,6 +1300,16 @@
 	)
 	(wire
 		(pts
+			(xy 280.67 27.94) (xy 289.56 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "252a5ae0-5920-4565-8a85-505de4d3e000")
+	)
+	(wire
+		(pts
 			(xy 111.76 281.94) (xy 120.65 281.94)
 		)
 		(stroke
@@ -1877,6 +1887,16 @@
 			(type default)
 		)
 		(uuid "593ddb16-af72-4378-ad24-eda6e7378121")
+	)
+	(wire
+		(pts
+			(xy 256.54 27.94) (xy 265.43 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a211c65-925b-47a8-8048-13cb47987b52")
 	)
 	(wire
 		(pts
@@ -2830,16 +2850,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 27.94) (xy 256.54 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c02d0831-23c5-421f-a8d0-5d300d781844")
-	)
-	(wire
-		(pts
 			(xy 256.54 360.68) (xy 24.13 360.68)
 		)
 		(stroke
@@ -3310,7 +3320,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 43.18) (xy 24.13 43.18)
+			(xy 24.13 43.18) (xy 304.8 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3477,6 +3487,16 @@
 			(type default)
 		)
 		(uuid "f78ee78a-2a7d-48c4-8f08-3751e2db5a12")
+	)
+	(wire
+		(pts
+			(xy 304.8 43.18) (xy 304.8 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8daf889-9112-45f7-8daf-41859235d425")
 	)
 	(wire
 		(pts
@@ -15435,6 +15455,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 297.18 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "292200b0-64a8-43af-9f3e-c7aac142bea6")
+		(property "Reference" "#PWR0625"
+			(at 297.18 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 297.18 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 297.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f7e6ec9-964d-4ff3-b873-a95045d9d71c")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
+					(reference "#PWR0625")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 31.75 416.56 0)
 		(unit 1)
 		(body_style 1)
@@ -16229,6 +16327,105 @@
 			(project "fin-ltm"
 				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
 					(reference "#PWR0507")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 273.05 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c3fc9ac-4af5-4c88-955b-2509cf20129b")
+		(property "Reference" "D321"
+			(at 284.48 21.5198 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 284.48 24.0598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 273.05 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 270.764 27.813 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 273.05 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 273.05 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb637b38-c55d-43aa-88b8-f3939ca64823")
+		)
+		(pin "3"
+			(uuid "f8c88883-de7e-4fd7-b2d2-3810431cd370")
+		)
+		(pin "4"
+			(uuid "ec5973e6-7f7c-40b8-8fd5-99fc61e2877e")
+		)
+		(pin "2"
+			(uuid "b92c19ce-acdf-4082-af86-b354a717c7a4")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
+					(reference "D321")
 					(unit 1)
 				)
 			)
@@ -23657,6 +23854,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 297.18 20.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48abffd1-3603-4039-9ce9-7f3728699e1e")
+		(property "Reference" "#PWR0624"
+			(at 297.18 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 297.18 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 297.18 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c0ba2bd-c98d-4a45-9d3c-96387e9a2ba6")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
+					(reference "#PWR0624")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 248.92 162.56 0)
 		(unit 1)
@@ -26294,6 +26569,84 @@
 			(project "fin-ltm"
 				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
 					(reference "D110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 273.05 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50a893f4-7e27-4dc5-aa47-5cdac5357743")
+		(property "Reference" "#PWR0623"
+			(at 273.05 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 273.05 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7db57c41-301e-4c5b-9560-9483bf66b953")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
+					(reference "#PWR0623")
 					(unit 1)
 				)
 			)
@@ -56108,6 +56461,105 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Extended:LED, WS2812B, 1615")
+		(at 297.18 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf35933f-562b-45c0-9401-d083e48a7d1c")
+		(property "Reference" "D322"
+			(at 308.61 21.5198 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 308.61 24.0598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B"
+			(at 297.18 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230111/5AD58278EBED6B6650A81C53A19BF314.pdf"
+			(at 294.894 27.813 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "1615 RGB LEDs(Built-in IC) ROHS"
+			(at 297.18 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5349954"
+			(at 297.18 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf7e3715-7513-4b70-898d-4c92ca664b6a")
+		)
+		(pin "3"
+			(uuid "2187d84b-07ae-48c2-89a6-24cbc9106561")
+		)
+		(pin "4"
+			(uuid "54a02ce1-dd89-4d9b-ba91-bd8ff5d8bf2e")
+		)
+		(pin "2"
+			(uuid "7b4dde10-7e32-4d4b-bfbf-d4ad361ab499")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
+					(reference "D322")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 248.92 83.82 0)
 		(unit 1)
@@ -64595,6 +65047,84 @@
 			(project "fin-ltm"
 				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
 					(reference "#PWR0278")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 273.05 20.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd56e47c-69ce-4fc2-b91f-98d90950d5db")
+		(property "Reference" "#PWR0622"
+			(at 273.05 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 273.05 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 273.05 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4865b1ed-402c-4f4d-9762-797de38192f0")
+		)
+		(instances
+			(project "fin-ltm"
+				(path "/da13f94e-0fc0-403b-a3ae-59c6a026d422/d89a664e-caf2-420e-9c80-1c073f244520"
+					(reference "#PWR0622")
 					(unit 1)
 				)
 			)
