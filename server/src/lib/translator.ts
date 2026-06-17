@@ -1,4 +1,4 @@
-import { AnyTrainState, Train } from "./digitraffic.js"
+import { AnyTrainState, Train, TrainBetweenStationsState } from "./digitraffic.js"
 import { importJSONC } from "./jsonc.js"
 import { MapEvent } from "./mapEvent.js"
 
@@ -52,9 +52,15 @@ export type BoardsSectionStation = BoardSection<"station", { station_code: strin
 
 export type AnyBoardSection = BoardsSectionBetween | BoardsSectionStation
 
+export interface MultiBetweenHandler {
+    interval: NodeJS.Timeout,
+    state: TrainBetweenStationsState
+}
+
 export class DataTranslator {
     #boards_config: BoardsConfig | null = null
     #board_configs: Map<string, { config: BoardConfig, sections: AnyBoardSection[] }> = new Map()
+    #multi_between_state = new Map<number, MultiBetweenHandler>()
     constructor(config_path = "/data/", callback = (t: DataTranslator) => { }) {
         console.log("[TRANSLATOR] Loading boards.jsonc")
         importJSONC<BoardsConfig>(config_path + "boards.jsonc").then((data) => {
@@ -134,13 +140,13 @@ export class DataTranslator {
         if (!state) {
             return null
         }
-
+        let section: AnyBoardSection
         let blocks: BoardBlock[] = []
         if (state.type == "at_station") {
-            const section = sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)!
+            section = sections.find(s => s.type == "station" && s.properties.station_code == state.current.station)!
             blocks = section.blocks
         } else {
-            const section = sections.find(s => s.type == "between" && (
+            section = sections.find(s => s.type == "between" && (
                 (s.properties.station_1_code == state.next.station && s.properties.station_2_code == state.last.station) ||
                 (s.properties.station_1_code == state.last.station && s.properties.station_2_code == state.next.station)
             ))!
@@ -149,7 +155,24 @@ export class DataTranslator {
         if (blocks.length == 1) return blocks[0].index
         blocks = blocks.filter(b => !b.filters || b.filters.length == 0 || b.filters.every(f => this.#checkBlockFilter(t, f)))
         if (blocks.length == 1) return blocks[0].index
-        return -1
+
+        if (state.type == "at_station" || section.type =="station") return null
+        // multi between handling
+
+        let i = 0
+        const totalTime = state.next.time.getTime() - state.last.time.getTime()
+        const sectionReversed = state.next.station == section.properties.station_1_code
+        if (sectionReversed) blocks.reverse()
+
+        const handler: MultiBetweenHandler = {
+            interval: setInterval(handleMultiBetween, totalTime / blocks.length),
+            state: state
+        }
+        function handleMultiBetween() {
+            i++
+            if (i >= blocks.length) return
+        }
+        return blocks[i].index
     }
     #checkBlockFilter(t: Train, filter: AnySectionFilter) {
         switch (filter.type) {
@@ -177,6 +200,7 @@ export class DataTranslator {
                             (s.properties.station_1_code == n.station && s.properties.station_2_code == p.station) ||
                             (s.properties.station_1_code == p.station && s.properties.station_2_code == n.station)
                         ))) {
+                            console.log("1",p.time, n.time)
                             return {
                                 type: "between",
                                 last: p,

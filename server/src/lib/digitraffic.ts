@@ -62,7 +62,7 @@ export function parseTrain(data: TrainData): Train | null {
         commuter_line_id: data.commuterLineID || null,
         start_point: data.timeTableRows[0].stationShortCode,
         end_point: data.timeTableRows[data.timeTableRows.length - 1].stationShortCode,
-        stations: data.timeTableRows.filter((r, i, a) => r.type == "DEPARTURE" || i == a.length - 1 || i == 0).map(r => ({ station: r.stationShortCode, time: new Date(last.actualTime || last.scheduledTime) }))
+        stations: data.timeTableRows.filter((r, i, a) => r.type == "DEPARTURE" || i == a.length - 1 || i == 0).map(r => ({ station: r.stationShortCode, time: r.actualTime ? new Date(r.actualTime) : new Date(new Date(r.scheduledTime).getTime() + (r.differenceInMinutes || 0) * 60_000) }))
     }
 
 
@@ -74,7 +74,7 @@ export function parseTrain(data: TrainData): Train | null {
             type: "at_station",
             current: {
                 station: last.stationShortCode,
-                time: new Date(last.actualTime || last.scheduledTime)
+                time: last.actualTime ? new Date(last.actualTime) : new Date(new Date(last.scheduledTime).getTime() + (last.differenceInMinutes || 0) * 60_000)
             }
         },
         properties: props
@@ -88,11 +88,11 @@ export function parseTrain(data: TrainData): Train | null {
             type: "between",
             last: {
                 station: last.stationShortCode,
-                time: new Date(last.actualTime || last.scheduledTime)
+                time: last.actualTime ? new Date(last.actualTime) : new Date(new Date(last.scheduledTime).getTime() + (last.differenceInMinutes || 0) * 60_000)
             },
             next: {
                 station: next.stationShortCode,
-                time: new Date(next.actualTime || next.scheduledTime)
+                time: next.actualTime ? new Date(next.actualTime) : new Date(new Date(next.scheduledTime).getTime() + (next.differenceInMinutes || 0) * 60_000)
             }
         },
         properties: props
