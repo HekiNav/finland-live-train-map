@@ -20,6 +20,9 @@ Contains Map Design ideas and plans as Inkscape SVGs
 ### [`/server`](./server/README.md)
 Contains the NodeJS server
 
+### [BuildGuide.md](BuildGuide.md)
+Contains instructions for building the project.
+
 ## Why this exists
 
 This project was made because we wanted to work on something together and Hack Club was running the Fallout event. Hekinav has built a similar type of project before for Helsinki. [The Helsinki Live Train map](https://github.com/HekiNav/helsinki-live-train-map) and we decided that making one of all the Trains in Finland would be cool. This project is meant to be something to look at and something cool to have in your space. Thats why we put so much effort in the silkscreen of the pcb and the placement of the LED's. We wanted it to be good to look at.
