@@ -4,13 +4,41 @@
         "name": "Finland Live Train Map",
         "desc": "Live LED train map of Finland. Focused on passenger IC routes.",
         "versions": ["100"],
-        "available": true
+        "available": true,
+        "modes": [
+            {
+                "id": "route",
+                "name": "IC train route",
+                "colors": [
+                    ["HKI-TKU","HKI-TUS"],
+                    ["ROI-HKI","HKI-KJÄ"],
+                    ["HKI-TPE"]
+                ],
+                "filters" : [
+                    {
+                        "type": "train_type",
+                        "allow": false,
+                        "list": ["HL","HV","SAA","W"]
+                    }
+                ]
+            },
+            {
+                "id": "length",
+                "name": "Train length"
+            }
+        ]
     },
     {
         "id": "hki-ltm",
         "name": "Helsinki Region Live Train Map",
         "desc": "Live LED train map of the Helsinki region commuter train network.",
         "versions": ["100"],
-        "available": false
+        "available": false,
+        "modes": [
+            {
+                "id": "lines",
+                "name": "Commuter Lines"
+            }
+        ]
     }
 ]
