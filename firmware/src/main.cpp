@@ -40,27 +40,23 @@ CRGB black = CRGB::Black;
 std::vector<CRGB> colorTable;
 
 #if defined(HKI_LTM)
-enum MapMode
+String mapModes[] =
 {
-	lines,
-	map_mode_count
+	"lines"
 };
-MapMode currentMapMode = lines;
 #elif defined(FIN_LTM)
-enum MapMode
+String mapModes[] =
 {
-	routes,
-	map_mode_count
+	"routes"
 };
-MapMode currentMapMode = routes;
 #else
-enum MapMode
+String mapModes[] =
 {
-	null_mode,
-	map_mode_count
+	"null"
 };
-MapMode currentMapMode = null_mode;
 #endif
+int16_t currentMapMode = 0;
+
 
 // --- Data structure for scheduled LED updates ---
 struct LedUpdate
@@ -263,8 +259,8 @@ String downloadJSON()
 
 	String url = serverURLs[currentServerIndex];
 	http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
-
-	http.begin(url);
+	Serial.println(url + "?mode=" + mapModes[currentMapMode]);
+	http.begin(url + "?mode=" + mapModes[currentMapMode]);
 
 	int httpCode = http.GET();
 	if (httpCode == HTTP_CODE_OK)
@@ -418,7 +414,7 @@ void onPower()
 void onMode()
 {
 	// Cycle through modes
-	currentMapMode = MapMode((currentMapMode + 1) % map_mode_count);
+	currentMapMode = (currentMapMode + 1) % mapModes->length();
 	modeStartTime = millis();  // Reset start time for fast forward mode
 	lastMapDrawTime = 0;	   // Force immediate redraw
 	brightness.setPower(true); // Ensure brightness is on when changing modes

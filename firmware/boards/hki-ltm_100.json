@@ -27,7 +27,8 @@
             "-DBRIGHTNESS_STEP=20",
             "-DDEBOUNCE_MS=50",
             "-DBACKEND_VERSION=\\\"100\\\"",
-            "-DCITY_CODE=\\\"hki\\\""
+            "-DCITY_CODE=\\\"hki\\\"",
+            "-DHKI_LTM"
         ],
         "f_cpu": "160000000L",
         "f_flash": "80000000L",
