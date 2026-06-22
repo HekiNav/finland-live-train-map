@@ -46,6 +46,7 @@ void enablePower()
 	digitalWrite(LVL_Shifter_EN, LOW); // Enable LVL Shifter
 #endif
 #if defined(LED_5V_EN)
+	pinMode(LED_5V_EN, OUTPUT);
 	digitalWrite(LED_5V_EN, HIGH); // Enable 5V Power
 #endif
 }
@@ -53,6 +54,7 @@ void enablePower()
 void disablePower()
 {
 #if defined(LED_5V_EN)
+	pinMode(LED_5V_EN, OUTPUT);
 	digitalWrite(LED_5V_EN, LOW); // Disable 5V Power
 #endif
 #if defined(LVL_Shifter_EN)
