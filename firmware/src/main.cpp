@@ -469,7 +469,7 @@ void realtimeMode(time_t epoch, bool wiFiConnected)
 		// --- Push updates to the LED strips only if changes were made ---
 		if (lastMapDrawTime < epoch)
 		{
-			drawRealtimeMap(epoch); // Draw the map with the current updates
+			//drawRealtimeMap(epoch); // Draw the map with the current updates
 			lastMapDrawTime = epoch;
 		}
 	}
@@ -541,7 +541,6 @@ void loop()
 
 		realtimeMode(epoch, wiFiConnected);
 	}
-
 	realtimeMode(epoch, wiFiConnected);
 
 	brightness.update();

@@ -43,7 +43,7 @@ void enablePower()
 {
 #if defined(LVL_Shifter_EN)
 	pinMode(LVL_Shifter_EN, OUTPUT);
-	digitalWrite(LVL_Shifter_EN, HIGH); // Enable LVL Shifter
+	digitalWrite(LVL_Shifter_EN, LOW); // Enable LVL Shifter
 #endif
 #if defined(LED_5V_EN)
 	digitalWrite(LED_5V_EN, HIGH); // Enable 5V Power
@@ -217,6 +217,7 @@ void setBlockColorRGB(uint16_t block, CRGB color)
 		if (block >= strip.startBlock && block < strip.startBlock + strip.numPixels)
 		{
 			strip.leds[block - strip.startBlock] = color;
+			Serial.printf("Block %d %s \n", block, color.toString());
 			found = true;
 			break;
 		}
