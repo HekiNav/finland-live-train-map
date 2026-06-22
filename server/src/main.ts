@@ -4,6 +4,7 @@ import { DataTranslator } from "./lib/translator.js";
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SocketMessage, encodeMessage, parseMessage } from "./lib/socket.js";
+import { MapEvent } from "./lib/mapEvent.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -40,7 +41,7 @@ const socket = new WebSocketServer({ port: 3010 })
 socket.on("error", console.error)
 socket.on("listening", () => console.log("[WS SERVER] Listening"))
 
-socket.on('connection', function connection(c,r) {
+socket.on('connection', function connection(c, r) {
   c.on('error', console.error);
 
   const cid = crypto.randomUUID()
@@ -51,7 +52,7 @@ socket.on('connection', function connection(c,r) {
   }))
 
   const url = new URL(`http://${process.env.HOST ?? 'localhost'}${r.url}`)
-  const {board_id, version, mode_id} = Object.fromEntries(url.searchParams.entries())
+  const { board_id, version, mode_id } = Object.fromEntries(url.searchParams.entries())
 
   const board = translator.getBoardConfig(board_id)
   if (!board) {
@@ -78,30 +79,16 @@ socket.on('connection', function connection(c,r) {
   if (!board.config.modes.some(m => m.id == mode_id && !(m.versions_not_available || []).some(v => v == version))) {
     c.send(encodeMessage({
       type: "error",
-      message: `Invalid board mode id (${mode_id}). Valid values are ${
-        board.config.modes
+      message: `Invalid board mode id (${mode_id}). Valid values are ${board.config.modes
         .filter(m => (m.versions_not_available || []).every(v => v != version))
         .map(m => m.id)
         .join(", ")
-      }`
+        }`
     }))
     return c.close()
   }
 
   let current_mode = mode_id
-
-  
-  function sendEvents(trains: Train[]) {
-    if(!board) return
-    const filters = board.config.modes.find(m => m.id == current_mode)?.filters!;
-    const updates = translator.generateUpdates(trains, current_mode, filters, board.sections);
-    if (updates.length == 0) return
-    console.log(`[WS SERVER] sending ${updates.length} events`);
-    c.send(encodeMessage({
-      type: "events",
-      updates
-    }));
-  }
 
   // initial state
   sendEvents(Array.from(digitraffic.state.values()))
@@ -125,6 +112,21 @@ socket.on('connection', function connection(c,r) {
     }, 1000)
   })
 
+  function sendEvents(trains: Train[]) {
+    if (!board) return
+    const filters = board.config.modes.find(m => m.id == current_mode)?.filters!;
+    const updates = translator.generateUpdates(trains, current_mode, filters, board.sections, send);
+    if (updates.length == 0) return
+    function send(events: MapEvent[]) {
+      console.log(`[WS SERVER] sending ${updates.length} events`);
+      c.send(encodeMessage({
+        type: "events",
+        updates
+      }));
+    }
+
+  }
+
   c.on("close", () => digitraffic.offUpdate(cid))
 
   c.on('message', function message(data) {
@@ -137,7 +139,7 @@ socket.on('connection', function connection(c,r) {
       const message = (result as { message: SocketMessage }).message
       switch (message.type) {
         case "ping_req":
-          c.send(encodeMessage({type: "ping_res"}))
+          c.send(encodeMessage({ type: "ping_res" }))
           break
         default:
           console.log("[WS SERVER] Received data of unknown type: " + message.type)
