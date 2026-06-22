@@ -21,7 +21,7 @@ ButtonManager buttons;
 
 // Array of server URLs for failover
 String serverURLs[] = {
-	String("https://ltm-api.hekinav.dev/") + CITY_CODE + "-ltm/" + BACKEND_VERSION + ".json",
+	String("https://ltm-api-v2.hekinav.dev/") + CITY_CODE + "-ltm/" + BACKEND_VERSION + ".json",
 };
 const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
 int currentServerIndex = 0;
@@ -364,7 +364,7 @@ time_t parseLEDMap(const String &downloadedJson)
 	for (JsonObject update : updates)
 	{
 		int block = update["b"];
-		int colorId = update["c"];
+		int colorId = update["c"][0];
 		int offset = update["t"];
 
 		// Schedule color update

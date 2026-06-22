@@ -208,7 +208,6 @@ export class DataTranslator {
                             (s.properties.station_1_code == n.station && s.properties.station_2_code == p.station) ||
                             (s.properties.station_1_code == p.station && s.properties.station_2_code == n.station)
                         ))) {
-                            console.log("1", p.time, n.time)
                             return {
                                 type: "between",
                                 last: p,

@@ -89,14 +89,18 @@ socket.on('connection', function connection(c, r) {
   }
 
   let current_mode = mode_id
+  let updateQueue = new Array<Train>()
+  let timeout: null | NodeJS.Timeout = null
+
+  let eventsToSend = new Array<MapEvent>()
+  let eventTimeout: null | NodeJS.Timeout = null
 
   // initial state
   sendEvents(Array.from(digitraffic.state.values()))
 
   console.log(`[WS SERVER] New connection: ${board.config.id}/${version}/${mode_id}`)
 
-  let updateQueue = new Array<Train>()
-  let timeout: null | NodeJS.Timeout = null
+
 
   digitraffic.onUpdate(cid, (update) => {
     // clump updates together
@@ -109,7 +113,7 @@ socket.on('connection', function connection(c, r) {
 
 
       sendEvents(trains);
-    }, 1000)
+    }, 5000)
   })
 
   function sendEvents(trains: Train[]) {
@@ -117,15 +121,26 @@ socket.on('connection', function connection(c, r) {
     const filters = board.config.modes.find(m => m.id == current_mode)?.filters!;
     const updates = translator.generateUpdates(trains, current_mode, filters, board.sections, send);
     if (updates.length == 0) return
+    send(updates)
     function send(events: MapEvent[]) {
-      console.log(`[WS SERVER] sending ${updates.length} events`);
-      c.send(encodeMessage({
-        type: "events",
-        updates
-      }));
-    }
+      eventsToSend.push(...events)
+      if (!eventTimeout) eventTimeout = setTimeout(() => {
+        const ev = eventsToSend
 
+        eventTimeout = null
+        eventsToSend = []
+
+        console.log(`[WS SERVER] sending ${events.length} events`);
+
+        c.send(encodeMessage({
+          type: "events",
+          updates: ev
+        }));
+      }, 5000)
+
+    }
   }
+
 
   c.on("close", () => digitraffic.offUpdate(cid))
 
