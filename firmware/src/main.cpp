@@ -2,6 +2,7 @@
 #include <ArduinoJson.h>
 #include <FastLED.h>
 #include <HTTPClient.h>
+#include <WebSocketsClient.h>
 #include <Preferences.h>
 #include <WiFi.h>
 #include <esp_sntp.h>
@@ -20,43 +21,32 @@ BrightnessManager brightness;
 ButtonManager buttons;
 
 // Array of server URLs for failover
-String serverURLs[] = {
-	String("https://ltm-api-v2.hekinav.dev/") + CITY_CODE + "-ltm/" + BACKEND_VERSION + ".json",
-};
-const int numServers = sizeof(serverURLs) / sizeof(serverURLs[0]);
-int currentServerIndex = 0;
-int failedFetchCount = 0;
+String serverURL = String("/?board_id=") + CITY_CODE + "-ltm&version" + BACKEND_VERSION + "&&mode_id=route";
+String serverHost = "ltm-api-v2.hekinav.dev";
 
 const char *ntpServers[] = {"pool.ntp.org"};
 const char *time_zone = "EET-2EEST,M3.5.0/3,M10.5.0/4";
 
-time_t lastMapDrawTime = 0;	 // Tracks the last time the map was drawn
-time_t nextFetchTime = 0;	 // Tracks when the next update should occur
-uint32_t modeStartTime = 0;	 // Tracks when the current mode started (for fast forward mode timing)
-uint8_t fetchOffset = 0;	 // Random time ms to fetch (reduces server load)
-uint8_t updateInterval = 30; // Default update interval in seconds
+WebSocketsClient ws;
+bool wsConnecting = false;
 
 CRGB black = CRGB::Black;
 std::vector<CRGB> colorTable;
 
 #if defined(HKI_LTM)
 String mapModes[] =
-{
-	"lines"
-};
+	{
+		"lines"};
 #elif defined(FIN_LTM)
 String mapModes[] =
-{
-	"routes"
-};
+	{
+		"routes"};
 #else
 String mapModes[] =
-{
-	"null"
-};
+	{
+		"null"};
 #endif
 int16_t currentMapMode = 0;
-
 
 // --- Data structure for scheduled LED updates ---
 struct LedUpdate
@@ -252,44 +242,6 @@ String getSystemInfo()
 	return info;
 }
 
-String downloadJSON()
-{
-	HTTPClient http;
-	String payload;
-
-	String url = serverURLs[currentServerIndex];
-	http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
-	Serial.println(url + "?mode=" + mapModes[currentMapMode]);
-	http.begin(url + "?mode=" + mapModes[currentMapMode]);
-
-	int httpCode = http.GET();
-	if (httpCode == HTTP_CODE_OK)
-	{
-		payload = http.getString();
-		http.end();
-		if (payload.length() == 0)
-		{
-			Serial.printf("Fetch from %s returned too little data (%d bytes)\n", url.c_str(), payload.length());
-		}
-		else
-		{
-			failedFetchCount = 0; // Reset failed fetch count on success
-			return payload;
-		}
-	}
-
-	Serial.printf("Fetch from %s returned: %i\n", url.c_str(), httpCode);
-	http.end();
-	failedFetchCount++;
-	if (failedFetchCount > 3)
-	{
-		currentServerIndex++; // Try the next server on the next attempt
-		currentServerIndex = currentServerIndex % numServers;
-	}
-
-	return String();
-}
-
 void setBlockColorId(uint8_t *blockColorIds, uint16_t block, int colorId)
 {
 	if (colorId < blockColorIds[block])
@@ -305,7 +257,7 @@ void setBlockColorId(uint8_t *blockColorIds, uint16_t block, int colorId)
 	setBlockColorRGB(block, color);
 }
 
-void drawRealtimeMap(time_t epoch)
+void dMap()
 {
 	suspendDithering();
 	clearLEDs();
@@ -324,10 +276,10 @@ void drawRealtimeMap(time_t epoch)
 float timetableRenderTime = 0.0f;
 uint8_t printoutCounter = 0;
 
-time_t parseLEDMap(const String &downloadedJson)
+time_t parseEvent(uint8_t *payload)
 {
 	JsonDocument doc;
-	DeserializationError error = deserializeJson(doc, downloadedJson);
+	DeserializationError error = deserializeJson(doc, payload);
 
 	if (error)
 	{
@@ -335,25 +287,10 @@ time_t parseLEDMap(const String &downloadedJson)
 		return 0;
 	}
 
-	String version = doc["version"] | "";
-	time_t baseTimestamp = doc["timestamp"] | 0;
-	updateInterval = doc["update"] | updateInterval;
-	JsonObject colors = doc["colors"];
+	String type = doc["type"];
 	JsonArray updates = doc["updates"];
 
-	if (String(BACKEND_VERSION) != version)
-	{
-		Serial.printf("Backend version mismatch: expected %s, got %s\n", BACKEND_VERSION, version.c_str());
-	}
-
-	// Serial.printf("%ld Base timestamp: %ld, Update offset: %d, Next fetch time: %ld\n",
-	// 			  time(nullptr),
-	// 			  baseTimestamp,
-	// 			  updateInterval,
-	// 			  nextFetchTime);
-
-	// Populate colorTable from the JSON colors object
-	colorTable.clear();
+	/* colorTable.clear();
 	for (JsonPair kv : colors)
 	{
 		JsonArray rgb = kv.value().as<JsonArray>();
@@ -382,7 +319,7 @@ time_t parseLEDMap(const String &downloadedJson)
 		ledUpdateSchedule.push_back(ledUpdate);
 	}
 
-	return baseTimestamp;
+	return baseTimestamp; */
 }
 
 void onBrightnessDown()
@@ -402,8 +339,6 @@ void onPower()
 	{
 		setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
 		vTaskDelay(pdMS_TO_TICKS(50));
-		lastMapDrawTime = 0;	  // Force redraw
-		modeStartTime = millis(); // Reset start time for fast forward mode
 	}
 	else
 	{
@@ -415,70 +350,27 @@ void onMode()
 {
 	// Cycle through modes
 	currentMapMode = (currentMapMode + 1) % mapModes->length();
-	modeStartTime = millis();  // Reset start time for fast forward mode
-	lastMapDrawTime = 0;	   // Force immediate redraw
 	brightness.setPower(true); // Ensure brightness is on when changing modes
 	Serial.println("Mode button pressed");
 }
 
-void realtimeMode(time_t epoch, bool wiFiConnected)
+void onEvent(WStype_t type, uint8_t *payload, size_t length)
 {
-	if (wiFiConnected)
+	switch (type)
 	{
-		// --- Fetch new data periodically ---
-		if (epoch > nextFetchTime && millis() % 1000 > fetchOffset)
-		{
-			if (epoch > nextFetchTime + updateInterval && brightness.isOn())
-			{
-				setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
-			}
-
-			time_t timeOffset = 0;
-			String downloadedJson = downloadJSON();
-			if (downloadedJson.length() > 0)
-			{
-				if (brightness.isOn())
-				{
-					setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
-				}
-				timeOffset = epoch - parseLEDMap(downloadedJson);
-			}
-			else
-			{
-				if (failedFetchCount > 3 + numServers)
-				{
-					Serial.println("All servers failed to provide data.");
-					if (brightness.isOn())
-					{
-						setStatusLedState(WIFI_LED_PIN, LED_ON_RED, SERVER_LED_PIN, LED_ON_RED);
-					}
-				}
-			}
-
-			nextFetchTime = constrain(nextFetchTime, epoch + 6, epoch + updateInterval);
-
-			Serial.printf(
-				"%s fetchDelay:%is MCU:%2.0f°C WiFi:%idBm\n", getLocalTime(epoch), timeOffset, temperatureRead(), WiFi.RSSI());
-			Serial.flush();
-		}
-
-		// --- Push updates to the LED strips only if changes were made ---
-		if (lastMapDrawTime < epoch)
-		{
-			drawRealtimeMap(epoch); // Draw the map with the current updates
-			lastMapDrawTime = epoch;
-		}
+	case WStype_DISCONNECTED:
+		wsConnecting = false;
+		setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
+		break;
+	default:
+		Serial.println(type);
+		break;
 	}
-	else
-	{
-		if (brightness.isOn())
-		{
-			if (millis() > 60 * 1000)
-			{
-				setStatusLedState(WIFI_LED_PIN, LED_ON_RED, SERVER_LED_PIN, LED_OFF);
-			}
-		}
-	}
+	/* time_t epoch = time(nullptr); // Get current time
+	Serial.printf(
+		"%s MCU:%2.0f°C WiFi:%idBm\n", getLocalTime(epoch), temperatureRead(), WiFi.RSSI());
+	Serial.flush();
+	parseEvent(payload); */
 }
 
 void setup()
@@ -511,8 +403,6 @@ void setup()
 	// --- WiFi Setup ---
 	xTaskCreate(statusLedManagerTask, "Status LED Manager", 1024, NULL, 2, &statusLedTaskHandle);
 
-	fetchOffset = random(0, 999); // Random delay between 0 and 999 ms to reduce server load
-
 	if (WiFiImprovSetup())
 	{
 		Serial.println("WiFi credentials found...");
@@ -529,15 +419,44 @@ void setup()
 
 void loop()
 {
-	time_t epoch = time(nullptr); // Get current time
 	bool wiFiConnected = (WiFi.status() == WL_CONNECTED);
 	if (!wiFiConnected)
 	{
 		manageWiFiConnection();
-
-		realtimeMode(epoch, wiFiConnected);
+		if (brightness.isOn())
+		{
+			if (millis() > 60 * 1000)
+			{
+				setStatusLedState(WIFI_LED_PIN, LED_ON_RED, SERVER_LED_PIN, LED_OFF);
+			}
+		}
 	}
-	realtimeMode(epoch, wiFiConnected);
+	else if (wiFiConnected && !ws.isConnected() && !wsConnecting)
+	{
+		wsConnecting = true;
+		if (brightness.isOn())
+		{
+			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
+		}
+		Serial.println("connecting to server");
+		ws.begin(serverHost, 80, serverURL);
+	}
+	else if (wiFiConnected && !ws.isConnected())
+	{
+		if (brightness.isOn())
+		{
+			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
+		}
+	}
+	else if (wiFiConnected)
+	{
+		if (brightness.isOn())
+		{
+			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
+		}
+	}
+
+	ws.onEvent(onEvent);
 
 	brightness.update();
 

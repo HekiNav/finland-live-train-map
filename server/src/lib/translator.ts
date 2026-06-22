@@ -177,6 +177,7 @@ export class DataTranslator {
         }
         function handleMultiBetween() {
             i++
+            if (!blocks[i]) return clearInterval(handler.interval)
             send(blocks[i].index)
             if (i >= blocks.length) return clearInterval(handler.interval)
         }
