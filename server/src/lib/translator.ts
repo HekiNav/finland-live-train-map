@@ -162,10 +162,10 @@ export class DataTranslator {
             ))!
             blocks = section.blocks
         }
-        if (blocks.length == 0) return null
         if (blocks.length == 1) return blocks[0].index
         blocks = blocks.filter(b => !b.filters || b.filters.length == 0 || b.filters.every(f => this.#checkBlockFilter(t, f)))
         if (blocks.length == 1) return blocks[0].index
+        if (blocks.length == 0) return null
 
         if (state.type == "at_station" || section.type == "station") return null
         // multi between handling
