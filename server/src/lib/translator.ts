@@ -45,7 +45,11 @@ export interface SectionFilter<T extends string> {
 export interface SectionFilterTrainVia extends SectionFilter<"train_via"> {
     station_code: string
 }
-export type AnySectionFilter = SectionFilterTrainVia
+
+export interface SectionFilterCommuterLine extends SectionFilter<"commuter_line"> {
+    lines: string[]
+}
+export type AnySectionFilter = SectionFilterTrainVia | SectionFilterCommuterLine
 
 export type BoardsSectionBetween = BoardSection<"between", { station_1_code: string, station_2_code: string }>
 export type BoardsSectionStation = BoardSection<"station", { station_code: string }>
@@ -60,7 +64,6 @@ export interface MultiBetweenHandler {
 export class DataTranslator {
     #boards_config: BoardsConfig | null = null
     #board_configs: Map<string, { config: BoardConfig, sections: AnyBoardSection[] }> = new Map()
-    #multi_between_state = new Map<number, MultiBetweenHandler>()
     constructor(config_path = "/data/", callback = (t: DataTranslator) => { }) {
         console.log("[TRANSLATOR] Loading boards.jsonc")
         importJSONC<BoardsConfig>(config_path + "boards.jsonc").then((data) => {
@@ -159,6 +162,7 @@ export class DataTranslator {
             ))!
             blocks = section.blocks
         }
+        if (blocks.length == 0) return null
         if (blocks.length == 1) return blocks[0].index
         blocks = blocks.filter(b => !b.filters || b.filters.length == 0 || b.filters.every(f => this.#checkBlockFilter(t, f)))
         if (blocks.length == 1) return blocks[0].index
@@ -187,8 +191,10 @@ export class DataTranslator {
         switch (filter.type) {
             case "train_via":
                 return t.properties.stations.some(s => s.station == filter.station_code)
+            case "commuter_line":
+                return filter.lines.some(l => l == t.properties.commuter_line_id) || filter.lines.some(l => l == "-") && (!t.properties.commuter_line_id || t.properties.commuter_line_id == "V")
             default:
-                console.error(`Unknown block filter type ${filter.type}`)
+                console.error(`Unknown block filter type ${(filter as AnySectionFilter).type}`)
                 return false
         }
     }

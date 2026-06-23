@@ -21,10 +21,6 @@ ButtonManager buttons;
 
 WiFiClient client;
 
-// Array of server URLs for failover
-String serverURL = String("/?board_id=") + CITY_CODE + "-ltm&version=" + BACKEND_VERSION + "&mode_id=route";
-String serverHost = "ltm-api-v2.hekinav.dev";
-
 const char *ntpServers[] = {"pool.ntp.org"};
 const char *time_zone = "EET-2EEST,M3.5.0/3,M10.5.0/4";
 
@@ -48,6 +44,9 @@ String mapModes[] =
 		"null"};
 #endif
 int16_t currentMapMode = 0;
+
+String serverURL = String("/?board_id=") + CITY_CODE + "-ltm&version=" + BACKEND_VERSION + "&mode_id=" + mapModes[currentMapMode];
+String serverHost = "ltm-api-v2.hekinav.dev";
 
 // --- Data structure for scheduled LED updates ---
 struct LedUpdate
@@ -79,6 +78,8 @@ typedef struct
 } statusLed;
 
 TaskHandle_t statusLedTaskHandle;
+
+uint8_t serverConnectionTries = 0;
 
 const char *getLocalTime(time_t epoch)
 {
@@ -274,9 +275,6 @@ void drawMap()
 	resumeDithering();
 }
 
-float timetableRenderTime = 0.0f;
-uint8_t printoutCounter = 0;
-
 void parseEvent(uint8_t *payload, size_t length)
 {
 	Serial.write(payload, length);
@@ -298,7 +296,7 @@ void parseEvent(uint8_t *payload, size_t length)
 	}
 	else if (type == "uuid")
 	{
-		Serial.printf("UUID assigned by server: %s \n", doc["uuid"]);
+		Serial.printf("UUID assigned by server: %s \n", doc["uuid"].as<const char*>());
 	}
 	else
 	{
@@ -455,13 +453,15 @@ void loop()
 			}
 		}
 	}
-	else if (!ws.isConnected() && !wsConnecting)
+	else if (!ws.isConnected() && !wsConnecting && serverConnectionTries < 5)
 	{
 		wsConnecting = true;
 		if (brightness.isOn())
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
 		}
+		serverConnectionTries++;
+		Serial.printf("Trying to connect, attempt %i", serverConnectionTries);
 		ws.beginSSL(serverHost, 443, serverURL);
 	}
 	else if (!ws.isConnected())
@@ -469,6 +469,8 @@ void loop()
 		if (brightness.isOn())
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
+		} else if (brightness.isOn() && serverConnectionTries >= 5) {
+			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_RED);
 		}
 	}
 	else
