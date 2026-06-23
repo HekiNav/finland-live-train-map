@@ -52,11 +52,6 @@ socket.on('connection', function connection(c, r) {
     uuid: cid
   }))
 
-  c.send(encodeMessage({
-    type: "colors",
-    colors: colors
-  }))
-
   const url = new URL(`http://${process.env.HOST ?? 'localhost'}${r.url}`)
   const { board_id, version, mode_id } = Object.fromEntries(url.searchParams.entries())
 
@@ -93,6 +88,11 @@ socket.on('connection', function connection(c, r) {
     }))
     return c.close()
   }
+  
+  c.send(encodeMessage({
+    type: "colors",
+    colors: colors
+  }))
 
   let current_mode = mode_id
   let updateQueue = new Array<Train>()

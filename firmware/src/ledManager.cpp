@@ -193,7 +193,6 @@ void setupLeds()
 
 void setBlockColorRGB(uint16_t block, CRGB color)
 {
-	Serial.printf("Block %d ", block);
 	// Apply gamma correction (γ = 2.0)
 	auto gammaCorrect = [](float value) -> uint8_t
 	{

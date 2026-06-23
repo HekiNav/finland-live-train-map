@@ -49,15 +49,8 @@ int16_t currentMapMode = 0;
 String serverURL = String("/?board_id=") + CITY_CODE + "-ltm&version=" + BACKEND_VERSION + "&mode_id=" + mapModes[currentMapMode];
 String serverHost = "ltm-api-v2.hekinav.dev";
 
-// --- Data structure for scheduled LED updates ---
-struct LedUpdate
-{
-	uint16_t block;
-	int colorId;
-	time_t timestamp; // Timestamp for when the update should occur
-};
 
-std::vector<LedUpdate> ledUpdateSchedule;
+bool ledUpdateScheduled = false;
 
 enum statusLedCommand
 {
@@ -80,7 +73,7 @@ typedef struct
 
 TaskHandle_t statusLedTaskHandle;
 
-std::map<int, int> trains;
+std::map<int, std::array<int,2>> trains;
 
 uint8_t serverConnectionTries = 0;
 unsigned long lastDrawTime = 0;
@@ -258,14 +251,14 @@ void setBlockColorId(uint16_t block, int colorId)
 void drawMap()
 {
 	suspendDithering();
+	clearLEDs();
 
-	// Draw the map based on the current LED update schedule
-	for (const auto &update : ledUpdateSchedule)
+	for (auto const& t : trains)
 	{
-		setBlockColorId(update.block, update.colorId);
+		setBlockColorId(t.second[0], t.second[1]);
 	}
 
-	ledUpdateSchedule.clear();
+	ledUpdateScheduled = false;
 
 	resumeDithering();
 }
@@ -299,35 +292,17 @@ void parseEvent(uint8_t *payload, size_t length)
 		{
 			if (update["t"] == "remove")
 			{
-				int block = trains[update["d"]["id"]];
-				if (!block)
-					continue;
-				LedUpdate ledUpdate;
-				ledUpdate.block = block;
-				ledUpdate.colorId = 0;
-				ledUpdateSchedule.push_back(ledUpdate);
+				trains.erase(update["d"]["id"].as<int>());
 			}
 			else
 			{
 				int block = update["d"]["idx"].as<int>();
 				int colorId = update["d"]["clr"].as<int>();
 
-				LedUpdate ledUpdate;
-				ledUpdate.block = block;
-
-				ledUpdate.colorId = colorId;
-				ledUpdateSchedule.push_back(ledUpdate);
-
-				int prevblock = trains[update["d"]["id"]];
-				if (!block)
-					continue;
-				LedUpdate clearPrevUpdate;
-				clearPrevUpdate.block = prevblock;
-
-				clearPrevUpdate.colorId = 0;
-				ledUpdateSchedule.push_back(clearPrevUpdate);
+				trains[update["d"]["id"]] = {block, colorId};
 			}
 		}
+		ledUpdateScheduled = true;
 	}
 	else if (type == "colors")
 	{
@@ -343,18 +318,6 @@ void parseEvent(uint8_t *payload, size_t length)
 	{
 		Serial.printf("Unknown event type: %s \n", type);
 	}
-
-	/* colorTable.clear();
-	for (JsonPair kv : colors)
-	{
-		JsonArray rgb = kv.value().as<JsonArray>();
-		colorTable.push_back(CRGB(rgb[0] | 0, rgb[1] | 0, rgb[2] | 0));
-	}
-
-
-
-
-	return baseTimestamp; */
 }
 
 void onBrightnessDown()
@@ -374,6 +337,7 @@ void onPower()
 	{
 		setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
 		vTaskDelay(pdMS_TO_TICKS(50));
+		ledUpdateScheduled = true;
 	}
 	else
 	{
@@ -503,7 +467,7 @@ void loop()
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
 		}
 	}
-	if (ledUpdateSchedule.size() > 0 && (millis() - lastDrawTime > DEBOUNCE_MS))
+	if (ledUpdateScheduled && (millis() - lastDrawTime > DEBOUNCE_MS))
 	{
 		Serial.println("Drawing map");
 		drawMap();
