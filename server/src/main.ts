@@ -12,7 +12,7 @@ export type RGBArray = [number, number, number]
 
 // some colors are skipped due to them looking too similar to other colors in testing
 export const colors = {
-  0: [0,0,0] as RGBArray          // Black
+  0: [0,0,0] as RGBArray,          // Black
   1: [255, 0, 0] as RGBArray,     // Red
   2: [255, 128, 0] as RGBArray,   // Orange
   3: [255, 255, 0] as RGBArray,   // Yellow
