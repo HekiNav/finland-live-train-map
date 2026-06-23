@@ -17,11 +17,10 @@
             "-DLED_1_PIN=8",
             "-DLED_1_START=100",
             "-DLED_1_PIXELS=222",
-            "-DDEBOUNCE_DELAY=50",
             "-DMIN_BRIGHTNESS=34",
             "-DMAX_BRIGHTNESS=254",
             "-DBRIGHTNESS_STEP=20",
-            "-DDEBOUNCE_MS=50",
+            "-DDEBOUNCE_MS=100",
             "-DBACKEND_VERSION=\\\"100\\\"",
             "-DCITY_CODE=\\\"fin\\\"",
             "-DFIN_LTM"

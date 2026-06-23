@@ -80,6 +80,7 @@ typedef struct
 TaskHandle_t statusLedTaskHandle;
 
 uint8_t serverConnectionTries = 0;
+unsigned long lastDrawTime = 0;
 
 const char *getLocalTime(time_t epoch)
 {
@@ -293,12 +294,14 @@ void parseEvent(uint8_t *payload, size_t length)
 		Serial.printf("Received %d updates \n", updates.size());
 		for (JsonObject update : updates)
 		{
-			int block = update["idx"];
-			int colorId = update["clr"];
+			if (update["t"] == "remove") continue;
+			int block = update["d"]["idx"].as<int>();
+			int colorId = update["d"]["clr"].as<int>();
 
 			// Schedule color update
 			LedUpdate ledUpdate;
 			ledUpdate.block = block;
+			Serial.println(String(block));
 			ledUpdate.colorId = colorId;
 			ledUpdateSchedule.push_back(ledUpdate);
 		}
@@ -477,12 +480,13 @@ void loop()
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
 		}
 	}
-	if (ledUpdateSchedule.size() > 0) {
+	if (ledUpdateSchedule.size() > 0 && (millis() - lastDrawTime > DEBOUNCE_MS)) {
 		Serial.println("Drawing map");
 		drawMap();
+		lastDrawTime = millis();
 	}
 
 	brightness.update();
 	ws.loop();
-	vTaskDelay(pdMS_TO_TICKS(50));
+	vTaskDelay(pdMS_TO_TICKS(10));
 }

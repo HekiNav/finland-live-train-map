@@ -95,7 +95,7 @@ void fastLEDDitheringTask(void *pvParameters)
 		switch (currentState)
 		{
 		case ledState::OFF:
-			if (FastLED.getBrightness() > 0 && anyLedsOn())
+			if (FastLED.getBrightness() > 0)
 			{
 				currentState = ledState::TURNING_ON;
 			}
@@ -109,21 +109,14 @@ void fastLEDDitheringTask(void *pvParameters)
 			break;
 
 		case ledState::ON:
-		{
-			uint8_t frameCounter = 0;
-			while (frameCounter < 100)
-			{ // Do 100 frames of dithering before checking
-				FastLED.show();
-				vTaskDelay(frameDelay);
-				frameCounter++;
-			}
+			FastLED.show();
+			vTaskDelay(frameDelay);
 
-			if (FastLED.getBrightness() == 0 || !anyLedsOn())
+			if (FastLED.getBrightness() == 0)
 			{
 				currentState = ledState::TURNING_OFF;
 			}
 			break;
-		}
 
 		case ledState::TURNING_OFF:
 			disablePower();
@@ -200,6 +193,7 @@ void setupLeds()
 
 void setBlockColorRGB(uint16_t block, CRGB color)
 {
+	Serial.printf("Block %d ", block);
 	// Apply gamma correction (γ = 2.0)
 	auto gammaCorrect = [](float value) -> uint8_t
 	{
@@ -218,7 +212,6 @@ void setBlockColorRGB(uint16_t block, CRGB color)
 	{
 		if (block >= strip.startBlock && block < strip.startBlock + strip.numPixels)
 		{
-			Serial.printf("Block %d",block);
 			strip.leds[block - strip.startBlock] = color;
 			found = true;
 			break;

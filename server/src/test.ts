@@ -4,7 +4,7 @@ import { SocketMessage, encodeMessage, parseMessage } from './lib/socket.js';
 function start() {
 
 
-  const ws = new WebSocket('ws://localhost:3010?board_id=fin-ltm&version=100&mode_id=route');
+  const ws = new WebSocket('ws://localhost:3010?board_id=hki-ltm&version=100&mode_id=lines');
 
   ws.on('error', console.error);
 
