@@ -7,6 +7,7 @@
 #include <esp_sntp.h>
 #include <time.h>
 #include <vector>
+#include <map>
 
 #include "WiFiConfig.h"
 
@@ -78,6 +79,8 @@ typedef struct
 } statusLed;
 
 TaskHandle_t statusLedTaskHandle;
+
+std::map<int, int> trains;
 
 uint8_t serverConnectionTries = 0;
 unsigned long lastDrawTime = 0;
@@ -294,16 +297,36 @@ void parseEvent(uint8_t *payload, size_t length)
 		Serial.printf("Received %d updates \n", updates.size());
 		for (JsonObject update : updates)
 		{
-			if (update["t"] == "remove") continue;
-			int block = update["d"]["idx"].as<int>();
-			int colorId = update["d"]["clr"].as<int>();
+			if (update["t"] == "remove")
+			{
+				int block = trains[update["d"]["id"]];
+				if (!block)
+					continue;
+				LedUpdate ledUpdate;
+				ledUpdate.block = block;
+				ledUpdate.colorId = 0;
+				ledUpdateSchedule.push_back(ledUpdate);
+			}
+			else
+			{
+				int block = update["d"]["idx"].as<int>();
+				int colorId = update["d"]["clr"].as<int>();
 
-			// Schedule color update
-			LedUpdate ledUpdate;
-			ledUpdate.block = block;
-			Serial.println(String(block));
-			ledUpdate.colorId = colorId;
-			ledUpdateSchedule.push_back(ledUpdate);
+				LedUpdate ledUpdate;
+				ledUpdate.block = block;
+
+				ledUpdate.colorId = colorId;
+				ledUpdateSchedule.push_back(ledUpdate);
+
+				int prevblock = trains[update["d"]["id"]];
+				if (!block)
+					continue;
+				LedUpdate clearPrevUpdate;
+				clearPrevUpdate.block = prevblock;
+
+				clearPrevUpdate.colorId = 0;
+				ledUpdateSchedule.push_back(clearPrevUpdate);
+			}
 		}
 	}
 	else if (type == "colors")
@@ -480,7 +503,8 @@ void loop()
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
 		}
 	}
-	if (ledUpdateSchedule.size() > 0 && (millis() - lastDrawTime > DEBOUNCE_MS)) {
+	if (ledUpdateSchedule.size() > 0 && (millis() - lastDrawTime > DEBOUNCE_MS))
+	{
 		Serial.println("Drawing map");
 		drawMap();
 		lastDrawTime = millis();

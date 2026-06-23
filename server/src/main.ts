@@ -12,19 +12,20 @@ export type RGBArray = [number, number, number]
 
 // some colors are skipped due to them looking too similar to other colors in testing
 export const colors = {
-  0: [255, 0, 0] as RGBArray,     // Red
-  1: [255, 128, 0] as RGBArray,   // Orange
-  2: [255, 255, 0] as RGBArray,   // Yellow
+  0: [0,0,0] as RGBArray          // Black
+  1: [255, 0, 0] as RGBArray,     // Red
+  2: [255, 128, 0] as RGBArray,   // Orange
+  3: [255, 255, 0] as RGBArray,   // Yellow
   // SKIPPED 3: [128, 255, 0], // Yellow-green
-  3: [0, 255, 0] as RGBArray,     // Green
+  4: [0, 255, 0] as RGBArray,     // Green
   // SKIPPED 5: [0, 255, 128], // Turqoise
-  4: [0, 255, 255] as RGBArray,   // Cyan
+  5: [0, 255, 255] as RGBArray,   // Cyan
   // SKIPPED 7: [0, 128, 255], // Almost blue
-  5: [0, 0, 255] as RGBArray,     // Blue
-  6: [128, 0, 255] as RGBArray,   // Purple
-  7: [255, 0, 255] as RGBArray,   // Magenta
-  8: [255, 0, 128] as RGBArray,   // Pink
-  9: [255, 255, 255] as RGBArray, // White
+  6: [0, 0, 255] as RGBArray,     // Blue
+  7: [128, 0, 255] as RGBArray,   // Purple
+  8: [255, 0, 255] as RGBArray,   // Magenta
+  9: [255, 0, 128] as RGBArray,   // Pink
+  10: [255, 255, 255] as RGBArray, // White
 }
 
 const [digitraffic, translator] = await Promise.all([
