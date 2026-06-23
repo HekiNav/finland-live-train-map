@@ -9,7 +9,7 @@
 extern Preferences preferences;
 
 ImprovWiFi improvSerial(&Serial);
-AsyncWebServer server(80);
+AsyncWebServer server(81);
 
 #define MAX_SSID_LEN 32
 #define MAX_PASS_LEN 64

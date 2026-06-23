@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include <FastLED.h>
-#include <HTTPClient.h>
 #include <WebSocketsClient.h>
 #include <Preferences.h>
 #include <WiFi.h>
@@ -20,8 +19,10 @@ Preferences preferences;
 BrightnessManager brightness;
 ButtonManager buttons;
 
+WiFiClient client;
+
 // Array of server URLs for failover
-String serverURL = String("/?board_id=") + CITY_CODE + "-ltm&version" + BACKEND_VERSION + "&&mode_id=route";
+String serverURL = String("/?board_id=") + CITY_CODE + "-ltm&version=" + BACKEND_VERSION + "&mode_id=route";
 String serverHost = "ltm-api-v2.hekinav.dev";
 
 const char *ntpServers[] = {"pool.ntp.org"};
@@ -257,7 +258,7 @@ void setBlockColorId(uint8_t *blockColorIds, uint16_t block, int colorId)
 	setBlockColorRGB(block, color);
 }
 
-void dMap()
+void drawMap()
 {
 	suspendDithering();
 	clearLEDs();
@@ -276,19 +277,33 @@ void dMap()
 float timetableRenderTime = 0.0f;
 uint8_t printoutCounter = 0;
 
-time_t parseEvent(uint8_t *payload)
+void parseEvent(uint8_t *payload, size_t length)
 {
+	Serial.write(payload, length);
+
 	JsonDocument doc;
-	DeserializationError error = deserializeJson(doc, payload);
+	DeserializationError error = deserializeJson(doc, payload, length);
 
 	if (error)
 	{
 		Serial.printf("JSON parse error: %s\n", error.c_str());
-		return 0;
+		return;
 	}
 
-	String type = doc["type"];
-	JsonArray updates = doc["updates"];
+	const String type = doc["type"];
+
+	if (type == "error")
+	{
+		Serial.printf("Error from server: %s \n", doc["message"].as<const char*>());
+	}
+	else if (type == "uuid")
+	{
+		Serial.printf("UUID assigned by server: %s \n", doc["uuid"]);
+	}
+	else
+	{
+		Serial.printf("Unknown event type: %s \n", type);
+	}
 
 	/* colorTable.clear();
 	for (JsonPair kv : colors)
@@ -361,16 +376,23 @@ void onEvent(WStype_t type, uint8_t *payload, size_t length)
 	case WStype_DISCONNECTED:
 		wsConnecting = false;
 		setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
+		Serial.println("DISCONNECTED");
+		break;
+	case WStype_CONNECTED:
+		Serial.println("CONNECTED");
+		break;
+	case WStype_ERROR:
+	case WStype_BIN:
+	case WStype_TEXT:
+		parseEvent(payload, length);
+		Serial.printf(
+			"MCU:%2.0f°C WiFi:%idBm\n", temperatureRead(), WiFi.RSSI());
+		Serial.flush();
 		break;
 	default:
-		Serial.println(type);
+		Serial.println("unknown type:" + String(type));
 		break;
 	}
-	/* time_t epoch = time(nullptr); // Get current time
-	Serial.printf(
-		"%s MCU:%2.0f°C WiFi:%idBm\n", getLocalTime(epoch), temperatureRead(), WiFi.RSSI());
-	Serial.flush();
-	parseEvent(payload); */
 }
 
 void setup()
@@ -399,6 +421,8 @@ void setup()
 	sntp_set_sync_interval(1000 * 60 * 15); // Set sync interval to 15 minutes
 	sntp_set_sync_mode(SNTP_SYNC_MODE_IMMED);
 	configTzTime(time_zone, ntpServers[0]);
+
+	ws.onEvent(onEvent);
 
 	// --- WiFi Setup ---
 	xTaskCreate(statusLedManagerTask, "Status LED Manager", 1024, NULL, 2, &statusLedTaskHandle);
@@ -431,24 +455,23 @@ void loop()
 			}
 		}
 	}
-	else if (wiFiConnected && !ws.isConnected() && !wsConnecting)
+	else if (!ws.isConnected() && !wsConnecting)
 	{
 		wsConnecting = true;
 		if (brightness.isOn())
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
 		}
-		Serial.println("connecting to server");
-		ws.begin(serverHost, 80, serverURL);
+		ws.beginSSL(serverHost, 443, serverURL);
 	}
-	else if (wiFiConnected && !ws.isConnected())
+	else if (!ws.isConnected())
 	{
 		if (brightness.isOn())
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
 		}
 	}
-	else if (wiFiConnected)
+	else
 	{
 		if (brightness.isOn())
 		{
@@ -456,9 +479,7 @@ void loop()
 		}
 	}
 
-	ws.onEvent(onEvent);
-
 	brightness.update();
-
+	ws.loop();
 	vTaskDelay(pdMS_TO_TICKS(30));
 }
