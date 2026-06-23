@@ -110,8 +110,11 @@ export class DataTranslator {
                 case "route":
                     color = 1
                     break
+                case "lines":
+                    color = 1
+                    break
                 default:
-                    console.error(`Unknown mode - Cannot process`)
+                    console.error(`Unknown mode (${mode}) - Cannot process`)
             }
 
             const section = this.#findSection(t, board_sections, (s) => ({
