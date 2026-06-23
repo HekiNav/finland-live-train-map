@@ -51,6 +51,11 @@ socket.on('connection', function connection(c, r) {
     uuid: cid
   }))
 
+  c.send(encodeMessage({
+    type: "colors",
+    colors: colors
+  }))
+
   const url = new URL(`http://${process.env.HOST ?? 'localhost'}${r.url}`)
   const { board_id, version, mode_id } = Object.fromEntries(url.searchParams.entries())
 
@@ -142,7 +147,10 @@ socket.on('connection', function connection(c, r) {
   }
 
 
-  c.on("close", () => digitraffic.offUpdate(cid))
+  c.on("close", () => {
+    console.log("[WS SERVER] CLosed connection")
+    digitraffic.offUpdate(cid)
+  })
 
   c.on('message', function message(data) {
     const result = parseMessage(data)

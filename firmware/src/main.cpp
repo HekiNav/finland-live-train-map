@@ -277,8 +277,6 @@ void drawMap()
 
 void parseEvent(uint8_t *payload, size_t length)
 {
-	Serial.write(payload, length);
-
 	JsonDocument doc;
 	DeserializationError error = deserializeJson(doc, payload, length);
 
@@ -297,6 +295,10 @@ void parseEvent(uint8_t *payload, size_t length)
 	else if (type == "uuid")
 	{
 		Serial.printf("UUID assigned by server: %s \n", doc["uuid"].as<const char*>());
+	}
+	else if (type == "events")
+	{
+		Serial.printf("Received %d updates \n", doc["updates"].size());
 	}
 	else
 	{
@@ -373,7 +375,6 @@ void onEvent(WStype_t type, uint8_t *payload, size_t length)
 	{
 	case WStype_DISCONNECTED:
 		wsConnecting = false;
-		setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
 		Serial.println("DISCONNECTED");
 		break;
 	case WStype_CONNECTED:
@@ -453,7 +454,7 @@ void loop()
 			}
 		}
 	}
-	else if (!ws.isConnected() && !wsConnecting && serverConnectionTries < 5)
+	else if (!ws.isConnected() && !wsConnecting && serverConnectionTries < 3)
 	{
 		wsConnecting = true;
 		if (brightness.isOn())
@@ -461,7 +462,7 @@ void loop()
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
 		}
 		serverConnectionTries++;
-		Serial.printf("Trying to connect, attempt %i", serverConnectionTries);
+		Serial.printf("Trying to connect, attempt %i \n", serverConnectionTries);
 		ws.beginSSL(serverHost, 443, serverURL);
 	}
 	else if (!ws.isConnected())
@@ -469,7 +470,8 @@ void loop()
 		if (brightness.isOn())
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
-		} else if (brightness.isOn() && serverConnectionTries >= 5) {
+		} 
+		if (brightness.isOn() && serverConnectionTries >= 3) {
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_RED);
 		}
 	}
@@ -483,5 +485,5 @@ void loop()
 
 	brightness.update();
 	ws.loop();
-	vTaskDelay(pdMS_TO_TICKS(30));
+	vTaskDelay(pdMS_TO_TICKS(50));
 }
