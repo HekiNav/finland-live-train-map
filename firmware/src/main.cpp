@@ -244,16 +244,8 @@ String getSystemInfo()
 	return info;
 }
 
-void setBlockColorId(uint8_t *blockColorIds, uint16_t block, int colorId)
+void setBlockColorId(uint16_t block, int colorId)
 {
-	if (colorId < blockColorIds[block])
-	{
-		return; // Do not update if the new color is lower priority
-	}
-
-	blockColorIds[block] = colorId; // Update the color ID for the block
-
-	// Get the actual color from the color table, defaulting to black if out of range
 	CRGB color = (colorId >= 0 && colorId < static_cast<int>(colorTable.size())) ? colorTable[colorId] : black;
 
 	setBlockColorRGB(block, color);
@@ -262,15 +254,14 @@ void setBlockColorId(uint8_t *blockColorIds, uint16_t block, int colorId)
 void drawMap()
 {
 	suspendDithering();
-	clearLEDs();
-
-	uint8_t blockColorIds[2000] = {0}; // Initialize all elements to 0
 
 	// Draw the map based on the current LED update schedule
 	for (const auto &update : ledUpdateSchedule)
 	{
-		setBlockColorId(blockColorIds, update.block, update.colorId);
+		setBlockColorId(update.block, update.colorId);
 	}
+
+	ledUpdateSchedule.clear();
 
 	resumeDithering();
 }
@@ -290,15 +281,37 @@ void parseEvent(uint8_t *payload, size_t length)
 
 	if (type == "error")
 	{
-		Serial.printf("Error from server: %s \n", doc["message"].as<const char*>());
+		Serial.printf("Error from server: %s \n", doc["message"].as<const char *>());
 	}
 	else if (type == "uuid")
 	{
-		Serial.printf("UUID assigned by server: %s \n", doc["uuid"].as<const char*>());
+		Serial.printf("UUID assigned by server: %s \n", doc["uuid"].as<const char *>());
 	}
 	else if (type == "events")
 	{
-		Serial.printf("Received %d updates \n", doc["updates"].size());
+		const JsonArray updates = doc["updates"];
+		Serial.printf("Received %d updates \n", updates.size());
+		for (JsonObject update : updates)
+		{
+			int block = update["idx"];
+			int colorId = update["clr"];
+
+			// Schedule color update
+			LedUpdate ledUpdate;
+			ledUpdate.block = block;
+			ledUpdate.colorId = colorId;
+			ledUpdateSchedule.push_back(ledUpdate);
+		}
+	}
+	else if (type == "colors")
+	{
+		Serial.printf("Received colortable \n");
+		const JsonObject colors = doc["colors"];
+		for (JsonPair kv : colors)
+		{
+			JsonArray rgb = kv.value().as<JsonArray>();
+			colorTable.push_back(CRGB(rgb[0] | 0, rgb[1] | 0, rgb[2] | 0));
+		}
 	}
 	else
 	{
@@ -312,27 +325,8 @@ void parseEvent(uint8_t *payload, size_t length)
 		colorTable.push_back(CRGB(rgb[0] | 0, rgb[1] | 0, rgb[2] | 0));
 	}
 
-	ledUpdateSchedule.clear();
-	for (JsonObject update : updates)
-	{
-		int block = update["b"];
-		int colorId = update["c"][0];
-		int offset = update["t"];
 
-		// Schedule color update
-		LedUpdate ledUpdate;
-		ledUpdate.block = block;
-		if (offset > 0)
-		{
-			ledUpdate.timestamp = baseTimestamp + offset;
-		}
-		else
-		{
-			ledUpdate.timestamp = 0;
-		}
-		ledUpdate.colorId = colorId;
-		ledUpdateSchedule.push_back(ledUpdate);
-	}
+
 
 	return baseTimestamp; */
 }
@@ -470,8 +464,9 @@ void loop()
 		if (brightness.isOn())
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_BLINK_GREEN_FAST);
-		} 
-		if (brightness.isOn() && serverConnectionTries >= 3) {
+		}
+		if (brightness.isOn() && serverConnectionTries >= 3)
+		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_RED);
 		}
 	}
@@ -481,6 +476,10 @@ void loop()
 		{
 			setStatusLedState(WIFI_LED_PIN, LED_ON_GREEN, SERVER_LED_PIN, LED_ON_GREEN);
 		}
+	}
+	if (ledUpdateSchedule.size() > 0) {
+		Serial.println("Drawing map");
+		drawMap();
 	}
 
 	brightness.update();

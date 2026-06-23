@@ -218,6 +218,7 @@ void setBlockColorRGB(uint16_t block, CRGB color)
 	{
 		if (block >= strip.startBlock && block < strip.startBlock + strip.numPixels)
 		{
+			Serial.printf("Block %d",block);
 			strip.leds[block - strip.startBlock] = color;
 			found = true;
 			break;

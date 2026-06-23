@@ -118,7 +118,7 @@ socket.on('connection', function connection(c, r) {
 
 
       sendEvents(trains);
-    }, 5000)
+    }, 1000)
   })
 
   function sendEvents(trains: Train[]) {
@@ -141,7 +141,7 @@ socket.on('connection', function connection(c, r) {
           type: "events",
           updates: ev
         }));
-      }, 5000)
+      }, 10000)
 
     }
   }
