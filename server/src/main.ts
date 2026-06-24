@@ -102,7 +102,7 @@ socket.on('connection', function connection(c, r) {
   let eventTimeout: null | NodeJS.Timeout = null
 
   // initial state
-  sendEvents(Array.from(digitraffic.state.values()))
+  sendEvents(Array.from(digitraffic.state.values()), true)
 
   console.log(`[WS SERVER] New connection: ${board.config.id}/${version}/${mode_id}`)
 
@@ -122,11 +122,20 @@ socket.on('connection', function connection(c, r) {
     }, 100)
   })
 
-  function sendEvents(trains: Train[]) {
+  function sendEvents(trains: Train[], skipBuffer = false) {
     if (!board) return
     const filters = board.config.modes.find(m => m.id == current_mode)?.filters!;
-    const updates = translator.generateUpdates(trains, current_mode, filters, board.sections, send);
+    const colors = board.config.modes.find(m => m.id == current_mode)?.colors!;
+    const updates = translator.generateUpdates(trains, current_mode, filters, board.sections, colors);
     if (updates.length == 0) return
+    if (skipBuffer) {
+      console.log(`[WS SERVER] sending ${updates.length} events`);
+      c.send(encodeMessage({
+        type: "events",
+        updates: updates
+      }));
+      return
+    }
     send(updates)
     function send(events: MapEvent[]) {
       eventsToSend.push(...events)
