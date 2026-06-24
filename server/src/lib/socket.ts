@@ -1,3 +1,4 @@
+import { RGBArray } from "../main.js"
 import { MapEvent } from "./mapEvent.js"
 import { WebSocket } from "ws"
 
@@ -16,11 +17,16 @@ export function encodeMessage(msg: SocketMessage): WebSocket.RawData {
 
 export type SocketMessage = 
 SocketEventsMessage | SocketErrorMessage | SocketPingReqMessage | 
-SocketPingResMessage | SocketUUIDMessage | {type: "null"}
+SocketPingResMessage | SocketUUIDMessage | {type: "null"}| SocketColorsMessage
 
 export interface SocketErrorMessage {
     type: "error",
     message: string
+}
+
+export interface SocketColorsMessage {
+    type: "colors",
+    colors: {[k: number]: RGBArray}
 }
 
 export interface SocketEventsMessage {

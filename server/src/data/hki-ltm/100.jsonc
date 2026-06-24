@@ -2,26 +2,37 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"HPL"
+            "station_code": "HPL"
         },
         "blocks": [
             {
-                "index": 101,
-                "lines": [
-                    "A",
-                    "L",
-                    "I",
-                    "P"
+                "index": 100,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D18",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 111,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "X",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -34,22 +45,33 @@
         },
         "blocks": [
             {
-                "index": 102,
-                "lines": [
-                    "A",
-                    "L",
-                    "I",
-                    "P"
+                "index": 101,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D17",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 110,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -57,26 +79,37 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"ILA"
+            "station_code": "ILA"
         },
         "blocks": [
             {
-                "index": 103,
-                "lines": [
-                    "A",
-                    "L",
-                    "I",
-                    "P"
+                "index": 102,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D16",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 109,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -87,284 +120,378 @@
             "station_1_code": "ILA",
             "station_2_code": "PSL"
         },
-        "segments": [
-            [
-                {
-                    "index": 104,
-                    "lines": [
-                        "A",
-                        "L",
-                        "I",
-                        "P"
-                    ]
-                },
-                {
-                    "index": "D15",
-                    "lines": [
-                        "E",
-                        "U",
-                        "Y",
-                        "H",
-                        "-"
-                    ]
-                }
-            ],
-            [
-                {
-                    "index": 105,
-                    "lines": [
-                        "A",
-                        "L",
-                        "I",
-                        "P"
-                    ]
-                },
-                {
-                    "index": 106,
-                    "lines": [
-                        "E",
-                        "U",
-                        "Y",
-                        "H",
-                        "-"
-                    ]
-                }
-            ],
-            [
-                {
-                    "index": 107,
-                    "lines": [
-                        "A",
-                        "L",
-                        "I",
-                        "P"
-                    ],
-                    "line": "coastal"
-                },
-                {
-                    "index": 108,
-                    "lines": [
-                        "E",
-                        "U",
-                        "Y",
-                        "H",
-                        "-"
-                    ],
-                    "line": "coastal"
-                }
-            ],
-            [
-                {
-                    "index": "D177",
-                    "lines": [
-                        "A",
-                        "L",
-                        "I",
-                        "P"
-                    ],
-                    "line": "coastal"
-                },
-                {
-                    "index": "D167",
-                    "lines": [
-                        "E",
-                        "U",
-                        "Y",
-                        "H",
-                        "-"
-                    ]
-                }
-            ]
+        "blocks": [
+            {
+                "index": 103,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 108,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 104,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 105,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 106,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 107,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 319,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 318,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"PSL"
+            "station_code": "HKI"
         },
         "blocks": [
             {
-                "index": "D176",
-                "lines": [
-                    "A",
-                    "L",
-                    "I",
-                    "P"
-                ],
-                "line": "coastal"
+                "index": 303,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "X",
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
             },
             {
-                "index": "D166",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
-                ],
-                "line": "coastal"
+                "index": 302,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
             },
             {
-                "index": "D156",
-                "lines": [
-                    "T",
-                    "K"
-                ],
-                "line": "main"
+                "index": 301,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
             },
             {
-                "index": "D146",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
-                ],
-                "line": "main"
+                "index": 300,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
             }
         ]
     },
     {
         "type": "between",
         "properties": {
-            "station_1_code": "PSL",
-            "station_2_code": "HKI"
+            "station_1_code": "HKI",
+            "station_2_code": "PSL"
         },
-        "segments": [
-            [
-                {
-                    "index": "D175",
-                    "lines": [
-                        "A",
-                        "L",
-                        "I",
-                        "P"
-                    ],
-                    "line": "coastal"
-                },
-                {
-                    "index": "D165",
-                    "lines": [
-                        "E",
-                        "U",
-                        "Y",
-                        "H",
-                        "-"
-                    ],
-                    "line": "coastal"
-                },
-                {
-                    "index": "D155",
-                    "lines": [
-                        "T",
-                        "K",
-                        "I",
-                        "P"
-                    ],
-                    "line": "main"
-                },
-                {
-                    "index": "D145",
-                    "lines": [
-                        "D",
-                        "R",
-                        "Z",
-                        "-"
-                    ],
-                    "line": "main"
-                }
-            ],
-            [
-                {
-                    "index": "D174",
-                    "lines": [
-                        "A",
-                        "L",
-                        "I",
-                        "P"
-                    ],
-                    "line": "coastal"
-                },
-                {
-                    "index": "D164",
-                    "lines": [
-                        "E",
-                        "U",
-                        "Y",
-                        "H",
-                        "-"
-                    ],
-                    "line": "coastal"
-                },
-                {
-                    "index": "D154",
-                    "lines": [
-                        "T",
-                        "K",
-                        "I",
-                        "P"
-                    ],
-                    "line": "main"
-                },
-                {
-                    "index": "D144",
-                    "lines": [
-                        "D",
-                        "R",
-                        "Z",
-                        "-"
-                    ],
-                    "line": "main"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 307,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 306,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 305,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 304,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 311,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 310,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 309,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 308,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HKI"
+            "station_code": "PSL"
         },
         "blocks": [
             {
-                "index": "D173",
-                "lines": [
-                    "A",
-                    "L",
-                    "I",
-                    "P"
-                ],
-                "line": "coastal"
+                "index": 315,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
             },
             {
-                "index": "D163",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
-                ],
-                "line": "coastal"
+                "index": 314,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
+                ]
             },
             {
-                "index": "D153",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
-                ],
-                "line": "main"
+                "index": 313,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
+                ]
             },
             {
-                "index": "D143",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
-                ],
-                "line": "main"
+                "index": 312,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -374,71 +501,97 @@
             "station_1_code": "PSL",
             "station_2_code": "KÄP"
         },
-        "segments": [
-            [
-                {
-                    "index": "D157",
-                    "lines": [
-                        "T",
-                        "K",
-                        "I",
-                        "P"
-                    ]
-                },
-                {
-                    "index": "D147",
-                    "lines": [
-                        "D",
-                        "R",
-                        "Z",
-                        "-"
-                    ]
-                }
-            ],
-            [
-                {
-                    "index": "D158",
-                    "lines": [
-                        "T",
-                        "K",
-                        "I",
-                        "P"
-                    ]
-                },
-                {
-                    "index": "D148",
-                    "lines": [
-                        "D",
-                        "R",
-                        "Z",
-                        "-"
-                    ]
-                }
-            ]
+        "blocks": [
+            {
+                "index": 317,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 316,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 321,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 320,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KÄP"
+            "station_code": "KÄP"
         },
         "blocks": [
             {
-                "index": "D149",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 322,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D159",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 323,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -451,21 +604,31 @@
         },
         "blocks": [
             {
-                "index": "D160",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 325,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D150",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 324,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -473,20 +636,30 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"OLK"
+            "station_code": "OLK"
         },
         "blocks": [
             {
-                "index": "D161",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 327,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
-            },
+                
+
+    },
+    {
+        "index": 326,
+        "filters": [
             {
-                "index": "D151",
+                "type": "commuter_line",
                 "lines": [
                     "D",
                     "R",
@@ -495,6 +668,8 @@
                 ]
             }
         ]
+    }
+]
     },
     {
         "type": "between",
@@ -504,21 +679,31 @@
         },
         "blocks": [
             {
-                "index": "D162",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 329,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D152",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 328,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -526,25 +711,35 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"PMK"
+            "station_code": "PMK"
         },
         "blocks": [
             {
-                "index": "D178",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 331,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D168",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 330,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -557,21 +752,31 @@
         },
         "blocks": [
             {
-                "index": "D179",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 333,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D169",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 332,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -579,25 +784,35 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"ML"
+            "station_code": "ML"
         },
         "blocks": [
             {
-                "index": "D180",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 335,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D170",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 334,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -610,21 +825,31 @@
         },
         "blocks": [
             {
-                "index": "D181",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 337,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D171",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 336,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -632,25 +857,35 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"TNA"
+            "station_code": "TNA"
         },
         "blocks": [
             {
-                "index": "D182",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 339,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D172",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 338,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -663,21 +898,31 @@
         },
         "blocks": [
             {
-                "index": "D188",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 341,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D183",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 340,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -685,25 +930,35 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"PLA"
+            "station_code": "PLA"
         },
         "blocks": [
             {
-                "index": "D189",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 343,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D184",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 342,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -716,21 +971,31 @@
         },
         "blocks": [
             {
-                "index": "D190",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 345,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D185",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 344,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -738,25 +1003,35 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"TKL"
+            "station_code": "TKL"
         },
         "blocks": [
             {
-                "index": "D191",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 347,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D186",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 346,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -769,21 +1044,31 @@
         },
         "blocks": [
             {
-                "index": "D192",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 349,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D187",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 348,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -791,25 +1076,35 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"HKH"
+            "station_code": "HKH"
         },
         "blocks": [
             {
-                "index": "D203",
-                "lines": [
-                    "T",
-                    "K",
-                    "I",
-                    "P"
+                "index": 351,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K",
+                            "I",
+                            "P"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D193",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 350,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -820,65 +1115,91 @@
             "station_1_code": "HKH",
             "station_2_code": "KVY"
         },
-        "segments": [
-            [
-                {
-                    "index": "D204",
-                    "lines": [
-                        "T",
-                        "K"
-                    ]
-                },
-                {
-                    "index": "D194",
-                    "lines": [
-                        "D",
-                        "R",
-                        "Z",
-                        "-"
-                    ]
-                }
-            ],
-            [
-                {
-                    "index": "D205",
-                    "lines": [
-                        "T",
-                        "K"
-                    ]
-                },
-                {
-                    "index": "D195",
-                    "lines": [
-                        "D",
-                        "R",
-                        "Z",
-                        "-"
-                    ]
-                }
-            ]
+        "blocks": [
+            {
+                "index": 353,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 352,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 355,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
+                ]
+            },
+            {
+                "index": 354,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KVY"
+            "station_code": "KVY"
         },
         "blocks": [
             {
-                "index": "D206",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 357,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D196",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 356,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -891,19 +1212,29 @@
         },
         "blocks": [
             {
-                "index": "D207",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 359,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D197",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 358,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -911,23 +1242,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"RKL"
+            "station_code": "RKL"
         },
         "blocks": [
             {
-                "index": "D208",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 361,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D198",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 360,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -940,19 +1281,29 @@
         },
         "blocks": [
             {
-                "index": "D209",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 363,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D199",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 362,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -960,23 +1311,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"KRS"
+            "station_code": "KRS"
         },
         "blocks": [
             {
-                "index": "D210",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 365,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D200",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 364,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -989,19 +1350,29 @@
         },
         "blocks": [
             {
-                "index": "D211",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 367,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D201",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 366,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -1009,23 +1380,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"SAV"
+            "station_code": "SAV"
         },
         "blocks": [
             {
-                "index": "D212",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 369,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D202",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 368,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -1038,19 +1419,29 @@
         },
         "blocks": [
             {
-                "index": "D219",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 371,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D213",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 370,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -1058,23 +1449,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"KE"
+            "station_code": "KE"
         },
         "blocks": [
             {
-                "index": "D220",
-                "lines": [
-                    "T",
-                    "K"
+                "index": 373,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "T",
+                            "K"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D214",
-                "lines": [
-                    "D",
-                    "R",
-                    "Z",
-                    "-"
+                "index": 372,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "D",
+                            "R",
+                            "Z",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -1085,27 +1486,19 @@
             "station_1_code": "KE",
             "station_2_code": "HAA"
         },
-        "segments": [
-            [
-                {
-                    "index": "D215"
-                }
-            ],
-            [
-                {
-                    "index": "D216"
-                }
-            ],
-            [
-                {
-                    "index": "D217"
-                }
-            ],
-            [
-                {
-                    "index": "D218"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 374
+            },
+            {
+                "index": 375
+            },
+            {
+                "index": 376
+            },
+            {
+                "index": 377
+            }
         ]
     },
     {
@@ -1114,27 +1507,23 @@
             "station_1_code": "KE",
             "station_2_code": "AIN"
         },
-        "segments": [
-            [
-                {
-                    "index": "D221"
-                }
-            ],
-            [
-                {
-                    "index": "D222"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 378
+            },
+            {
+                "index": 379
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"AIN"
+            "station_code": "AIN"
         },
         "blocks": [
             {
-                "index": "D223"
+                "index": 380
             }
         ]
     },
@@ -1144,27 +1533,23 @@
             "station_1_code": "AIN",
             "station_2_code": "JP"
         },
-        "segments": [
-            [
-                {
-                    "index": "D224"
-                }
-            ],
-            [
-                {
-                    "index": "D225"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 381
+            },
+            {
+                "index": 382
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"JP"
+            "station_code": "JP"
         },
         "blocks": [
             {
-                "index": "D226"
+                "index": 383
             }
         ]
     },
@@ -1174,27 +1559,23 @@
             "station_1_code": "JP",
             "station_2_code": "SAU"
         },
-        "segments": [
-            [
-                {
-                    "index": "D227"
-                }
-            ],
-            [
-                {
-                    "index": "D228"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 384
+            },
+            {
+                "index": 385
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"SAU"
+            "station_code": "SAU"
         },
         "blocks": [
             {
-                "index": "D229"
+                "index": 386
             }
         ]
     },
@@ -1204,27 +1585,23 @@
             "station_1_code": "SAU",
             "station_2_code": "JK"
         },
-        "segments": [
-            [
-                {
-                    "index": "D230"
-                }
-            ],
-            [
-                {
-                    "index": "D231"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 387
+            },
+            {
+                "index": 388
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"JK"
+            "station_code": "JK"
         },
         "blocks": [
             {
-                "index": "D232"
+                "index": 389
             }
         ]
     },
@@ -1234,27 +1611,23 @@
             "station_1_code": "JK",
             "station_2_code": "HY"
         },
-        "segments": [
-            [
-                {
-                    "index": "D233"
-                }
-            ],
-            [
-                {
-                    "index": "D234"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 390
+            },
+            {
+                "index": 391
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HY"
+            "station_code": "HY"
         },
         "blocks": [
             {
-                "index": "D235"
+                "index": 392
             }
         ]
     },
@@ -1264,32 +1637,26 @@
             "station_1_code": "HY",
             "station_2_code": "RI"
         },
-        "segments": [
-            [
-                {
-                    "index": "D236"
-                }
-            ],
-            [
-                {
-                    "index": "D237"
-                }
-            ],
-            [
-                {
-                    "index": "D238"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 393
+            },
+            {
+                "index": 394
+            },
+            {
+                "index": 395
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"RI"
+            "station_code": "RI"
         },
         "blocks": [
             {
-                "index": "D239"
+                "index": 396
             }
         ]
     },
@@ -1299,27 +1666,23 @@
             "station_1_code": "RI",
             "station_2_code": "HK"
         },
-        "segments": [
-            [
-                {
-                    "index": "D240"
-                }
-            ],
-            [
-                {
-                    "index": "D241"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 397
+            },
+            {
+                "index": 398
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HK"
+            "station_code": "HK"
         },
         "blocks": [
             {
-                "index": "D242"
+                "index": 399
             }
         ]
     },
@@ -1331,18 +1694,18 @@
         },
         "blocks": [
             {
-                "index": "D243"
+                "index": 400
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"OI"
+            "station_code": "OI"
         },
         "blocks": [
             {
-                "index": "D244"
+                "index": 401
             }
         ]
     },
@@ -1354,18 +1717,18 @@
         },
         "blocks": [
             {
-                "index": "D245"
+                "index": 402
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MLA"
+            "station_code": "MLA"
         },
         "blocks": [
             {
-                "index": "D246"
+                "index": 403
             }
         ]
     },
@@ -1377,18 +1740,18 @@
         },
         "blocks": [
             {
-                "index": "D247"
+                "index": 404
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LAA"
+            "station_code": "LAA"
         },
         "blocks": [
             {
-                "index": "D248"
+                "index": 405
             }
         ]
     },
@@ -1400,18 +1763,18 @@
         },
         "blocks": [
             {
-                "index": "D249"
+                "index": 406
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"JR"
+            "station_code": "JR"
         },
         "blocks": [
             {
-                "index": "D250"
+                "index": 407
             }
         ]
     },
@@ -1423,18 +1786,18 @@
         },
         "blocks": [
             {
-                "index": "D251"
+                "index": 408
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HR"
+            "station_code": "HR"
         },
         "blocks": [
             {
-                "index": "D252"
+                "index": 409
             }
         ]
     },
@@ -1446,28 +1809,38 @@
         },
         "blocks": [
             {
-                "index": "D253"
+                "index": 410
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LH"
+            "station_code": "LH"
         },
         "blocks": [
             {
-                "index": "D268",
-                "lines": [
-                    "G"
+                "index": 425,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "G"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D267",
-                "lines": [
-                    "Z",
-                    "O",
-                    "-"
+                "index": 424,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Z",
+                            "O",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -1478,37 +1851,29 @@
             "station_1_code": "LH",
             "station_2_code": "HNN"
         },
-        "segments": [
-            [
-                {
-                    "index": "D254"
-                }
-            ],
-            [
-                {
-                    "index": "D255"
-                }
-            ],
-            [
-                {
-                    "index": "D256"
-                }
-            ],
-            [
-                {
-                    "index": "D257"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 411
+            },
+            {
+                "index": 412
+            },
+            {
+                "index": 413
+            },
+            {
+                "index": 414
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HNN"
+            "station_code": "HNN"
         },
         "blocks": [
             {
-                "index": "D258"
+                "index": 415
             }
         ]
     },
@@ -1518,32 +1883,26 @@
             "station_1_code": "HNN",
             "station_2_code": "MLÄ"
         },
-        "segments": [
-            [
-                {
-                    "index": "D259"
-                }
-            ],
-            [
-                {
-                    "index": "D260"
-                }
-            ],
-            [
-                {
-                    "index": "D261"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 416
+            },
+            {
+                "index": 417
+            },
+            {
+                "index": 418
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MLÄ"
+            "station_code": "MLÄ"
         },
         "blocks": [
             {
-                "index": "D262"
+                "index": 419
             }
         ]
     },
@@ -1553,32 +1912,26 @@
             "station_1_code": "MLÄ",
             "station_2_code": "HAA"
         },
-        "segments": [
-            [
-                {
-                    "index": "D263"
-                }
-            ],
-            [
-                {
-                    "index": "D264"
-                }
-            ],
-            [
-                {
-                    "index": "D265"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 420
+            },
+            {
+                "index": 421
+            },
+            {
+                "index": 422
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HAA"
+            "station_code": "HAA"
         },
         "blocks": [
             {
-                "index": "D266"
+                "index": 423
             }
         ]
     },
@@ -1590,18 +1943,18 @@
         },
         "blocks": [
             {
-                "index": "D269"
+                "index": 426
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"VLH"
+            "station_code": "VLH"
         },
         "blocks": [
             {
-                "index": "D270"
+                "index": 427
             }
         ]
     },
@@ -1613,18 +1966,18 @@
         },
         "blocks": [
             {
-                "index": "D271"
+                "index": 428
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"NSL"
+            "station_code": "NSL"
         },
         "blocks": [
             {
-                "index": "D272"
+                "index": 429
             }
         ]
     },
@@ -1636,18 +1989,18 @@
         },
         "blocks": [
             {
-                "index": "D273"
+                "index": 430
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"UKÄ"
+            "station_code": "UKÄ"
         },
         "blocks": [
             {
-                "index": "D274"
+                "index": 431
             }
         ]
     },
@@ -1659,18 +2012,18 @@
         },
         "blocks": [
             {
-                "index": "D275"
+                "index": 432
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KA"
+            "station_code": "KA"
         },
         "blocks": [
             {
-                "index": "D276"
+                "index": 433
             }
         ]
     },
@@ -1682,18 +2035,18 @@
         },
         "blocks": [
             {
-                "index": "D277"
+                "index": 434
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KRA"
+            "station_code": "KRA"
         },
         "blocks": [
             {
-                "index": "D278"
+                "index": 435
             }
         ]
     },
@@ -1705,18 +2058,18 @@
         },
         "blocks": [
             {
-                "index": "D279"
+                "index": 436
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KV"
+            "station_code": "KV"
         },
         "blocks": [
             {
-                "index": "D289"
+                "index": 437
             }
         ]
     },
@@ -1728,18 +2081,18 @@
         },
         "blocks": [
             {
-                "index": "D281"
+                "index": 438
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MKI"
+            "station_code": "MKI"
         },
         "blocks": [
             {
-                "index": "D282"
+                "index": 439
             }
         ]
     },
@@ -1751,18 +2104,18 @@
         },
         "blocks": [
             {
-                "index": "D283"
+                "index": 440
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"IKR"
+            "station_code": "IKR"
         },
         "blocks": [
             {
-                "index": "D284"
+                "index": 441
             }
         ]
     },
@@ -1774,18 +2127,18 @@
         },
         "blocks": [
             {
-                "index": "D285"
+                "index": 442
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TSL"
+            "station_code": "TSL"
         },
         "blocks": [
             {
-                "index": "D286"
+                "index": 443
             }
         ]
     },
@@ -1797,18 +2150,18 @@
         },
         "blocks": [
             {
-                "index": "D287"
+                "index": 444
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KY"
+            "station_code": "KY"
         },
         "blocks": [
             {
-                "index": "D288"
+                "index": 445
             }
         ]
     },
@@ -1820,18 +2173,18 @@
         },
         "blocks": [
             {
-                "index": "D290"
+                "index": 446
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KLN"
+            "station_code": "KLN"
         },
         "blocks": [
             {
-                "index": "D291"
+                "index": 447
             }
         ]
     },
@@ -1843,18 +2196,18 @@
         },
         "blocks": [
             {
-                "index": "D292"
+                "index": 448
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"PTI"
+            "station_code": "PTI"
         },
         "blocks": [
             {
-                "index": "D293"
+                "index": 449
             }
         ]
     },
@@ -1866,18 +2219,18 @@
         },
         "blocks": [
             {
-                "index": "D294"
+                "index": 450
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KTA"
+            "station_code": "KTA"
         },
         "blocks": [
             {
-                "index": "D295"
+                "index": 451
             }
         ]
     },
@@ -1889,18 +2242,18 @@
         },
         "blocks": [
             {
-                "index": "D296"
+                "index": 452
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KTS"
+            "station_code": "KTS"
         },
         "blocks": [
             {
-                "index": "D297"
+                "index": 453
             }
         ]
     },
@@ -1912,18 +2265,18 @@
         },
         "blocks": [
             {
-                "index": "D25"
+                "index": 112
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LNÄ"
+            "station_code": "LNÄ"
         },
         "blocks": [
             {
-                "index": "D26"
+                "index": 113
             }
         ]
     },
@@ -1935,18 +2288,18 @@
         },
         "blocks": [
             {
-                "index": "D27"
+                "index": 114
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LEN"
+            "station_code": "LEN"
         },
         "blocks": [
             {
-                "index": "D28"
+                "index": 115
             }
         ]
     },
@@ -1958,18 +2311,18 @@
         },
         "blocks": [
             {
-                "index": "D29"
+                "index": 116
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"AVP"
+            "station_code": "AVP"
         },
         "blocks": [
             {
-                "index": "D30"
+                "index": 117
             }
         ]
     },
@@ -1981,18 +2334,18 @@
         },
         "blocks": [
             {
-                "index": "D31"
+                "index": 118
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KTÖ"
+            "station_code": "KTÖ"
         },
         "blocks": [
             {
-                "index": "D32"
+                "index": 119
             }
         ]
     },
@@ -2004,18 +2357,18 @@
         },
         "blocks": [
             {
-                "index": "D34"
+                "index": 120
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"VEH"
+            "station_code": "VEH"
         },
         "blocks": [
             {
-                "index": "D35"
+                "index": 121
             }
         ]
     },
@@ -2027,18 +2380,18 @@
         },
         "blocks": [
             {
-                "index": "D36"
+                "index": 122
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"VKS"
+            "station_code": "VKS"
         },
         "blocks": [
             {
-                "index": "D37"
+                "index": 123
             }
         ]
     },
@@ -2050,18 +2403,18 @@
         },
         "blocks": [
             {
-                "index": "D38"
+                "index": 124
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MRL"
+            "station_code": "MRL"
         },
         "blocks": [
             {
-                "index": "D39"
+                "index": 125
             }
         ]
     },
@@ -2073,18 +2426,18 @@
         },
         "blocks": [
             {
-                "index": "D40"
+                "index": 126
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LOH"
+            "station_code": "LOH"
         },
         "blocks": [
             {
-                "index": "D41"
+                "index": 127
             }
         ]
     },
@@ -2096,18 +2449,18 @@
         },
         "blocks": [
             {
-                "index": "D42"
+                "index": 128
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MYR"
+            "station_code": "MYR"
         },
         "blocks": [
             {
-                "index": "D43"
+                "index": 129
             }
         ]
     },
@@ -2119,18 +2472,18 @@
         },
         "blocks": [
             {
-                "index": "D44"
+                "index": 130
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MLO"
+            "station_code": "MLO"
         },
         "blocks": [
             {
-                "index": "D45"
+                "index": 131
             }
         ]
     },
@@ -2142,18 +2495,18 @@
         },
         "blocks": [
             {
-                "index": "D46"
+                "index": 132
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KAN"
+            "station_code": "KAN"
         },
         "blocks": [
             {
-                "index": "D47"
+                "index": 133
             }
         ]
     },
@@ -2165,18 +2518,18 @@
         },
         "blocks": [
             {
-                "index": "D48"
+                "index": 134
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"POH"
+            "station_code": "POH"
         },
         "blocks": [
             {
-                "index": "D49"
+                "index": 135
             }
         ]
     },
@@ -2186,17 +2539,13 @@
             "station_1_code": "POH",
             "station_2_code": "HPL"
         },
-        "segments": [
-            [
-                {
-                    "index": "D50"
-                }
-            ],
-            [
-                {
-                    "index": "D52"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 136
+            },
+            {
+                "index": 137
+            }
         ]
     },
     {
@@ -2207,20 +2556,30 @@
         },
         "blocks": [
             {
-                "index": "D54",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 139,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D52",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 137,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2228,24 +2587,34 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"VMO"
+            "station_code": "VMO"
         },
         "blocks": [
             {
-                "index": "D53",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 138,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D66",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 140,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2258,20 +2627,30 @@
         },
         "blocks": [
             {
-                "index": "D67",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 142,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D55",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 141,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2279,24 +2658,34 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"PJM"
+            "station_code": "PJM"
         },
         "blocks": [
             {
-                "index": "D68",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 144,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D56",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 143,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2309,20 +2698,30 @@
         },
         "blocks": [
             {
-                "index": "D69",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 146,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D57",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 145,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2330,24 +2729,34 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"MÄK"
+            "station_code": "MÄK"
         },
         "blocks": [
             {
-                "index": "D70",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 148,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D58",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 147,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2360,20 +2769,30 @@
         },
         "blocks": [
             {
-                "index": "D71",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 150,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D59",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 149,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2381,24 +2800,34 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"LPV"
+            "station_code": "LPV"
         },
         "blocks": [
             {
-                "index": "D72",
-                "lines": [
-                    "A",
-                    "L"
+                "index": 152,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "A",
+                            "L"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D60",
-                "lines": [
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 151,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2411,42 +2840,62 @@
         },
         "blocks": [
             {
-                "index": "D73",
-                "lines": [
-                    "L",
-                    "E",
-                    "U",
-                    "Y",
-                    "H",
-                    "-"
+                "index": 154,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U",
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D61",
-                "lines": []
+                "index": 153,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": []
+                    }
+                ]
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KIL"
+            "station_code": "KIL"
         },
         "blocks": [
             {
-                "index": "D74",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 156,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D62",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 155,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2459,15 +2908,25 @@
         },
         "blocks": [
             {
-                "index": "D75",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 158,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "index": 157,
+        "filters": [
             {
-                "index": "D63",
+                "type": "commuter_line",
                 "lines": [
                     "Y",
                     "H",
@@ -2479,23 +2938,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"KEA"
+            "station_code": "KEA"
         },
         "blocks": [
             {
-                "index": "D76",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 160,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D64",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 159,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2508,19 +2977,29 @@
         },
         "blocks": [
             {
-                "index": "D77",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 162,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D65",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 161,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2528,23 +3007,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"KNI"
+            "station_code": "KNI"
         },
         "blocks": [
             {
-                "index": "D87",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 164,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D78",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 163,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2557,19 +3046,29 @@
         },
         "blocks": [
             {
-                "index": "D88",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 166,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D79",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 165,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2577,23 +3076,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"KVH"
+            "station_code": "KVH"
         },
         "blocks": [
             {
-                "index": "D89",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 168,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D80",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 167,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2606,19 +3115,29 @@
         },
         "blocks": [
             {
-                "index": "D90",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 170,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D81",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 169,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2626,23 +3145,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"TRL"
+            "station_code": "TRL"
         },
         "blocks": [
             {
-                "index": "D91",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 172,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D82",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 171,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2655,19 +3184,29 @@
         },
         "blocks": [
             {
-                "index": "D92",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 174,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D83",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 173,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2675,23 +3214,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"EPO"
+            "station_code": "EPO"
         },
         "blocks": [
             {
-                "index": "D93",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 176,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D84",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 175,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2704,19 +3253,29 @@
         },
         "blocks": [
             {
-                "index": "D94",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 178,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D85",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 177,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2724,23 +3283,33 @@
     {
         "type": "station",
         "properties": {
-            "station_code":"KLH"
+            "station_code": "KLH"
         },
         "blocks": [
             {
-                "index": "D95",
-                "lines": [
-                    "L",
-                    "E",
-                    "U"
+                "index": 180,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "L",
+                            "E",
+                            "U"
+                        ]
+                    }
                 ]
             },
             {
-                "index": "D86",
-                "lines": [
-                    "Y",
-                    "H",
-                    "-"
+                "index": 179,
+                "filters": [
+                    {
+                        "type": "commuter_line",
+                        "lines": [
+                            "Y",
+                            "H",
+                            "-"
+                        ]
+                    }
                 ]
             }
         ]
@@ -2753,18 +3322,18 @@
         },
         "blocks": [
             {
-                "index": "D96"
+                "index": 181
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"MAS"
+            "station_code": "MAS"
         },
         "blocks": [
             {
-                "index": "D97"
+                "index": 182
             }
         ]
     },
@@ -2776,18 +3345,18 @@
         },
         "blocks": [
             {
-                "index": "D98"
+                "index": 183
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"JRS"
+            "station_code": "JRS"
         },
         "blocks": [
             {
-                "index": "D99"
+                "index": 184
             }
         ]
     },
@@ -2799,18 +3368,18 @@
         },
         "blocks": [
             {
-                "index": "D100"
+                "index": 185
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TOL"
+            "station_code": "TOL"
         },
         "blocks": [
             {
-                "index": "D101"
+                "index": 186
             }
         ]
     },
@@ -2822,18 +3391,18 @@
         },
         "blocks": [
             {
-                "index": "D102"
+                "index": 187
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KKN"
+            "station_code": "KKN"
         },
         "blocks": [
             {
-                "index": "D103"
+                "index": 188
             }
         ]
     },
@@ -2845,18 +3414,18 @@
         },
         "blocks": [
             {
-                "index": "D104"
+                "index": 189
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"STI"
+            "station_code": "STI"
         },
         "blocks": [
             {
-                "index": "D105"
+                "index": 190
             }
         ]
     },
@@ -2868,18 +3437,18 @@
         },
         "blocks": [
             {
-                "index": "D106"
+                "index": 191
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"IKO"
+            "station_code": "IKO"
         },
         "blocks": [
             {
-                "index": "D107"
+                "index": 192
             }
         ]
     },
@@ -2891,18 +3460,18 @@
         },
         "blocks": [
             {
-                "index": "D108"
+                "index": 193
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"KR"
+            "station_code": "KR"
         },
         "blocks": [
             {
-                "index": "D109"
+                "index": 194
             }
         ]
     },
@@ -2914,18 +3483,18 @@
         },
         "blocks": [
             {
-                "index": "D110"
+                "index": 195
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"DRA"
+            "station_code": "DRA"
         },
         "blocks": [
             {
-                "index": "D111"
+                "index": 196
             }
         ]
     },
@@ -2937,18 +3506,18 @@
         },
         "blocks": [
             {
-                "index": "D112"
+                "index": 197
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TMS"
+            "station_code": "TMS"
         },
         "blocks": [
             {
-                "index": "D113"
+                "index": 198
             }
         ]
     },
@@ -2960,18 +3529,18 @@
         },
         "blocks": [
             {
-                "index": "D114"
+                "index": 199
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"SGY"
+            "station_code": "SGY"
         },
         "blocks": [
             {
-                "index": "D115"
+                "index": 200
             }
         ]
     },
@@ -2983,18 +3552,18 @@
         },
         "blocks": [
             {
-                "index": "D116"
+                "index": 201
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LPO"
+            "station_code": "LPO"
         },
         "blocks": [
             {
-                "index": "D117"
+                "index": 202
             }
         ]
     },
@@ -3006,18 +3575,18 @@
         },
         "blocks": [
             {
-                "index": "D118"
+                "index": 203
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"STA"
+            "station_code": "STA"
         },
         "blocks": [
             {
-                "index": "D119"
+                "index": 204
             }
         ]
     },
@@ -3029,18 +3598,18 @@
         },
         "blocks": [
             {
-                "index": "D120"
+                "index": 205
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HKP"
+            "station_code": "HKP"
         },
         "blocks": [
             {
-                "index": "D121"
+                "index": 206
             }
         ]
     },
@@ -3052,18 +3621,18 @@
         },
         "blocks": [
             {
-                "index": "D122"
+                "index": 207
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HNK"
+            "station_code": "HNK"
         },
         "blocks": [
             {
-                "index": "D123"
+                "index": 208
             }
         ]
     },
@@ -3073,32 +3642,26 @@
             "station_1_code": "RI",
             "station_2_code": "RY"
         },
-        "segments": [
-            [
-                {
-                    "index": "D240"
-                }
-            ],
-            [
-                {
-                    "index": "D124"
-                }
-            ],
-            [
-                {
-                    "index": "D125"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 393
+            },
+            {
+                "index": 209
+            },
+            {
+                "index": 210
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"RY"
+            "station_code": "RY"
         },
         "blocks": [
             {
-                "index": "D126"
+                "index": 211
             }
         ]
     },
@@ -3110,18 +3673,18 @@
         },
         "blocks": [
             {
-                "index": "D127"
+                "index": 212
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TU"
+            "station_code": "TU"
         },
         "blocks": [
             {
-                "index": "D128"
+                "index": 213
             }
         ]
     },
@@ -3133,18 +3696,18 @@
         },
         "blocks": [
             {
-                "index": "D129"
+                "index": 214
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"HL"
+            "station_code": "HL"
         },
         "blocks": [
             {
-                "index": "D130"
+                "index": 215
             }
         ]
     },
@@ -3156,18 +3719,18 @@
         },
         "blocks": [
             {
-                "index": "D131"
+                "index": 216
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"PRL"
+            "station_code": "PRL"
         },
         "blocks": [
             {
-                "index": "D132"
+                "index": 217
             }
         ]
     },
@@ -3179,18 +3742,18 @@
         },
         "blocks": [
             {
-                "index": "D133"
+                "index": 218
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"ITA"
+            "station_code": "ITA"
         },
         "blocks": [
             {
-                "index": "D134"
+                "index": 219
             }
         ]
     },
@@ -3202,18 +3765,18 @@
         },
         "blocks": [
             {
-                "index": "D135"
+                "index": 220
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TL"
+            "station_code": "TL"
         },
         "blocks": [
             {
-                "index": "D136"
+                "index": 221
             }
         ]
     },
@@ -3225,18 +3788,18 @@
         },
         "blocks": [
             {
-                "index": "D137"
+                "index": 222
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"VIA"
+            "station_code": "VIA"
         },
         "blocks": [
             {
-                "index": "D138"
+                "index": 223
             }
         ]
     },
@@ -3248,18 +3811,18 @@
         },
         "blocks": [
             {
-                "index": "D139"
+                "index": 224
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"LPÄ"
+            "station_code": "LPÄ"
         },
         "blocks": [
             {
-                "index": "D140"
+                "index": 225
             }
         ]
     },
@@ -3269,31 +3832,36 @@
             "station_1_code": "LPÄ",
             "station_2_code": "TPE"
         },
-        "segments": [
-            [
-                {
-                    "index": "D141"
-                }
-            ],
-            [
-                {
-                    "index": "D142"
-                }
-            ]
+        "blocks": [
+            {
+                "index": 226
+            },
+            {
+                "index": 227
+            }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TPE"
+            "station_code": "TPE"
         },
-        "equalblocksException": true,
         "blocks": [
             {
-                "index": "D298"
+                "index": 228,
+                "filters" : [
+                    {
+                        "type": "random"
+                    }
+                ]
             },
             {
-                "index": "D303"
+                "index": 229,
+                "filters" : [
+                    {
+                        "type": "random"
+                    }
+                ]
             }
         ]
     },
@@ -3305,18 +3873,18 @@
         },
         "blocks": [
             {
-                "index": "D299"
+                "index": 230
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"TSO"
+            "station_code": "TSO"
         },
         "blocks": [
             {
-                "index": "D300"
+                "index": 231
             }
         ]
     },
@@ -3328,18 +3896,18 @@
         },
         "blocks": [
             {
-                "index": "D301"
+                "index": 232
             }
         ]
     },
     {
         "type": "station",
         "properties": {
-            "station_code":"NOA"
+            "station_code": "NOA"
         },
         "blocks": [
             {
-                "index": "D302"
+                "index": 233
             }
         ]
     }

@@ -2016,304 +2016,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Capacitors:0603,10uF"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 2.032 1.668 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "10uF"
-				(at 2.032 -0.3782 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_JLCPCB:C_0603"
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C19702"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Stock" "9881407"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Price" "0.009USD"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Process" "SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Minimum Qty" "20"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Attrition Qty" "10"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Class" "Basic Component"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Samsung Electro-Mechanics"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Part" "CL10A106KP8NNNC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Voltage Rated" "10V"
-				(at 2.032 -2.0462 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Tolerance" "±10%"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Capacitance" "10uF"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Temperature Coefficient" "X5R"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0603,10uF_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0603,10uF_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.175)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.175)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_JLCPCB-Capacitors:0805,47uF"
 			(pin_numbers
 				(hide yes)
@@ -11131,7 +10833,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,10uF")
 		(at 154.94 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -11164,7 +10866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 153.162 175.26 90)
 			(hide yes)
 			(show_name no)
@@ -11175,7 +10877,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11186,7 +10888,7 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11197,7 +10899,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C15525"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11208,7 +10910,7 @@
 				)
 			)
 		)
-		(property "Stock" "9881407"
+		(property "Stock" "3940889"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11296,7 +10998,7 @@
 				)
 			)
 		)
-		(property "Part" "CL10A106KP8NNNC"
+		(property "Part" "CL05A106MQ5NUNC"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11307,7 +11009,7 @@
 				)
 			)
 		)
-		(property "Voltage Rated" "10V"
+		(property "Voltage Rated" "6.3V"
 			(at 157.48 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11318,7 +11020,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "Tolerance" "±20%"
 			(at 154.94 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -24297,7 +23999,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,10uF")
 		(at 163.83 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -24330,7 +24032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 162.052 175.26 90)
 			(hide yes)
 			(show_name no)
@@ -24341,7 +24043,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
 			(at 163.83 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -24352,7 +24054,7 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 163.83 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -24363,7 +24065,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C15525"
 			(at 163.83 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -24374,7 +24076,7 @@
 				)
 			)
 		)
-		(property "Stock" "9881407"
+		(property "Stock" "3940889"
 			(at 163.83 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -24462,7 +24164,7 @@
 				)
 			)
 		)
-		(property "Part" "CL10A106KP8NNNC"
+		(property "Part" "CL05A106MQ5NUNC"
 			(at 163.83 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -24473,7 +24175,7 @@
 				)
 			)
 		)
-		(property "Voltage Rated" "10V"
+		(property "Voltage Rated" "6.3V"
 			(at 166.37 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24484,7 +24186,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "Tolerance" "±20%"
 			(at 163.83 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -27802,7 +27504,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,10uF")
 		(at 81.28 46.99 0)
 		(unit 1)
 		(body_style 1)
@@ -27834,7 +27536,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 79.502 46.99 90)
 			(hide yes)
 			(show_name no)
@@ -27845,7 +27547,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
 			(at 81.28 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -27856,7 +27558,7 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 81.28 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -27867,7 +27569,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C15525"
 			(at 81.28 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -27878,7 +27580,7 @@
 				)
 			)
 		)
-		(property "Stock" "9881407"
+		(property "Stock" "3940889"
 			(at 81.28 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -27966,7 +27668,7 @@
 				)
 			)
 		)
-		(property "Part" "CL10A106KP8NNNC"
+		(property "Part" "CL05A106MQ5NUNC"
 			(at 81.28 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -27977,7 +27679,7 @@
 				)
 			)
 		)
-		(property "Voltage Rated" "10V"
+		(property "Voltage Rated" "6.3V"
 			(at 83.312 49.0362 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27988,7 +27690,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "Tolerance" "±20%"
 			(at 81.28 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -29218,7 +28920,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,10uF")
 		(at 44.45 39.37 0)
 		(unit 1)
 		(body_style 1)
@@ -29250,7 +28952,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 42.672 39.37 90)
 			(hide yes)
 			(show_name no)
@@ -29261,7 +28963,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -29272,7 +28974,7 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -29283,7 +28985,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C15525"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -29294,7 +28996,7 @@
 				)
 			)
 		)
-		(property "Stock" "9881407"
+		(property "Stock" "3940889"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -29382,7 +29084,7 @@
 				)
 			)
 		)
-		(property "Part" "CL10A106KP8NNNC"
+		(property "Part" "CL05A106MQ5NUNC"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -29393,7 +29095,7 @@
 				)
 			)
 		)
-		(property "Voltage Rated" "10V"
+		(property "Voltage Rated" "6.3V"
 			(at 46.482 41.4162 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29404,7 +29106,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "Tolerance" "±20%"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -30151,7 +29853,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF")
+		(lib_id "PCM_JLCPCB-Capacitors:0402,10uF")
 		(at 121.92 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -30184,7 +29886,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 120.142 66.04 90)
 			(hide yes)
 			(show_name no)
@@ -30195,7 +29897,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -30206,7 +29908,7 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "6.3V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -30217,7 +29919,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C15525"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -30228,7 +29930,7 @@
 				)
 			)
 		)
-		(property "Stock" "9881407"
+		(property "Stock" "3940889"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -30316,7 +30018,7 @@
 				)
 			)
 		)
-		(property "Part" "CL10A106KP8NNNC"
+		(property "Part" "CL05A106MQ5NUNC"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -30327,7 +30029,7 @@
 				)
 			)
 		)
-		(property "Voltage Rated" "10V"
+		(property "Voltage Rated" "6.3V"
 			(at 124.46 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30338,7 +30040,7 @@
 				(justify left)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "Tolerance" "±20%"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)

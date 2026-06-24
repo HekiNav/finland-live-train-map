@@ -1,0 +1,65 @@
+{
+    "build": {
+        "arduino": {
+            "ldscript": "esp32c3_out.ld"
+        },
+        "core": "esp32",
+        "extra_flags": [
+            "-DARDUINO_USB_MODE=1",
+            "-DARDUINO_USB_CDC_ON_BOOT=1",
+            "-DWIFI_LED_PIN=5",
+            "-DSERVER_LED_PIN=10",
+            "-DBRIGHTNESS_DOWN_BUTTON=6",
+            "-DBRIGHTNESS_UP_BUTTON=7",
+            "-DMODE_BUTTON=8",
+            "-DPOWER_BUTTON=9",
+            "-DLED_5V_EN=4",
+            "-DLVL_Shifter_EN=0",
+            "-DLED_1_PIN=3",
+            "-DLED_1_START=100",
+            "-DLED_1_PIXELS=154",
+            "-DLED_2_PIN=1",
+            "-DLED_2_START=300",
+            "-DLED_2_PIXELS=134",
+            "-DDEBOUNCE_DELAY=50",
+            "-DMIN_BRIGHTNESS=34",
+            "-DMAX_BRIGHTNESS=254",
+            "-DBRIGHTNESS_STEP=20",
+            "-DDEBOUNCE_MS=50",
+            "-DBACKEND_VERSION=\\\"100\\\"",
+            "-DCITY_CODE=\\\"hki\\\"",
+            "-DHKI_LTM"
+        ],
+        "f_cpu": "160000000L",
+        "f_flash": "80000000L",
+        "flash_mode": "qio",
+        "hwids": [
+            [
+                "0X303A",
+                "0x1001"
+            ]
+        ],
+        "mcu": "esp32c3",
+        "variant": "esp32c3"
+    },
+    "connectivity": [
+        "wifi"
+    ],
+    "debug": {
+        "openocd_target": "esp32c3.cfg"
+    },
+    "frameworks": [
+        "arduino",
+        "espidf"
+    ],
+    "name": "Helsinki Train Network Network V1.0.0",
+    "upload": {
+        "flash_size": "4MB",
+        "maximum_ram_size": 327680,
+        "maximum_size": 4194304,
+        "require_upload_port": true,
+        "speed": 460800
+    },
+    "url": "https://ltm.hekinav.dev/",
+    "vendor": "Hekinav"
+}

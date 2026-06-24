@@ -30,12 +30,12 @@ export class DigitrafficDataCollector {
     }
     async #getInitialData() {
         const data = await (await fetch("https://rata.digitraffic.fi/api/v1/live-trains/")).json() as TrainData[]
+        let i = 0
         data.forEach(train => {
             const data = parseTrain(train)
             if (!data) return
-            if (data.running) this.state.set(data.id, data)
+            if (data.running) i++ && this.state.set(data.id, data)
         });
-
     }
     #updateTrain(t: Train) {
         this.#listeners.forEach(l => l(t))

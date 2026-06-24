@@ -45,7 +45,11 @@ export interface SectionFilter<T extends string> {
 export interface SectionFilterTrainVia extends SectionFilter<"train_via"> {
     station_code: string
 }
-export type AnySectionFilter = SectionFilterTrainVia
+
+export interface SectionFilterCommuterLine extends SectionFilter<"commuter_line"> {
+    lines: string[]
+}
+export type AnySectionFilter = SectionFilterTrainVia | SectionFilterCommuterLine
 
 export type BoardsSectionBetween = BoardSection<"between", { station_1_code: string, station_2_code: string }>
 export type BoardsSectionStation = BoardSection<"station", { station_code: string }>
@@ -60,7 +64,6 @@ export interface MultiBetweenHandler {
 export class DataTranslator {
     #boards_config: BoardsConfig | null = null
     #board_configs: Map<string, { config: BoardConfig, sections: AnyBoardSection[] }> = new Map()
-    #multi_between_state = new Map<number, MultiBetweenHandler>()
     constructor(config_path = "/data/", callback = (t: DataTranslator) => { }) {
         console.log("[TRANSLATOR] Loading boards.jsonc")
         importJSONC<BoardsConfig>(config_path + "boards.jsonc").then((data) => {
@@ -87,7 +90,7 @@ export class DataTranslator {
     listBoards() {
         return Array.from(this.#board_configs.keys())
     }
-    generateUpdates(trains: Train[], mode: string, filters: AnyBoardModeTrainFilter[], board_sections: AnyBoardSection[]): MapEvent[] {
+    generateUpdates(trains: Train[], mode: string, filters: AnyBoardModeTrainFilter[], board_sections: AnyBoardSection[], colorTable: ColorTable): MapEvent[] {
         let events: MapEvent[] = []
         const filteredTrains = trains
             .filter(t => filters.every(f => this.#checkBoardModeTrainFilter(t, f)))
@@ -107,11 +110,21 @@ export class DataTranslator {
                 case "route":
                     color = 1
                     break
+                case "lines":
+                    color = colorTable.findIndex(c => c.some(l => l == t.properties.commuter_line_id)) + 1 || 10
+                    break
                 default:
-                    console.error(`Unknown mode - Cannot process`)
+                    console.error(`Unknown mode (${mode}) - Cannot process`)
             }
 
-            const section = this.#findSection(t, board_sections)
+            const section = this.#findSection(t, board_sections, (s) => ({
+                t: "update",
+                d: {
+                    idx: s,
+                    id: t.id,
+                    clr: color
+                }
+            }))
 
             if (!section) return null
 
@@ -135,7 +148,7 @@ export class DataTranslator {
                 return false
         }
     }
-    #findSection(t: Train, sections: AnyBoardSection[]): number | null {
+    #findSection(t: Train, sections: AnyBoardSection[], send: (n: number) => void): number | null {
         const state = this.#convertState(t, sections)
         if (!state) {
             return null
@@ -155,8 +168,9 @@ export class DataTranslator {
         if (blocks.length == 1) return blocks[0].index
         blocks = blocks.filter(b => !b.filters || b.filters.length == 0 || b.filters.every(f => this.#checkBlockFilter(t, f)))
         if (blocks.length == 1) return blocks[0].index
+        if (blocks.length == 0) return null
 
-        if (state.type == "at_station" || section.type =="station") return null
+        if (state.type == "at_station" || section.type == "station") return null
         // multi between handling
 
         let i = 0
@@ -170,7 +184,9 @@ export class DataTranslator {
         }
         function handleMultiBetween() {
             i++
-            if (i >= blocks.length) return
+            if (!blocks[i]) return clearInterval(handler.interval)
+            send(blocks[i].index)
+            if (i >= blocks.length) return clearInterval(handler.interval)
         }
         return blocks[i].index
     }
@@ -178,8 +194,10 @@ export class DataTranslator {
         switch (filter.type) {
             case "train_via":
                 return t.properties.stations.some(s => s.station == filter.station_code)
+            case "commuter_line":
+                return filter.lines.some(l => l == t.properties.commuter_line_id) || filter.lines.some(l => l == "-") && (!t.properties.commuter_line_id || t.properties.commuter_line_id == "V")
             default:
-                console.error(`Unknown block filter type ${filter.type}`)
+                console.error(`Unknown block filter type ${(filter as AnySectionFilter).type}`)
                 return false
         }
     }
@@ -200,7 +218,6 @@ export class DataTranslator {
                             (s.properties.station_1_code == n.station && s.properties.station_2_code == p.station) ||
                             (s.properties.station_1_code == p.station && s.properties.station_2_code == n.station)
                         ))) {
-                            console.log("1",p.time, n.time)
                             return {
                                 type: "between",
                                 last: p,

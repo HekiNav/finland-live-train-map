@@ -1,0 +1,60 @@
+{
+    "build": {
+        "arduino": {
+            "ldscript": "esp32c3_out.ld"
+        },
+        "core": "esp32",
+        "extra_flags": [
+            "-DARDUINO_USB_MODE=1",
+            "-DARDUINO_USB_CDC_ON_BOOT=1",
+            "-DWIFI_LED_PIN=5",
+            "-DSERVER_LED_PIN=4",
+            "-DBRIGHTNESS_DOWN_BUTTON=9",
+            "-DBRIGHTNESS_UP_BUTTON=10",
+            "-DMODE_BUTTON=2",
+            "-DPOWER_BUTTON=3",
+            "-DLED_5V_EN=6",
+            "-DLED_1_PIN=8",
+            "-DLED_1_START=100",
+            "-DLED_1_PIXELS=222",
+            "-DMIN_BRIGHTNESS=34",
+            "-DMAX_BRIGHTNESS=254",
+            "-DBRIGHTNESS_STEP=20",
+            "-DDEBOUNCE_MS=100",
+            "-DBACKEND_VERSION=\\\"100\\\"",
+            "-DCITY_CODE=\\\"fin\\\"",
+            "-DFIN_LTM"
+        ],
+        "f_cpu": "160000000L",
+        "f_flash": "80000000L",
+        "flash_mode": "qio",
+        "hwids": [
+            [
+                "0X303A",
+                "0x1001"
+            ]
+        ],
+        "mcu": "esp32c3",
+        "variant": "esp32c3"
+    },
+    "connectivity": [
+        "wifi"
+    ],
+    "debug": {
+        "openocd_target": "esp32c3.cfg"
+    },
+    "frameworks": [
+        "arduino",
+        "espidf"
+    ],
+    "name": "Finland Train Network Network V1.0.0",
+    "upload": {
+        "flash_size": "4MB",
+        "maximum_ram_size": 327680,
+        "maximum_size": 4194304,
+        "require_upload_port": true,
+        "speed": 460800
+    },
+    "url": "https://ltm.hekinav.dev/",
+    "vendor": "Hekinav"
+}
