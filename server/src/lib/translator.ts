@@ -90,7 +90,7 @@ export class DataTranslator {
     listBoards() {
         return Array.from(this.#board_configs.keys())
     }
-    generateUpdates(trains: Train[], mode: string, filters: AnyBoardModeTrainFilter[], board_sections: AnyBoardSection[], send: (ev: MapEvent[]) => void): MapEvent[] {
+    generateUpdates(trains: Train[], mode: string, filters: AnyBoardModeTrainFilter[], board_sections: AnyBoardSection[], colorTable: ColorTable): MapEvent[] {
         let events: MapEvent[] = []
         const filteredTrains = trains
             .filter(t => filters.every(f => this.#checkBoardModeTrainFilter(t, f)))
@@ -111,7 +111,7 @@ export class DataTranslator {
                     color = 1
                     break
                 case "lines":
-                    color = 1
+                    color = colorTable.findIndex(c => c.some(l => l == t.properties.commuter_line_id)) + 1 || 10
                     break
                 default:
                     console.error(`Unknown mode (${mode}) - Cannot process`)

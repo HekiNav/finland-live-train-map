@@ -50,7 +50,16 @@
                 "id": "lines",
                 "name": "Commuter Lines",
                 "colors": [
-                    
+                    ["Z"],
+                    ["A"],
+                    ["E", "O"],
+                    ["P", "G"],
+                    ["M", "I"],
+                    ["K"],
+                    ["Y", "L", "H", "X"],
+                    ["U"],
+                    ["D", "T", "R"],
+                    ["V"]
                 ],
                 "filters" : [
                     {
