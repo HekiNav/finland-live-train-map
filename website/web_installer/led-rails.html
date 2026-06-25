@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hekinav Live Train Map Setup</title>
+    <meta name="description" content="Easily update and configure Wi-Fi for your Live Train Map">
+    <meta property="og:title" content="Hekinav Live Train Map Setup" />
+    <meta property="og:site_name" content="Hekinav Live Train Map Setup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Easily update and configure Wi-Fi for your Live Train Map" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hekinav Live Train Map Setup" />
+    <meta name="twitter:description" content="Easily update and configure Wi-Fi for your Live Train Map" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script type="module" src="https://unpkg.com/esp-web-tools@10.2.1/dist/web/install-button.js?module"></script>
+    <style>
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+            background: #222;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* ESP Web Tools launch button (documented vars) */
+        esp-web-install-button {
+            --esp-tools-button-color: #2f64e1;
+            --esp-tools-button-text-color: #ffffff;
+            --esp-tools-button-border-radius: 25px;
+        }
+
+        /* ESP Web Tools popup dialog/theme tokens */
+        ewt-install-dialog,
+        ewt-improv-dialog,
+        ewt-no-port-picked-dialog,
+        ewt-dialog {
+            --md-sys-color-primary: #2f64e1;
+            /* spinner + primary actions */
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #2f64e1;
+            --md-sys-color-on-primary-container: #ffffff;
+            --text-color: rgba(235, 235, 235, 0.9);
+            --md-sys-color-background: #222222;
+            --md-sys-color-surface: #222222;
+            --md-sys-color-surface-container: #222222;
+            --md-sys-color-surface-container-low: #252525;
+            --md-sys-color-surface-container-high: #2b2b2b;
+            --md-sys-color-surface-container-highest: #333333;
+            --md-sys-color-on-surface: #e6e6e6;
+            --md-sys-color-on-surface-variant: #c9c9c9;
+            --md-sys-color-on-background: #e6e6e6;
+            --md-sys-color-surface-variant: #3a3a3a;
+            --md-sys-color-secondary-container: #4a4a4a;
+            --md-sys-color-on-secondary-container: #f2f2f2;
+            --md-sys-color-outline: #666666;
+            --md-sys-color-outline-variant: #4f4f4f;
+            --md-list-item-selected-container-color: #4a4a4a;
+            --md-list-item-selected-label-text-color: #f2f2f2;
+            --md-menu-item-selected-container-color: #4a4a4a;
+            --md-menu-item-selected-label-text-color: #f2f2f2;
+            color: #d8d8d8;
+        }
+
+        /* Force identical theme on each EWT popup type */
+        ewt-install-dialog,
+        ewt-improv-dialog,
+        ewt-no-port-picked-dialog {
+            --md-filled-button-container-color: #2f64e1;
+            --md-filled-button-label-text-color: #ffffff;
+            --md-outlined-button-label-text-color: #e6e6e6;
+            --md-outlined-button-outline-color: #666666;
+            --md-text-button-label-text-color: #e6e6e6;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px 12px 0 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        main {
+            width: 100%;
+            background: #222;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .instructions {
+            margin: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            text-align: left;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 24px auto;
+            border-radius: 5px;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            outline: none;
+            cursor: pointer;
+            padding: 8px 0;
+            margin: 10px 0;
+            width: 230px;
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 19px;
+            background-color: #09f;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        esp-web-install-button {
+            margin-top: 24px;
+        }
+
+        ol {
+            margin: auto;
+            text-align: left;
+            /* display: inline-block; */
+        }
+
+        /* 
+        li::marker {
+            color: #09f;
+        } */
+
+        li {
+            margin: 5px;
+        }
+
+        a {
+            color: #888;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .btn {
+            background-color: #2f64e1;
+        }
+
+        .footer {
+            margin-top: 32px;
+            border-top: 1px solid #444;
+            padding-top: 16px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.95em;
+        }
+
+        .version-btn-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .version-btn {
+            width: 180px;
+            padding: 12px 0;
+            font-size: 18px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            background-color: #1f4192;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .version-btn.selected {
+            background-color: #2f64e1;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 8px;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body onload="checkSupported()">
+    <div class="content">
+        <header>
+            <h1>Hekinav Live Train Map Setup</h1>
+            <p>Wi-Fi setup and updates for your Live Train Map.</p>
+        </header>
+        <main>
+            <div id="flasher">
+                <ol class="instructions">
+                    <li>Plug your map into a USB port on your computer using a usb cable.
+                        <br>
+                        <span style="margin-top:24px; color:#888; font-size:0.95em;">Note: For setup you can only use
+                            the USB port
+                            on the <strong>left side</strong> on the Helsinki map.</span>
+                    </li>
+                    <li>Make sure you have selected the correct board below.
+                        <br>
+                    </li>
+                    <li>Click "Connect" and select the correct COM port.
+                        <br>
+                        <span style="margin-top:24px; color:#888; font-size:0.95em;">Look for the COM port labeled as
+                            "USB JTAG/serial debug unit".
+                        </span>
+                    </li>
+                    <li>Select "Connect to Wi-Fi" and follow the prompts.
+                        <br>
+                        <span style="margin-top:24px; color:#888; font-size:0.95em;">Installing the latest Firmware is
+                            optional.
+                        </span>
+                    </li>
+                </ol>
+                <div class="container">
+                    <div class="version-btn-group">
+                        <button type="button" class="btn version-btn" id="btn-hki-ltm_100"
+                            onclick="selectVersion('hki-ltm_100')">Helsinki
+                            V1.0</button>
+                        <button type="button" class="btn version-btn selected" id="btn-fin-ltm_100"
+                            onclick="selectVersion('fin-ltm_100')">Finland
+                            V1.0</button>
+                    </div>
+                    <esp-web-install-button id="inst" manifest="bin/AKL_V1_1_0/manifest.json" improv-wifi>
+                        <button class="btn" id="install-btn" slot="activate">Connect</button>
+                        <span slot="unsupported">Sorry, your browser does not support Web Serial. Please use Chrome or
+                            Edge.</span>
+                        <span slot="not-allowed">This tool requires HTTPS. Please use a secure connection.</span>
+                    </esp-web-install-button>
+                </div>
+            </div>
+            <div class="footer">
+                Powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web
+                    Tools</a><br>
+            </div>
+    </div>
+    <script>
+        async function getManifestVersion(manifestPath) {
+            const response = await fetch(manifestPath);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const manifest = await response.json();
+        }
+
+        function selectVersion(version) {
+            // Remove selected from all
+            document.getElementById('btn-fin-ltm_100').classList.remove('selected');
+            document.getElementById('btn-hki-ltm_100').classList.remove('selected');
+            let manifestPath = '';
+            if (version === 'fin-ltm_100') {
+                manifestPath = 'bin/fin-ltm_100/manifest.json';
+                document.getElementById('btn-fin-ltm_100').classList.add('selected');
+            } else if (version === 'hki-ltm_100') {
+                manifestPath = 'bin/hki-ltm_100/manifest.json';
+                document.getElementById('btn-hki-ltm_100').classList.add('selected');
+            }
+            document.getElementById('inst').setAttribute('manifest', manifestPath);
+            document.getElementById('install-btn').textContent = 'Connect';
+            getManifestVersion(manifestPath);
+        }
+
+        function checkSupported() {
+            if (document.getElementById('inst').hasAttribute('install-unsupported')) unsupported();
+            else selectVersion('hki-ltm_100');
+        }
+
+        function unsupported() {
+            document.getElementById('flasher').innerHTML = "Sorry, your browser is not yet supported!<br>Please try on Chrome or Edge.<br>";
+        }
+
+        function observeUntilApplied(targetHost, applyUpdate, timeoutMs, watchCharacterData) {
+            if (applyUpdate()) return;
+
+            let rafQueued = false;
+            let timer;
+            let timeoutHandle;
+
+            const runApply = () => {
+                if (applyUpdate()) {
+                    observer.disconnect();
+                    clearInterval(timer);
+                    clearTimeout(timeoutHandle);
+                }
+            };
+
+            const observer = new MutationObserver(() => {
+                if (rafQueued) return;
+                rafQueued = true;
+                requestAnimationFrame(() => {
+                    rafQueued = false;
+                    runApply();
+                });
+            });
+
+            const observerOptions = { childList: true, subtree: true, characterData: watchCharacterData };
+            observer.observe(targetHost, observerOptions);
+            if (targetHost.shadowRoot) observer.observe(targetHost.shadowRoot, observerOptions);
+
+            timer = setInterval(runApply, 120);
+            timeoutHandle = setTimeout(() => {
+                observer.disconnect();
+                clearInterval(timer);
+                console.log('[EWT] observeUntilApplied timed out for', (targetHost.tagName || 'unknown').toLowerCase());
+            }, timeoutMs);
+        }
+
+        function collectRoots(host) {
+            const stack = [host];
+            const visited = new Set();
+            const roots = [];
+
+            while (stack.length) {
+                const current = stack.pop();
+                if (!current || visited.has(current)) continue;
+                visited.add(current);
+                roots.push(current);
+
+                if (current.querySelectorAll) {
+                    current.querySelectorAll('*').forEach((el) => {
+                        if (el.shadowRoot && !visited.has(el.shadowRoot)) {
+                            stack.push(el.shadowRoot);
+                        }
+                    });
+                }
+
+                if (current.shadowRoot && !visited.has(current.shadowRoot)) {
+                    stack.push(current.shadowRoot);
+                }
+            }
+
+            return roots;
+        }
+
+        function normalizeText(value) {
+            return (value || '').replace(/\s+/g, ' ').trim();
+        }
+
+        function trySkipEraseStep(dialog, roots) {
+            const fullText = normalizeText(roots.map((root) => root.textContent || '').join(' '));
+            const isEraseStep = /erase\s+device/i.test(fullText)
+                && /all\s+data\s+on\s+the\s+device\s+will\s+be\s+lost/i.test(fullText);
+
+            if (!isEraseStep) {
+                if (dialog.__eraseStepClickAttempted) {
+                    dialog.__eraseStepSkipped = true;
+                    console.log('[EWT] Erase step is no longer visible. Proceeding with install flow.');
+                    return true;
+                }
+
+                dialog.__eraseStepDetected = false;
+                return false;
+            }
+
+            if (!dialog.__eraseStepDetected) {
+                dialog.__eraseStepDetected = true;
+                console.log('[EWT] Erase step detected. Attempting to continue without erasing.');
+            }
+
+            let uncheckedEraseOption = false;
+            roots.forEach((root) => {
+                root.querySelectorAll?.('input[type="checkbox"]').forEach((checkbox) => {
+                    if (checkbox.checked) {
+                        checkbox.checked = false;
+                        checkbox.dispatchEvent(new Event('input', { bubbles: true }));
+                        checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+                        uncheckedEraseOption = true;
+                    }
+                });
+            });
+
+            if (uncheckedEraseOption) {
+                console.log('[EWT] Erase checkbox was checked. It has been unchecked.');
+            }
+
+            const buttonCandidates = [];
+            roots.forEach((root) => {
+                root.querySelectorAll?.('button, md-filled-button, md-outlined-button, md-text-button, md-tonal-button, md-elevated-button, mwc-button, ewt-button, [role="button"], [slot="primaryAction"], [slot="secondaryAction"], [dialog-action], [dialogaction], [data-action], [action]').forEach((el) => {
+                    if (!buttonCandidates.includes(el)) buttonCandidates.push(el);
+                });
+            });
+
+            const getButtonDescriptor = (button) => {
+                const tag = (button.tagName || '').toLowerCase();
+                const slot = (button.getAttribute('slot') || '').toLowerCase();
+                const action = normalizeText(
+                    button.getAttribute('dialog-action')
+                    || button.getAttribute('dialogaction')
+                    || button.getAttribute('data-action')
+                    || button.getAttribute('action')
+                    || ''
+                ).toLowerCase();
+                const ariaLabel = normalizeText(button.getAttribute('aria-label'));
+                const text = normalizeText(button.innerText || button.textContent);
+                const id = (button.id || '').toLowerCase();
+                const className = normalizeText(button.className || '').toLowerCase();
+                const value = normalizeText(button.getAttribute('value') || '').toLowerCase();
+                const role = (button.getAttribute('role') || '').toLowerCase();
+                const disabled = Boolean(
+                    button.disabled
+                    || button.hasAttribute('disabled')
+                    || button.getAttribute('aria-disabled') === 'true'
+                );
+                const searchText = normalizeText([
+                    ariaLabel,
+                    text,
+                    slot,
+                    action,
+                    id,
+                    className,
+                    value,
+                    role,
+                    tag
+                ].join(' ')).toLowerCase();
+
+                return {
+                    button,
+                    tag,
+                    slot,
+                    action,
+                    ariaLabel,
+                    text,
+                    id,
+                    className,
+                    value,
+                    role,
+                    searchText,
+                    disabled
+                };
+            };
+
+            const buttonDescriptors = buttonCandidates.map(getButtonDescriptor);
+
+            if (!dialog.__loggedEraseButtons && buttonDescriptors.length) {
+                dialog.__loggedEraseButtons = true;
+                console.log('[EWT] Erase step button details:', buttonDescriptors.map((info) => ({
+                    tag: info.tag,
+                    slot: info.slot,
+                    action: info.action,
+                    ariaLabel: info.ariaLabel,
+                    text: info.text,
+                    id: info.id,
+                    className: info.className,
+                    value: info.value,
+                    role: info.role,
+                    disabled: info.disabled
+                })));
+            }
+
+            let continueButtonInfo = buttonDescriptors.find((info) => !info.disabled && /\bnext\b/.test(info.searchText));
+
+            if (!continueButtonInfo) {
+                continueButtonInfo = buttonDescriptors.find((info) => !info.disabled && /\bnext\b/.test(info.action));
+            }
+
+            if (!continueButtonInfo) {
+                continueButtonInfo = buttonDescriptors.find((info) => !info.disabled && info.slot === 'primaryaction');
+            }
+
+            if (!continueButtonInfo) {
+                continueButtonInfo = buttonDescriptors.find((info) => {
+                    if (info.disabled) return false;
+                    if (/erase|wipe/.test(info.searchText)) return false;
+                    if (/back|cancel|close/.test(info.searchText)) return false;
+                    return /install|continue|confirm|proceed/.test(info.searchText);
+                });
+            }
+
+            if (!continueButtonInfo && buttonDescriptors.length === 2) {
+                continueButtonInfo = buttonDescriptors.find((info) => !info.disabled && info.slot !== 'secondaryaction');
+            }
+
+            if (!continueButtonInfo) {
+                const now = Date.now();
+                if (!dialog.__lastEraseWaitLog || now - dialog.__lastEraseWaitLog > 1000) {
+                    dialog.__lastEraseWaitLog = now;
+                    console.log('[EWT] Erase step is visible, but no non-erase continue button was found yet. Waiting...');
+                }
+                return false;
+            }
+
+            const continueButton = continueButtonInfo.button;
+            const continueLabel = continueButtonInfo.text
+                || continueButtonInfo.ariaLabel
+                || continueButtonInfo.action
+                || continueButtonInfo.slot
+                || continueButtonInfo.tag
+                || 'next';
+
+            const clickTarget = continueButton.shadowRoot?.querySelector?.('button, [role="button"]') || continueButton;
+            const now = Date.now();
+
+            if (dialog.__lastNextClickAt && now - dialog.__lastNextClickAt < 1000) {
+                return false;
+            }
+
+            dialog.__lastNextClickAt = now;
+            dialog.__eraseStepClickAttempted = true;
+
+            console.log(`[EWT] Clicking next candidate "${continueLabel}".`, {
+                tag: continueButtonInfo.tag,
+                slot: continueButtonInfo.slot,
+                action: continueButtonInfo.action
+            });
+
+            try {
+                clickTarget.click();
+                clickTarget.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, composed: true }));
+            } catch (error) {
+                console.log('[EWT] Clicking next candidate failed:', error);
+            }
+
+            return false;
+        }
+
+        function customizeInstallDialog(dialog) {
+            if (dialog.__customInstallCopyInit) return;
+            dialog.__customInstallCopyInit = true;
+            dialog.__eraseStepSkipped = false;
+            console.log('[EWT] customizeInstallDialog initialized.');
+
+            const targetDuration = 'a few seconds';
+
+            const applyCustomCopy = () => {
+                if (dialog.__eraseStepSkipped) return true;
+                if (!document.body.contains(dialog)) {
+                    console.log('[EWT] Install dialog removed from DOM before erase step automation finished.');
+                    return true;
+                }
+
+                const roots = collectRoots(dialog);
+                let changed = false;
+
+                while (roots.length) {
+                    const currentRoot = roots.pop();
+                    if (!currentRoot) continue;
+
+                    const walker = document.createTreeWalker(currentRoot, NodeFilter.SHOW_TEXT);
+                    let node = walker.nextNode();
+                    while (node) {
+                        const value = node.nodeValue || '';
+                        if (/\b2\s+minutes\b/.test(value)) {
+                            node.nodeValue = value.replace(/\b2\s+minutes\b/g, targetDuration);
+                            changed = true;
+                        }
+                        node = walker.nextNode();
+                    }
+                }
+
+                if (changed) {
+                    console.log('[EWT] Updated install dialog copy from "2 minutes" to "a few seconds".');
+                }
+
+                if (trySkipEraseStep(dialog, collectRoots(dialog))) {
+                    console.log('[EWT] Erase-step automation completed successfully.');
+                    return true;
+                }
+
+                return false;
+            };
+
+            observeUntilApplied(dialog, applyCustomCopy, 120000, true);
+        }
+
+        function customizeNoPortPickedDialog(dialog) {
+            if (dialog.__customNoPortCopyInit) return;
+            dialog.__customNoPortCopyInit = true;
+
+            const desiredHeading = 'No port selected';
+            const desiredContentHtml = `
+                        <div>If your train map did not appear in the port list, try these steps:</div>
+                        <ol>
+                            <li>Make sure your train map is connected to this computer.</li>
+                            <li>Use another USB data cable (some cables are power-only and will not show a serial port).</li>
+                            <li>Try a different USB port on your computer, then click Try Again.</li>
+                            <li>Unplug and reconnect the map, wait a few seconds, and reopen the port picker.</li>
+                        </ol>
+                    `.trim();
+
+            const applyCustomCopy = () => {
+                const root = dialog.shadowRoot;
+                if (!root) return false;
+
+                const heading = root.querySelector('[slot="headline"]');
+                const contentSlot = root.querySelector('[slot="content"]');
+                if (!heading || !contentSlot) return false;
+
+                heading.textContent = desiredHeading;
+                contentSlot.innerHTML = desiredContentHtml;
+                return true;
+            };
+
+            observeUntilApplied(dialog, applyCustomCopy, 3000, false);
+        }
+
+        function initDialogCustomizations(dialogConfigs) {
+            const processAddedNode = (addedNode) => {
+                if (!(addedNode instanceof Element)) return;
+
+                dialogConfigs.forEach(({ selector, customize }) => {
+                    if (addedNode.matches(selector)) {
+                        customize(addedNode);
+                    }
+
+                    addedNode.querySelectorAll?.(selector).forEach((dialog) => {
+                        customize(dialog);
+                    });
+                });
+            };
+
+            dialogConfigs.forEach(({ selector, customize }) => {
+                document.querySelectorAll(selector).forEach((dialog) => {
+                    customize(dialog);
+                });
+            });
+
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    mutation.addedNodes.forEach((addedNode) => processAddedNode(addedNode));
+                });
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+        }
+
+        initDialogCustomizations([
+            { selector: 'ewt-no-port-picked-dialog', customize: customizeNoPortPickedDialog },
+            { selector: 'ewt-install-dialog', customize: customizeInstallDialog }
+        ]);
+
+        console.log('LED-Rails Installer loaded successfully!');
+    </script>
+</body>
+
+</html>
