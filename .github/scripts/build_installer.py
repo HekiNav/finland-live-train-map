@@ -33,7 +33,7 @@ def build_environments() -> None:
     """Build all configured environments with mergebin target"""
     for env in ENVIRONMENTS:
         print(f"Building environment: {env['id']}")
-        run_command(["pio", "run", "-e", env["id"], "--target", "mergebin_seperate_bootloader"])
+        run_command(["pio", "run", "-d","./firmware", "-e", env["id"], "--target", "mergebin_seperate_bootloader"])
 
 
 def create_manifest(env: dict[str, str], site_bin_dir: str) -> None:
