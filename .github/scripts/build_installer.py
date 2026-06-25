@@ -12,11 +12,11 @@ from typing import List, Optional
 # Configuration
 ENVIRONMENTS = [
     {"id": "hki-ltm_100", "name": "Helsinki V1.0"},
-    {"id": "hki-ltm_100", "name": "Finland V1.0"},
+    {"id": "fin-ltm_100", "name": "Finland V1.0"},
 ]
 WEB_INSTALLER_SRC = "website/web_installer"
 SITE_DIR = "_site"
-BUILD_DIR = ".pio/build"
+BUILD_DIR = "firmware/.pio/build"
 
 
 def run_command(cmd: List[str], cwd: Optional[str] = None) -> None:
