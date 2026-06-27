@@ -11,8 +11,8 @@ from typing import List, Optional
 
 # Configuration
 ENVIRONMENTS = [
-    {"id": "hki-ltm_100", "name": "Helsinki V1.0"},
-    {"id": "fin-ltm_100", "name": "Finland V1.0"},
+    {"id": "hki-ltm_100", "name": "LTM Firmware (Helsinki) V1.0"},
+    {"id": "fin-ltm_100", "name": "LTM Firmware (Finland) V1.0"},
 ]
 WEB_INSTALLER_SRC = "website/web_installer"
 SITE_DIR = "_site"
