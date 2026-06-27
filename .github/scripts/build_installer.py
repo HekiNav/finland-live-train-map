@@ -44,6 +44,7 @@ def create_manifest(env: dict[str, str], site_bin_dir: str) -> None:
         "new_install_prompt_erase": True,
         "builds": [
             {
+                "chipFamily": "esp32c3",
                 "parts": [
                     {
                         "path": "bootloader.bin",
