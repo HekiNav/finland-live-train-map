@@ -19,8 +19,14 @@ View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%
 ### [`/design`](./design/README.md)
 Contains Map Design ideas and plans as Inkscape SVGs
 
-### [`/server`](./server/README.md)
-Contains the NodeJS server
+
+NOTE! All software has been moved to [another repo (HekiNav/ltm-firmware)](https://github.com/HekiNav/ltm-firmware)
+
+### [`/server`](https://github.com/HekiNav/ltm-firmware/tree/main/server/README.md)
+Contains the NodeJS server that processes data from Fintraffic to amore usable format
+
+### [`/firmware`](https://github.com/HekiNav/ltm-firmware/tree/main/firmware/README.md)
+Contains the Platformio firmware for the ESP32C3
 
 ### [BuildGuide.md](BuildGuide.md)
 Contains instructions for building the project.
