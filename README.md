@@ -37,6 +37,6 @@ This project was made because we wanted to work on something together and Hack C
 
 ## Zine page
 
-Soon...
+![Zine Page](./media/Zine.png)
 
-We were required to make a zine page for Fallout.
+We were required to make a Zine page for Fallout. Available as a [`zine.pdf`](Zine.pdf)
