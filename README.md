@@ -8,6 +8,8 @@ This project was made for Hack Club [Fallout](https://fallout.hackclub.com) by [
 
 ## Repository structure / table of contents
 
+NOTE! All software has been moved to [another repo (HekiNav/ltm-firmware)](https://github.com/HekiNav/ltm-firmware)
+
 **Each directory contains its own README file with more detailed information on the specific section. Basic information is provided here.**
 
 ### [`/pcb`](./pcb/README.md)
@@ -19,8 +21,6 @@ View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%
 ### [`/design`](./design/README.md)
 Contains Map Design ideas and plans as Inkscape SVGs
 
-
-NOTE! All software has been moved to [another repo (HekiNav/ltm-firmware)](https://github.com/HekiNav/ltm-firmware)
 
 ### [`/server`](https://github.com/HekiNav/ltm-firmware/tree/main/server/README.md)
 Contains the NodeJS server that processes data from Fintraffic to amore usable format
