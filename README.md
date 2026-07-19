@@ -37,7 +37,17 @@ This project was made because we wanted to work on something together and Hack C
 
 ## BOM
 
-The BOM for this project is pretty much just making buying the PCB and then 3d printing the case (we are self-printing so we didn't add this). You can see the JLCPCB formatted [BOM.csv](./pcb/jlcpcb/production_files/BOM-fin-ltm.csv). We have some more detailed information about how to order it. Here is also a table that just includes the price of the PCB and the assembly, shipping for it and a price for screws to attach it to the wall.
+The BOM for this project is pretty much just making buying the PCB and then 3d printing the case (we are self-printing so we didn't add this). You can see the JLCPCB formatted [BOM.csv](./pcb/jlcpcb/production_files/BOM-fin-ltm.csv). We have some more detailed information about how to order it. Here is also a table that just includes the price of the PCB and the assembly, shipping + customs for it.
+
+|         Part          |   Total price   |                     Link                            |   Extra info  | 
+| --------------------- | --------------- | --------------------------------------------------- | ------------- |
+| PCB                   |     14.83€      | [JLCPCB](https://jlcpcb.com/pcb-fabrication/fr4-pcb)|               |
+| PCBA inc. components  |     136.03€     | [JLCPCBA](https://jlcpcb.com/pcb-assembly)          | For specific component pricing see the JLCPCB bom in the pcb folder  |
+| JLCPCB shipping       |     22.37€      | [Shipping](https://jlcpcb.com/shipping)             |               |
+| Import tax / customs  |     44.18€      | [Tulli.fi](https://tulli.fi/tullilaskuri#/)         |               |
+|                       |                 |                                                     |               |
+| Total                 |     217.42€     |                                                     |               |
+
 
 ## Zine page
 
