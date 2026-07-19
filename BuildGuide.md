@@ -30,5 +30,9 @@ Connect your board via the USB Type-C port to a computer. It is recommended to u
 
 ### Web Installer
 
+Go to [the Web Installer site](https://ltm.hekinav.dev/web_installer/) and follow the instructions on the site.
+
 ### Building from source
+
+Use the guide in the [firmware repo](https://github.com/hekinav/ltm-firmware/tree/main/firmware#compiling-the-code-yourself)
 
