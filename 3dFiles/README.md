@@ -13,3 +13,8 @@ The case is printed in 3 seperate pieces. The main body and then the top corners
 ![render assembly](/media/Assembly.png)
 
 Here is a picture of the frame seperated. 
+
+
+## The kickstand
+
+The full fusion project includes a lot of random history and a kickstanc section. This is because we were planning on adding a kickstand to the design but ended up not having time for it. The project history is kind of a mess because of this. The part does work and is done but the kickstand will be included in a later design version.
