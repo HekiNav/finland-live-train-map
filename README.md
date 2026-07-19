@@ -16,11 +16,8 @@ NOTE! All software has been moved to [another repo (HekiNav/ltm-firmware)](https
 Contains KiCad design files
 View interactive PCB design in [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FHekinav%2FFinland-Live-Train-Map%2Ftree%2Fmain%2Fpcb)
 
-**NOTICE**: KiCanvas does not properly render everything, please hide layers User.1-User.5 to view power circuitry. These layers mark the different power circuits
-
 ### [`/design`](./design/README.md)
 Contains Map Design ideas and plans as Inkscape SVGs
-
 
 ### [`/server`](https://github.com/HekiNav/ltm-firmware/tree/main/server/README.md)
 Contains the NodeJS server that processes data from Fintraffic to amore usable format
@@ -42,9 +39,9 @@ The BOM for this project is pretty much just making buying the PCB and then 3d p
 |         Part          |   Total price   |                     Link                            |   Extra info  | 
 | --------------------- | --------------- | --------------------------------------------------- | ------------- |
 | PCB                   |     14.83€      | [JLCPCB](https://jlcpcb.com/pcb-fabrication/fr4-pcb)|               |
-| PCBA inc. components  |     136.03€     | [JLCPCBA](https://jlcpcb.com/pcb-assembly)          | For specific component pricing see the JLCPCB bom in the pcb folder  |
+| PCBA inc. components  |     136.03€     | [JLCPCB PCBA](https://jlcpcb.com/pcb-assembly)      | For specific component pricing see the JLCPCB bom in the pcb folder  |
 | JLCPCB shipping       |     22.37€      | [Shipping](https://jlcpcb.com/shipping)             |               |
-| Import tax / customs  |     44.18€      | [Tulli.fi](https://tulli.fi/tullilaskuri#/)         |               |
+| Taxes / customs fees  |     44.18€      | [Tulli.fi](https://tulli.fi/tullilaskuri#/)         |               |
 |                       |                 |                                                     |               |
 | Total                 |     217.42€     |                                                     |               |
 
