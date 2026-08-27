@@ -1,13 +1,17 @@
 (kicad_symbol_lib
-	(version 20241209)
+	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(symbol "RT9080"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at 0 9.652 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,6 +20,8 @@
 		)
 		(property "Value" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24,29 +30,35 @@
 		)
 		(property "Footprint" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "RT9080_0_1"
@@ -63,14 +75,6 @@
 			)
 		)
 		(symbol "RT9080_1_1"
-			(text "RF9080\n"
-				(at 0 7.112 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(pin power_in line
 				(at -8.89 2.54 0)
 				(length 2.54)
@@ -82,6 +86,24 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 8.89 -2.54 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -125,24 +147,6 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 8.89 -2.54 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(embedded_fonts no)
 	)
@@ -150,9 +154,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
 			(at 0 8.89 0)
-			(do_not_autoplace)
+			(show_name no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -161,6 +168,8 @@
 		)
 		(property "Value" ""
 			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -169,29 +178,35 @@
 		)
 		(property "Footprint" ""
 			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "SSD1306_Conn_0_1"
@@ -391,8 +406,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
-			(at 0 13.208 0)
+			(at 0 13.462 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -401,6 +420,8 @@
 		)
 		(property "Value" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -409,34 +430,40 @@
 		)
 		(property "Footprint" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "Test_Connector_1_1"
 			(pin passive line
-				(at 0 7.62 0)
+				(at 0 8.89 0)
 				(length 2.54)
 				(name "+5V"
 					(effects
@@ -454,7 +481,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -472,9 +499,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 2.54 0)
+				(at 0 3.81 0)
 				(length 2.54)
-				(name "Reset"
+				(name "Boot"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -490,9 +517,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(length 2.54)
-				(name "TX"
+				(name "Reset"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -508,9 +535,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 0 -1.27 0)
 				(length 2.54)
-				(name "RX"
+				(name "TX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -526,9 +553,9 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 0)
+				(at 0 -3.81 0)
 				(length 2.54)
-				(name "GND"
+				(name "RX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -544,7 +571,25 @@
 				)
 			)
 			(pin passive line
-				(at 0 -7.62 0)
+				(at 0 -6.35 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -8.89 0)
 				(length 2.54)
 				(name "+3V3"
 					(effects
@@ -553,7 +598,7 @@
 						)
 					)
 				)
-				(number "7"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
