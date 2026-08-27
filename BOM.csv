@@ -1,0 +1,33 @@
+Part,Quantity,Total price,Links,Extra info,LCSC id
+PCB,5,14.84€,https://jlcpcb.com/pcb-fabrication/fr4-pcb,,
+PCBA inc. components,5,136.03€,https://jlcpcb.com/pcb-assembly,For specific component pricing see the JLCPCB bom in the pcb folder,
+JLCPCB shipping (UPS),1,22.37€,https://jlcpcb.com/shipping,,
+Import tax / customs,1,44.18€,https://tulli.fi/tullilaskuri#/,,
+1.5pF,20,0.18€,https://jlcpcb.com/partdetail/1904-0402CG1R5C500NT/C1552,,C1552
+100kΩ,35,0.11€,https://jlcpcb.com/partdetail/26484-0402WGF1003TCE/C25741,,C25741
+10kΩ,40,0.14€,https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744,,C25744
+10uF,280,9.97€,https://jlcpcb.com/partdetail/16204-CL05A106MQ5NUNC/C15525,,C15525
+"15nH,300mA",20,0.11€,https://jlcpcb.com/partdetail/Sunlord-SDCL1005C15NJTDF/C27143,,C27143
+2.7nH,20,0.30€,https://jlcpcb.com/partdetail/MurataElectronics-LQG15HS2N7S02D/C77108,,C77108
+27pF,20,0.09€,https://jlcpcb.com/partdetail/1909-0402CG270J500NT/C1557,,C1557
+"40MHz, 15pF",9,0.86€,https://jlcpcb.com/partdetail/YXC_CrystalOscillators-X322540MPB4SI/C9010,,C9010
+47uF,21,3.67€,https://jlcpcb.com/partdetail/17464-CL21A476MQYNNNE/C16780,,C16780
+5.1kΩ,25,0.03€,https://jlcpcb.com/partdetail/26648-0402WGF5101TCE/C25905,,C25905
+510kΩ,20,0.01€,https://jlcpcb.com/partdetail/HWACHN-HRC0402J514DNTO/C54920807,,C54920807
+510Ω,20,0.04€,https://jlcpcb.com/parts/componentSearch?searchTxt=C25123,,C25123
+"Connector, USB-TYPE-C-16P",6,0.33€,https://jlcpcb.com/partdetail/DEALON-USB_TYPE_C019/C2927039,,C2927039
+ESP32-C3FH4,5,9.44€,https://jlcpcb.com/parts/componentSearch?searchTxt=C2858491,,C2858491
+Discrete Diode Emerald Green Water Clear 0805 LED Indication,25,0.35€,https://jlcpcb.com/parts/componentSearch?searchTxt=C2297,,C2297
+H3V3U10B,20,0.60€,https://jlcpcb.com/partdetail/hongjiacheng-H3V3U10B/C20615782,,C20615782
+HL3415A,9,0.32€,https://jlcpcb.com/partdetail/hongjiacheng-HL3415A/C28646270,,C28646270
+MM1W5V6,14,0.68€,https://jlcpcb.com/partdetail/hongjiacheng-MM1W5V6/C22435086,,C22435086
+MMBT3904,10,0.10€,https://jlcpcb.com/partdetail/hongjiacheng-MMBT3904/C7420353,,C7420353
+MMSZ5227B,15,0.26€,https://jlcpcb.com/partdetail/hongjiacheng-MMSZ5227B/C22395553,,C22395553
+"Polyfuse, 2A",9,0.32€,https://jlcpcb.com/partdetail/BORN-SMD1206_20006N/C6165195,,C6165195
+Red,25,0.29€,https://jlcpcb.com/partdetail/85425-NCD0805R1/C84256,,C84256
+SN74LV1T34DBV,5,0.95€,https://jlcpcb.com/partdetail/TexasInstruments-SN74LV1T34DBVR/C100024,,C100024
+"Tactile Button, 160gf",25,0.44€,https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884,,C318884
+WS2812B,1119,33.71€,https://jlcpcb.com/partdetail/XINGLIGHT-XL_1615RGBC2812B/C5349954,,C5349954
+RT9080,7,0.73€,https://jlcpcb.com/partdetail/RichtekTech-RT908033GJ5/C841192,,C841192
+,,,,,
+Total:,,281.46€,,,
