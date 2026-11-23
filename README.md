@@ -4,7 +4,7 @@
 
 The project consist of the physical pcb and case as well as the server that processes the information from the api and serves it to the ESP-32 to process. The physical project is a pcb with LEDs marking the route for intercity trains across Finland. There are two versions of the map. A more simplified version with just the routes visible. Then there is the more geografically correct version with the borders of Finland printed on the silkscreen. The LEDs mark the position of trains in real time so you can see at a glance where the trains are. The case makes it possible to wall mount the pcb or have it on your desk.
 
-This project was made for Hack Club [Fallout](https://fallout.hackclub.com) by [NoseFa](https://github.com/NoseFa) and [Hekinav](https://github.com/HekiNav).
+This project was made by [NoseFa](https://github.com/NoseFa) and [Hekinav](https://github.com/HekiNav).
 
 ## Repository structure / table of contents
 
@@ -45,9 +45,3 @@ The BOM for this project is pretty much just making buying the PCB and then 3d p
 |                       |                 |                                                     |               |
 | Total                 |     217.42€     |                                                     |               |
 
-
-## Zine page
-
-![Zine Page](./media/Zine.png)
-
-We were required to make a Zine page for Fallout. Available as a [`zine.pdf`](Zine.pdf)
